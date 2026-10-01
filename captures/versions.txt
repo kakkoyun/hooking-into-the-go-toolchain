@@ -1,0 +1,4 @@
+go:      go version go1.27.1 darwin/arm64
+otelc:   otelc version v1.1.0 go1.27.1 
+uname:   Darwin arm64
+date:    2026-10-01T12:17:12Z

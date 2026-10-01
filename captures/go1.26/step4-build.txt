@@ -1,0 +1,84 @@
+WORK=$REPO/.cache/step4-go126/tmp/go-build1957112555
+# github.com/kakkoyun/hooking-into-the-go-toolchain/app
+toyhook: compile github.com/kakkoyun/hooking-into-the-go-toolchain/app before: -o $WORK/b001/_pkg_.a -trimpath $WORK/b001=> -p main -lang=go1.25 -complete -buildid wWfLN-USjLf4-gFNKuV8/wWfLN-USjLf4-gFNKuV8 -goversion go1.26.8 -c=16 -shared -nolocalimports -importcfg $WORK/b001/importcfg -pack app/main.go
+toyhook: rewrote 1 function(s) in app/main.go -> $WORK/b001/main.go
+toyhook: compile importcfg $WORK/b001/importcfg: 7 lines, adding 65:
+toyhook:   + packagefile internal/goarch=$REPO/.cache/step4-go126/gocache/8c/8c4c51605e208cc9a8fd5e5dca61cc21236d4e31ee9ac6f11c186a3b04415643-d
+toyhook:   + packagefile internal/abi=$REPO/.cache/step4-go126/gocache/c2/c28a526875f4cfc76199ee551111ef09a1b8c98c215447db06465393f1194079-d
+toyhook:   + packagefile internal/unsafeheader=$REPO/.cache/step4-go126/gocache/55/5500b92f71acc66124869ab630bf6f63b4afb5c7d30bcec7c78581cd0a19e1e0-d
+toyhook:   + packagefile internal/cpu=$REPO/.cache/step4-go126/gocache/2e/2e595107f551da44a7289c6e6333f5baade8166d5f11d1df70847b08bf0bd65a-d
+toyhook:   + packagefile internal/bytealg=$REPO/.cache/step4-go126/gocache/08/0893c89c7c1dcfda31226937e7687658c6ccccdef58cf69cf9fe32d5da076e5e-d
+toyhook:   + packagefile internal/byteorder=$REPO/.cache/step4-go126/gocache/c4/c4d129c3535ebeb573bc657709dfc60ba01dfb386c656a8a054170d5aeaa88ef-d
+toyhook:   + packagefile internal/chacha8rand=$REPO/.cache/step4-go126/gocache/1a/1a88060f579ef10e01d3f094975cb781c97595455e28510d3ab8bde14845e661-d
+toyhook:   + packagefile internal/coverage/rtcov=$REPO/.cache/step4-go126/gocache/8f/8f7fbac022a794ccaee3b4490d385d710a7fab05a20d2ea569331b788e5f8ee1-d
+toyhook:   + packagefile internal/godebugs=$REPO/.cache/step4-go126/gocache/81/812b0040a879fabee50d3f8aa38395600baa8ceb8c1055765a683c6338a04432-d
+toyhook:   + packagefile internal/goexperiment=$REPO/.cache/step4-go126/gocache/36/364bd0e3583f71cc95eb04060799a9d9aa71547a282c62505a44233995c386db-d
+toyhook:   + packagefile internal/goos=$REPO/.cache/step4-go126/gocache/ef/ef3a28042308ee820604b1d2dfd5356dd4f9a92de97a9d8f7db831312b49788c-d
+toyhook:   + packagefile internal/profilerecord=$REPO/.cache/step4-go126/gocache/3d/3dae917f20c9f9922186a213d184a3fb0c701a2a6bde2857d872f586446411bc-d
+toyhook:   + packagefile internal/runtime/atomic=$REPO/.cache/step4-go126/gocache/55/55ed5d20142c9cf25902d25c7282276c75ff805201c6c123ea31b525b37b674f-d
+toyhook:   + packagefile internal/runtime/exithook=$REPO/.cache/step4-go126/gocache/80/80eb60a1bf3a19c86f342b3adcb63eae1dd0a121af46c22a10ecec5ac53c86fb-d
+toyhook:   + packagefile internal/runtime/gc=$REPO/.cache/step4-go126/gocache/f1/f1c55caea851012690875d759645ea15db9252ff467eccec0b6f1aa80710fcfd-d
+toyhook:   + packagefile internal/runtime/sys=$REPO/.cache/step4-go126/gocache/86/861b2599198d4cd430bd62f4bfb571df98aa5a578f03dc09d70af6036b60ffce-d
+toyhook:   + packagefile internal/runtime/gc/scan=$REPO/.cache/step4-go126/gocache/50/50f54a9d7b695b0b6cba0a07541018fffa9e52cca6392c1f0ac1e6e872bf2f52-d
+toyhook:   + packagefile internal/asan=$REPO/.cache/step4-go126/gocache/5d/5d17387768953c24f0b628e5d42b5ce70602f446a4c2eaa98abd56401d0328c1-d
+toyhook:   + packagefile internal/msan=$REPO/.cache/step4-go126/gocache/e9/e9237f64c124cbac6109c94e6f0278f1e5042034895bd60d0b8c90ef5598f944-d
+toyhook:   + packagefile internal/race=$REPO/.cache/step4-go126/gocache/92/9274e45362ec50695117e0e6a4b1e3b590db0422aca9431fbfcdf8fc23bb1962-d
+toyhook:   + packagefile internal/runtime/math=$REPO/.cache/step4-go126/gocache/f3/f31059cad62a1180ad7e363ad60f670eef7cf073af2aafea32cb27e440396619-d
+toyhook:   + packagefile internal/runtime/maps=$REPO/.cache/step4-go126/gocache/a3/a3d655db1f1ffb5c2d6098a31d5392107afb8877a831498a3c9d1bfe25d207b4-d
+toyhook:   + packagefile internal/runtime/pprof/label=$REPO/.cache/step4-go126/gocache/37/371c5affe0b644d60228b92afd558853ae2029f4437a7adb6dfcb1a596a64703-d
+toyhook:   + packagefile math/bits=$REPO/.cache/step4-go126/gocache/3a/3a32a6e24af36c5b4c87da46840089f23e10844839d47460e3860880c4a4d5d3-d
+toyhook:   + packagefile internal/strconv=$REPO/.cache/step4-go126/gocache/38/38646310782b85f7d1cc029b59db46c2a1cf1a51398fa0986a1bc8a82c03bca9-d
+toyhook:   + packagefile internal/stringslite=$REPO/.cache/step4-go126/gocache/ee/eefc6a10e9cb6649a1bc14f2b021b74722dac69b085b20950e245bf1d93b5cb7-d
+toyhook:   + packagefile internal/trace/tracev2=$REPO/.cache/step4-go126/gocache/2e/2e0728e7ff62b40d82de1b47bee654b608d1b4ae83e69608b87886ebe2a3601d-d
+toyhook:   + packagefile internal/reflectlite=$REPO/.cache/step4-go126/gocache/78/786d3bed2a28e85c57743cfff528c2ed41cbd351e675f4e2289ca4743516b5e5-d
+toyhook:   + packagefile errors=$REPO/.cache/step4-go126/gocache/ff/ffea684bb9464d3feef3238491fb9b5f91b05135f782b570e6f8f56576d1bde7-d
+toyhook:   + packagefile sync/atomic=$REPO/.cache/step4-go126/gocache/78/78adb38cdf67c32d122130b317b233a5e21eaa441ee00defd2ea2530089fe478-d
+toyhook:   + packagefile internal/sync=$REPO/.cache/step4-go126/gocache/b9/b99525d65ff62c96e31e39b23b73b086716005dbbfcd07bd34443c461997030f-d
+toyhook:   + packagefile internal/synctest=$REPO/.cache/step4-go126/gocache/30/308ee6b1ac6e29ad66673847771be492b978c35852b9cc2e46f15fd69184616e-d
+toyhook:   + packagefile sync=$REPO/.cache/step4-go126/gocache/4b/4b59dcc3a3dc38f089dce65392fd23ea8a9adcfd0f09e045de664c0c6905ba75-d
+toyhook:   + packagefile io=$REPO/.cache/step4-go126/gocache/ff/ff02080a138f3e05ba83f5ac247e6a3a3d5bc8fb15f19d84e7e295f2afa07eca-d
+toyhook:   + packagefile iter=$REPO/.cache/step4-go126/gocache/bc/bc3859649237526bcc5f06849aa0c2ded059fd726ea384b777456c88870d57b9-d
+toyhook:   + packagefile unicode=$REPO/.cache/step4-go126/gocache/d0/d07093623d72ddd7fc20e6897e89182cd474f39da92df90fedef453e9bef05b8-d
+toyhook:   + packagefile unicode/utf8=$REPO/.cache/step4-go126/gocache/97/97a8c54b23aad3362983c7898e4c2ced5e3ade700eb58d11ce38592f92197738-d
+toyhook:   + packagefile internal/bisect=$REPO/.cache/step4-go126/gocache/d0/d07c557b17a633e1ce0501946d3a431d262d6b9118b259926c61fe0b90b85771-d
+toyhook:   + packagefile internal/godebug=$REPO/.cache/step4-go126/gocache/90/9079cef5c8dfed9485cd04cfef23c972c2bc9ad07dfecfde6d7c74a8c7eb6020-d
+toyhook:   + packagefile internal/oserror=$REPO/.cache/step4-go126/gocache/37/3797a1df18c176594454a6ecfffe03f79d47416f772e5d600473c02652895820-d
+toyhook:   + packagefile syscall=$REPO/.cache/step4-go126/gocache/fe/fe48312b04f050c59bb27e209905f09a28917fe0ec52ea2e522118d7959ec01b-d
+toyhook:   + packagefile context=$REPO/.cache/step4-go126/gocache/90/90311bb8aebe5756706bb2361b06673ebb436ca88faab7803418ad0269c001f1-d
+toyhook:   + packagefile encoding=$REPO/.cache/step4-go126/gocache/ae/ae99d88173d2bb8086b0848ecada528eb96712da53d763946e641364a664eb36-d
+toyhook:   + packagefile cmp=$REPO/.cache/step4-go126/gocache/50/509dcb3b38db5c677cd897931aacf854118e726dcda550e2af282efe17963f00-d
+toyhook:   + packagefile slices=$REPO/.cache/step4-go126/gocache/c1/c10a62c890ab78062eeeb363d09d37d0e9e62b31eecc94b5edf053214089d42e-d
+toyhook:   + packagefile strconv=$REPO/.cache/step4-go126/gocache/37/37505959eded353aa92cc903cd518093c4d989f54ad646af993372acd7d45721-d
+toyhook:   + packagefile encoding/base64=$REPO/.cache/step4-go126/gocache/17/177b26bc3255b4bf76b6d36455e1865b6f623d7ea7897fcc5dd385b6d66efac8-d
+toyhook:   + packagefile math=$REPO/.cache/step4-go126/gocache/73/73772d527372590ca0d3f12ff8e8a9bba6eb6f8c14ef0c70828eab7a65b1edea-d
+toyhook:   + packagefile reflect=$REPO/.cache/step4-go126/gocache/76/7686b7f0a203f1771a470b15a78ef3474872c967fc94576a8b017e27029ac334-d
+toyhook:   + packagefile internal/fmtsort=$REPO/.cache/step4-go126/gocache/74/74b2f68c1321394f653a1bcec03ec20879c21e30936f2b73a8c765b19a13f9d6-d
+toyhook:   + packagefile path=$REPO/.cache/step4-go126/gocache/2b/2b103ee48d27f72c8d6a83cda259b38078a7a2b2415ee2fc148d3c38509471e5-d
+toyhook:   + packagefile io/fs=$REPO/.cache/step4-go126/gocache/fc/fc3b9cbf2676a96e014bd8cefad3d80deef0c0d048e34c6c585f37b880b2d136-d
+toyhook:   + packagefile internal/filepathlite=$REPO/.cache/step4-go126/gocache/66/661d407add275a8b78bc71f4b5204db34f4b2768faf9500931d5745ea1926aab-d
+toyhook:   + packagefile internal/syscall/unix=$REPO/.cache/step4-go126/gocache/fe/fe7bea9aa6afa5f74baa5f5462bf3f8cbcdf6853a2ee857ebad98888825f609d-d
+toyhook:   + packagefile internal/poll=$REPO/.cache/step4-go126/gocache/a0/a02b22f98449c2fae921befb1842c3bb58fc258a5909bc4810c4ea1cb37ac21e-d
+toyhook:   + packagefile internal/syscall/execenv=$REPO/.cache/step4-go126/gocache/85/852529cf7702c254bb311e2e0a47059f4cdb1aae1f1492b468b70cd694f4345e-d
+toyhook:   + packagefile internal/testlog=$REPO/.cache/step4-go126/gocache/de/de1ce06f601578eadd766df36d5e22e3466c6fd31c0df840456ea97f0f3b42db-d
+toyhook:   + packagefile strings=$REPO/.cache/step4-go126/gocache/b2/b2897ac1b802537c9abf6d64b68c06f51bc38c1689b08ef5649273878520cc5c-d
+toyhook:   + packagefile unicode/utf16=$REPO/.cache/step4-go126/gocache/52/52772207fae9918b1b91fc2b419c2b01a771cb5d3c413981ac1343b7fa592403-d
+toyhook:   + packagefile encoding/json=$REPO/.cache/step4-go126/gocache/0b/0b1369d3e2d327c2d5a9072b1331e80811f712675fc4dba55219fc0ba7334368-d
+toyhook:   + packagefile log/internal=$REPO/.cache/step4-go126/gocache/d5/d5544177ef44023797ec561de38329c455df70e59ceb53c1a8774730b6449bdc-d
+toyhook:   + packagefile log=$REPO/.cache/step4-go126/gocache/08/084c67a47f46047e703cc7d19fd30ff4c71e0a71616ad50f2246490824bd9151-d
+toyhook:   + packagefile log/slog/internal=$REPO/.cache/step4-go126/gocache/1b/1b048332c9f656e06ec67c912e541230566512d072a07b469842193e6ee70805-d
+toyhook:   + packagefile log/slog/internal/buffer=$REPO/.cache/step4-go126/gocache/91/91a234f1dde72545ef165b34b0ccb3a1d7164fb8f87f9a504c205f1d617bccab-d
+toyhook:   + packagefile log/slog=$REPO/.cache/step4-go126/gocache/8f/8f71494e73f1e001e3bc4b23aca5ffab7174ef25b320e06fb17951099f0b7b1f-d
+toyhook: compile github.com/kakkoyun/hooking-into-the-go-toolchain/app after: -o $WORK/b001/_pkg_.a -trimpath $WORK/b001=> -p main -lang=go1.25 -complete -buildid wWfLN-USjLf4-gFNKuV8/wWfLN-USjLf4-gFNKuV8 -goversion go1.26.8 -c=16 -shared -nolocalimports -importcfg $WORK/b001/importcfg.toyhook -pack $WORK/b001/main.go
+# github.com/kakkoyun/hooking-into-the-go-toolchain/app
+toyhook: link importcfg $WORK/b001/importcfg.link: 62 lines, adding 11:
+toyhook:   + packagefile context=$REPO/.cache/step4-go126/gocache/90/90311bb8aebe5756706bb2361b06673ebb436ca88faab7803418ad0269c001f1-d
+toyhook:   + packagefile encoding=$REPO/.cache/step4-go126/gocache/ae/ae99d88173d2bb8086b0848ecada528eb96712da53d763946e641364a664eb36-d
+toyhook:   + packagefile encoding/base64=$REPO/.cache/step4-go126/gocache/17/177b26bc3255b4bf76b6d36455e1865b6f623d7ea7897fcc5dd385b6d66efac8-d
+toyhook:   + packagefile strings=$REPO/.cache/step4-go126/gocache/b2/b2897ac1b802537c9abf6d64b68c06f51bc38c1689b08ef5649273878520cc5c-d
+toyhook:   + packagefile unicode/utf16=$REPO/.cache/step4-go126/gocache/52/52772207fae9918b1b91fc2b419c2b01a771cb5d3c413981ac1343b7fa592403-d
+toyhook:   + packagefile encoding/json=$REPO/.cache/step4-go126/gocache/0b/0b1369d3e2d327c2d5a9072b1331e80811f712675fc4dba55219fc0ba7334368-d
+toyhook:   + packagefile log/internal=$REPO/.cache/step4-go126/gocache/d5/d5544177ef44023797ec561de38329c455df70e59ceb53c1a8774730b6449bdc-d
+toyhook:   + packagefile log=$REPO/.cache/step4-go126/gocache/08/084c67a47f46047e703cc7d19fd30ff4c71e0a71616ad50f2246490824bd9151-d
+toyhook:   + packagefile log/slog/internal=$REPO/.cache/step4-go126/gocache/1b/1b048332c9f656e06ec67c912e541230566512d072a07b469842193e6ee70805-d
+toyhook:   + packagefile log/slog/internal/buffer=$REPO/.cache/step4-go126/gocache/91/91a234f1dde72545ef165b34b0ccb3a1d7164fb8f87f9a504c205f1d617bccab-d
+toyhook:   + packagefile log/slog=$REPO/.cache/step4-go126/gocache/8f/8f71494e73f1e001e3bc4b23aca5ffab7174ef25b320e06fb17951099f0b7b1f-d

@@ -1,0 +1,10 @@
+second build, same GOCACHE, output file kept:    3 log line(s), 3 of them -V=full
+compile | - | 5 | -V=full
+asm | - | 87 | -V=full
+link | - | 4 | -V=full
+
+second build, same GOCACHE, output file deleted: 4 log line(s)
+compile | - | 9 | -V=full
+asm | - | 5 | -V=full
+link | - | 4 | -V=full
+link | github.com/kakkoyun/hooking-into-the-go-toolchain/app | 165 | files=0

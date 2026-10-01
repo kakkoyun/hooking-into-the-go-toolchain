@@ -1,0 +1,4 @@
+hello, toolchain
+→ countLines at 14:28:59
+go.mod has 3 lines
+done in 1ms

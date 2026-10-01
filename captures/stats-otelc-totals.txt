@@ -1,0 +1,9 @@
+tool        calls     sum ms
+asm            91       1227
+cc              2        396
+cgo             4        989
+compile       511      44199
+link            1       2298
+total         609      49111
+build phase (go build with toolexec): 13.628188208s
+setup phase (otelc): 4.508856417s

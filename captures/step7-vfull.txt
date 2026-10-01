@@ -1,0 +1,4 @@
+plain:
+compile version go1.27.1
+through otelc toolexec:
+compile version go1.27.1 otelc@v1.1.0/55ec54fb480c0c69

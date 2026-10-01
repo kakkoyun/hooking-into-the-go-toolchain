@@ -1,0 +1,793 @@
+WORK=$REPO/.cache/step1/tmp/go-build3768285036
+cd $REPO
+git status --porcelain
+cd $REPO
+git -c log.showsignature=false log -1 --format=%H:%ct
+cd $REPO; git config extensions.objectformat
+0.012s # cd $REPO; git config extensions.objectformat
+cd $REPO; git tag -l
+0.012s # cd $REPO; git tag -l
+mkdir -p $WORK/b008/
+mkdir -p $WORK/b018/
+mkdir -p $WORK/b014/
+mkdir -p $WORK/b025/
+mkdir -p $WORK/b017/
+mkdir -p $WORK/b015/
+echo '# import config' > $WORK/b018/importcfg # internal
+mkdir -p $WORK/b033/
+mkdir -p $WORK/b029/
+mkdir -p $WORK/b026/
+mkdir -p $WORK/b006/
+mkdir -p $WORK/b012/
+mkdir -p $WORK/b030/
+echo '# import config' > $WORK/b008/importcfg # internal
+cd $REPO
+$GOROOT/pkg/tool/darwin_arm64/compile -o $WORK/b018/_pkg_.a -trimpath "$WORK/b018=>" -p internal/profilerecord -lang=go1.27 -std -complete -buildid LGn7wrMUrjX3K1nPF-iC/LGn7wrMUrjX3K1nPF-iC -goversion go1.27.1 -c=16 -shared -nolocalimports -importcfg $WORK/b018/importcfg -pack $GOROOT/src/internal/profilerecord/profilerecord.go
+echo '# import config' > $WORK/b014/importcfg # internal
+mkdir -p $WORK/b040/
+$GOROOT/pkg/tool/darwin_arm64/compile -o $WORK/b008/_pkg_.a -trimpath "$WORK/b008=>" -p internal/unsafeheader -lang=go1.27 -std -complete -buildid N-lbfe0dJwy1ZhR8_o-I/N-lbfe0dJwy1ZhR8_o-I -goversion go1.27.1 -c=12 -shared -nolocalimports -importcfg $WORK/b008/importcfg -pack $GOROOT/src/internal/unsafeheader/unsafeheader.go
+echo '# import config' > $WORK/b017/importcfg # internal
+echo '# import config' > $WORK/b015/importcfg # internal
+$GOROOT/pkg/tool/darwin_arm64/compile -o $WORK/b014/_pkg_.a -trimpath "$WORK/b014=>" -p internal/coverage/rtcov -lang=go1.27 -std -complete -buildid gFi0xBrl01Awr5OvfnPl/gFi0xBrl01Awr5OvfnPl -goversion go1.27.1 -c=6 -shared -nolocalimports -importcfg $WORK/b014/importcfg -pack $GOROOT/src/internal/coverage/rtcov/rtcov.go
+$GOROOT/pkg/tool/darwin_arm64/compile -o $WORK/b017/_pkg_.a -trimpath "$WORK/b017=>" -p internal/goos -lang=go1.27 -std -complete -buildid -OQDQeVaXzGtFQUOl287/-OQDQeVaXzGtFQUOl287 -goversion go1.27.1 -c=8 -shared -nolocalimports -importcfg $WORK/b017/importcfg -pack $GOROOT/src/internal/goos/goos.go $GOROOT/src/internal/goos/unix.go $GOROOT/src/internal/goos/zgoos_darwin.go
+echo '# import config' > $WORK/b006/importcfg # internal
+$GOROOT/pkg/tool/darwin_arm64/compile -o $WORK/b015/_pkg_.a -trimpath "$WORK/b015=>" -p internal/godebugs -lang=go1.27 -std -complete -buildid P_0nO5HNX5G0bEFX1v25/P_0nO5HNX5G0bEFX1v25 -goversion go1.27.1 -c=5 -shared -nolocalimports -importcfg $WORK/b015/importcfg -pack $GOROOT/src/internal/godebugs/table.go
+echo '# import config' > $WORK/b026/importcfg # internal
+echo '# import config' > $WORK/b025/importcfg # internal
+$GOROOT/pkg/tool/darwin_arm64/compile -o $WORK/b026/_pkg_.a -trimpath "$WORK/b026=>" -p internal/msan -lang=go1.27 -std -complete -buildid YXpjxDwYcT3GhUbT39mZ/YXpjxDwYcT3GhUbT39mZ -goversion go1.27.1 -c=4 -shared -nolocalimports -importcfg $WORK/b026/importcfg -pack $GOROOT/src/internal/msan/doc.go $GOROOT/src/internal/msan/nomsan.go
+echo '# import config' > $WORK/b012/importcfg # internal
+echo '# import config' > $WORK/b029/importcfg # internal
+echo '# import config' > $WORK/b040/importcfg # internal
+$GOROOT/pkg/tool/darwin_arm64/compile -o $WORK/b006/_pkg_.a -trimpath "$WORK/b006=>" -p internal/goarch -lang=go1.27 -std -complete -buildid PD2jozD7Zx5c1ZNLSrVb/PD2jozD7Zx5c1ZNLSrVb -goversion go1.27.1 -c=4 -shared -nolocalimports -importcfg $WORK/b006/importcfg -pack $GOROOT/src/internal/goarch/goarch.go $GOROOT/src/internal/goarch/goarch_arm64.go $GOROOT/src/internal/goarch/zgoarch_arm64.go
+echo '# import config' > $WORK/b033/importcfg # internal
+echo '# import config' > $WORK/b030/importcfg # internal
+$GOROOT/pkg/tool/darwin_arm64/compile -o $WORK/b025/_pkg_.a -trimpath "$WORK/b025=>" -p internal/asan -lang=go1.27 -std -complete -buildid P8EobfG3gbNL3ZkJP_do/P8EobfG3gbNL3ZkJP_do -goversion go1.27.1 -c=4 -shared -nolocalimports -importcfg $WORK/b025/importcfg -pack $GOROOT/src/internal/asan/doc.go $GOROOT/src/internal/asan/noasan.go
+$GOROOT/pkg/tool/darwin_arm64/compile -o $WORK/b030/_pkg_.a -trimpath "$WORK/b030=>" -p internal/runtime/pprof/label -lang=go1.27 -std -complete -buildid HLdm6BMYhDGpTOT_BfOF/HLdm6BMYhDGpTOT_BfOF -goversion go1.27.1 -c=4 -shared -nolocalimports -importcfg $WORK/b030/importcfg -pack $GOROOT/src/internal/runtime/pprof/label/labelset.go
+$GOROOT/pkg/tool/darwin_arm64/compile -o $WORK/b033/_pkg_.a -trimpath "$WORK/b033=>" -p internal/trace/tracev2 -lang=go1.27 -std -complete -buildid r3lEQ8jlog3ttgQkHFzv/r3lEQ8jlog3ttgQkHFzv -goversion go1.27.1 -c=4 -shared -nolocalimports -importcfg $WORK/b033/importcfg -pack $GOROOT/src/internal/trace/tracev2/doc.go $GOROOT/src/internal/trace/tracev2/events.go $GOROOT/src/internal/trace/tracev2/spec.go
+mkdir -p $WORK/b016/
+$GOROOT/pkg/tool/darwin_arm64/compile -o $WORK/b012/_pkg_.a -trimpath "$WORK/b012=>" -p internal/byteorder -lang=go1.27 -std -complete -buildid WzGkbHYNBvEDQpmUM0qM/WzGkbHYNBvEDQpmUM0qM -goversion go1.27.1 -c=4 -shared -nolocalimports -importcfg $WORK/b012/importcfg -pack $GOROOT/src/internal/byteorder/byteorder.go
+$GOROOT/pkg/tool/darwin_arm64/compile -o $WORK/b040/_pkg_.a -trimpath "$WORK/b040=>" -p unicode -lang=go1.27 -std -complete -buildid yHvVPq17EuR2hDnI-RvW/yHvVPq17EuR2hDnI-RvW -goversion go1.27.1 -c=4 -shared -nolocalimports -importcfg $WORK/b040/importcfg -pack $GOROOT/src/unicode/casetables.go $GOROOT/src/unicode/digit.go $GOROOT/src/unicode/graphic.go $GOROOT/src/unicode/letter.go $GOROOT/src/unicode/tables.go
+$GOROOT/pkg/tool/darwin_arm64/compile -o $WORK/b029/_pkg_.a -trimpath "$WORK/b029=>" -p math/bits -lang=go1.27 -std -complete -buildid qYVaHbQ01zP8X5uCjt6P/qYVaHbQ01zP8X5uCjt6P -goversion go1.27.1 -c=4 -shared -nolocalimports -importcfg $WORK/b029/importcfg -pack $GOROOT/src/math/bits/bits.go $GOROOT/src/math/bits/bits_errors.go $GOROOT/src/math/bits/bits_tables.go
+mkdir -p $WORK/b037/
+mkdir -p $WORK/b011/
+echo -n > $WORK/b011/go_asm.h # internal
+echo '# import config' > $WORK/b016/importcfg # internal
+cd $GOROOT/src/internal/cpu
+$GOROOT/pkg/tool/darwin_arm64/asm -p internal/cpu -trimpath "$WORK/b011=>" -I $WORK/b011/ -I $GOROOT/pkg/include -D GOOS_darwin -D GOARCH_arm64 -shared -std -gensymabis -o $WORK/b011/symabis ./cpu.s ./cpu_arm64.s
+echo -n > $WORK/b037/go_asm.h # internal
+go tool buildid -w $WORK/b018/_pkg_.a # internal
+cd $REPO
+$GOROOT/pkg/tool/darwin_arm64/compile -o $WORK/b016/_pkg_.a -trimpath "$WORK/b016=>" -p internal/goexperiment -lang=go1.27 -std -complete -buildid MTtCHqmxaLJGS1eYdsOD/MTtCHqmxaLJGS1eYdsOD -goversion go1.27.1 -c=4 -shared -nolocalimports -importcfg $WORK/b016/importcfg -pack $GOROOT/src/internal/goexperiment/exp_arenas_off.go $GOROOT/src/internal/goexperiment/exp_boringcrypto_off.go $GOROOT/src/internal/goexperiment/exp_cgocheck2_off.go $GOROOT/src/internal/goexperiment/exp_dwarf5_off.go $GOROOT/src/internal/goexperiment/exp_fieldtrack_off.go $GOROOT/src/internal/goexperiment/exp_greenteagc_on.go $GOROOT/src/internal/goexperiment/exp_heapminimum512kib_off.go $GOROOT/src/internal/goexperiment/exp_jsonv2_on.go $GOROOT/src/internal/goexperiment/exp_loopvar_off.go $GOROOT/src/internal/goexperiment/exp_mapsplitgroup_off.go $GOROOT/src/internal/goexperiment/exp_newinliner_off.go $GOROOT/src/internal/goexperiment/exp_preemptibleloops_off.go $GOROOT/src/internal/goexperiment/exp_randomizedheapbase64_on.go $GOROOT/src/internal/goexperiment/exp_regabiargs_on.go $GOROOT/src/internal/goexperiment/exp_regabiwrappers_on.go $GOROOT/src/internal/goexperiment/exp_runtimefreegc_off.go $GOROOT/src/internal/goexperiment/exp_runtimesecret_off.go $GOROOT/src/internal/goexperiment/exp_simd_off.go $GOROOT/src/internal/goexperiment/exp_sizespecializedmalloc_on.go $GOROOT/src/internal/goexperiment/exp_staticlockranking_off.go $GOROOT/src/internal/goexperiment/flags.go
+cp $WORK/b018/_pkg_.a $REPO/.cache/step1/gocache/f6/f6f4a5d241d81e8e98f65fc08602c653a4877fd0ec0328abaa0df4a77f66ad23-d # internal
+mkdir -p $WORK/b041/
+echo '# import config' > $WORK/b041/importcfg # internal
+$GOROOT/pkg/tool/darwin_arm64/compile -o $WORK/b041/_pkg_.a -trimpath "$WORK/b041=>" -p unicode/utf8 -lang=go1.27 -std -complete -buildid QwUTdxSIxpV4BggcZCGW/QwUTdxSIxpV4BggcZCGW -goversion go1.27.1 -c=10 -shared -nolocalimports -importcfg $WORK/b041/importcfg -pack $GOROOT/src/unicode/utf8/utf8.go
+cd $GOROOT/src/sync/atomic
+$GOROOT/pkg/tool/darwin_arm64/asm -p sync/atomic -trimpath "$WORK/b037=>" -I $WORK/b037/ -I $GOROOT/pkg/include -D GOOS_darwin -D GOARCH_arm64 -shared -std -gensymabis -o $WORK/b037/symabis ./asm.s
+go tool buildid -w $WORK/b025/_pkg_.a # internal
+go tool buildid -w $WORK/b017/_pkg_.a # internal
+go tool buildid -w $WORK/b015/_pkg_.a # internal
+cp $WORK/b017/_pkg_.a $REPO/.cache/step1/gocache/a8/a8ced9d4dbf1f5148be7c3807814a643148eedc88aa047cef6299449a3f5f51d-d # internal
+mkdir -p $WORK/b044/
+go tool buildid -w $WORK/b026/_pkg_.a # internal
+echo '# import config' > $WORK/b044/importcfg # internal
+go tool buildid -w $WORK/b030/_pkg_.a # internal
+cp $WORK/b015/_pkg_.a $REPO/.cache/step1/gocache/0a/0a674027539e3c41e04c5f3ec2e58f65e26ce94ef6fdadf41a5ff5ab6e3d29be-d # internal
+cd $REPO
+$GOROOT/pkg/tool/darwin_arm64/compile -o $WORK/b044/_pkg_.a -trimpath "$WORK/b044=>" -p cmp -lang=go1.27 -std -complete -buildid vbAAfWv-h8o5Y2Uiz1B7/vbAAfWv-h8o5Y2Uiz1B7 -goversion go1.27.1 -c=10 -shared -nolocalimports -importcfg $WORK/b044/importcfg -pack $GOROOT/src/cmp/cmp.go
+go tool buildid -w $WORK/b012/_pkg_.a # internal
+cp $WORK/b030/_pkg_.a $REPO/.cache/step1/gocache/f3/f38268685716a9fc99f75f54eb9b8e6695e5439bd2acac280fa58fed9869a89b-d # internal
+cp $WORK/b025/_pkg_.a $REPO/.cache/step1/gocache/05/059b197be07779ec16047827a0c6368bdfce1dc63f38ca86af3dcd28a395423a-d # internal
+cp $WORK/b026/_pkg_.a $REPO/.cache/step1/gocache/5f/5fdd0a9b2f09a57a8e2a8cd361b9f0d3470db4b7ddb9637acfe92496cad85bb7-d # internal
+go tool buildid -w $WORK/b014/_pkg_.a # internal
+cp $WORK/b014/_pkg_.a $REPO/.cache/step1/gocache/b3/b3a8775c5f4cfa031f3e6c09155d35657b8dc2730f95cf52cc7b43628c2615d9-d # internal
+go tool buildid -w $WORK/b033/_pkg_.a # internal
+cp $WORK/b033/_pkg_.a $REPO/.cache/step1/gocache/70/703b9b5e38aefc930330f8b1e483b7605c5777d6c53b84c16de5e557681f0fd8-d # internal
+cp $WORK/b012/_pkg_.a $REPO/.cache/step1/gocache/b6/b68e84185f6638b5f93a48337c7fe5bbc2558acb690a22724cf9c10fc499bd78-d # internal
+go tool buildid -w $WORK/b008/_pkg_.a # internal
+echo '# import config' > $WORK/b011/importcfg # internal
+$GOROOT/pkg/tool/darwin_arm64/compile -o $WORK/b011/_pkg_.a -trimpath "$WORK/b011=>" -p internal/cpu -lang=go1.27 -std -buildid 7xcluTv-3rwZAUjsp1PY/7xcluTv-3rwZAUjsp1PY -goversion go1.27.1 -symabis $WORK/b011/symabis -c=12 -shared -nolocalimports -importcfg $WORK/b011/importcfg -pack -asmhdr $WORK/b011/go_asm.h $GOROOT/src/internal/cpu/cpu.go $GOROOT/src/internal/cpu/cpu_arm64.go $GOROOT/src/internal/cpu/cpu_arm64_darwin.go $GOROOT/src/internal/cpu/cpu_darwin.go $GOROOT/src/internal/cpu/cpu_no_name.go $GOROOT/src/internal/cpu/datacache_unsupported.go
+cp $WORK/b008/_pkg_.a $REPO/.cache/step1/gocache/a9/a9d10302997ca9ae5d449ddc759b7a7909d23e843fd485966d3e446ca344cc8a-d # internal
+go tool buildid -w $WORK/b029/_pkg_.a # internal
+cp $WORK/b029/_pkg_.a $REPO/.cache/step1/gocache/36/36a857d0d0a7ecf95cb358c629b81d8b6147286fd2a2b75c0890d12c1a300f34-d # internal
+go tool buildid -w $WORK/b006/_pkg_.a # internal
+mkdir -p $WORK/b031/
+echo '# import config' > $WORK/b037/importcfg # internal
+$GOROOT/pkg/tool/darwin_arm64/compile -o $WORK/b037/_pkg_.a -trimpath "$WORK/b037=>" -p sync/atomic -lang=go1.27 -std -buildid FterTGu05GigNeP98_ME/FterTGu05GigNeP98_ME -goversion go1.27.1 -symabis $WORK/b037/symabis -c=8 -shared -nolocalimports -importcfg $WORK/b037/importcfg -pack -asmhdr $WORK/b037/go_asm.h $GOROOT/src/sync/atomic/doc.go $GOROOT/src/sync/atomic/doc_64.go $GOROOT/src/sync/atomic/type.go $GOROOT/src/sync/atomic/value.go
+cat >$REPO/.cache/step1/tmp/go-build3768285036/b031/importcfg << 'EOF' # internal
+# import config
+packagefile math/bits=$REPO/.cache/step1/tmp/go-build3768285036/b029/_pkg_.a
+EOF
+cp $WORK/b006/_pkg_.a $REPO/.cache/step1/gocache/f4/f4f408ae75531dbfef0f14a48b7e5f48aa434a7c54bd0a327f4b68c7caf852bd-d # internal
+$GOROOT/pkg/tool/darwin_arm64/compile -o $WORK/b031/_pkg_.a -trimpath "$WORK/b031=>" -p internal/strconv -lang=go1.27 -std -complete -buildid 64ng1k0H54nvNbfzByaM/64ng1k0H54nvNbfzByaM -goversion go1.27.1 -c=6 -shared -nolocalimports -importcfg $WORK/b031/importcfg -pack $GOROOT/src/internal/strconv/atob.go $GOROOT/src/internal/strconv/atoc.go $GOROOT/src/internal/strconv/atof.go $GOROOT/src/internal/strconv/atoi.go $GOROOT/src/internal/strconv/ctoa.go $GOROOT/src/internal/strconv/decimal.go $GOROOT/src/internal/strconv/deps.go $GOROOT/src/internal/strconv/ftoa.go $GOROOT/src/internal/strconv/itoa.go $GOROOT/src/internal/strconv/pow10tab.go $GOROOT/src/internal/strconv/uscale.go
+mkdir -p $WORK/b028/
+go tool buildid -w $WORK/b016/_pkg_.a # internal
+go tool buildid -w $WORK/b044/_pkg_.a # internal
+cp $WORK/b016/_pkg_.a $REPO/.cache/step1/gocache/1f/1f406f998921f77762702a28cf570091646f63d9b6e97f6947434257eb5b2a34-d # internal
+mkdir -p $WORK/b005/
+mkdir -p $WORK/b021/
+echo -n > $WORK/b005/go_asm.h # internal
+cd $GOROOT/src/internal/abi
+$GOROOT/pkg/tool/darwin_arm64/asm -p internal/abi -trimpath "$WORK/b005=>" -I $WORK/b005/ -I $GOROOT/pkg/include -D GOOS_darwin -D GOARCH_arm64 -shared -std -gensymabis -o $WORK/b005/symabis ./abi_test.s ./stub.s
+cat >$REPO/.cache/step1/tmp/go-build3768285036/b028/importcfg << 'EOF' # internal
+# import config
+packagefile internal/goarch=$REPO/.cache/step1/tmp/go-build3768285036/b006/_pkg_.a
+EOF
+cd $REPO
+$GOROOT/pkg/tool/darwin_arm64/compile -o $WORK/b028/_pkg_.a -trimpath "$WORK/b028=>" -p internal/runtime/math -lang=go1.27 -std -complete -buildid yYfp7SK2dXicbW1o385N/yYfp7SK2dXicbW1o385N -goversion go1.27.1 -c=8 -shared -nolocalimports -importcfg $WORK/b028/importcfg -pack $GOROOT/src/internal/runtime/math/math.go
+cp $WORK/b044/_pkg_.a $REPO/.cache/step1/gocache/a5/a57819ca5627dcaa7232d32aaaf81e5bac25bceb3ec2805e0f48a7296e0cdb69-d # internal
+go tool buildid -w $WORK/b041/_pkg_.a # internal
+cat >$REPO/.cache/step1/tmp/go-build3768285036/b021/importcfg << 'EOF' # internal
+# import config
+packagefile internal/goarch=$REPO/.cache/step1/tmp/go-build3768285036/b006/_pkg_.a
+EOF
+$GOROOT/pkg/tool/darwin_arm64/compile -o $WORK/b021/_pkg_.a -trimpath "$WORK/b021=>" -p internal/runtime/gc -lang=go1.27 -std -complete -buildid LlhkbJxlQG3B65nadjFe/LlhkbJxlQG3B65nadjFe -goversion go1.27.1 -c=9 -shared -nolocalimports -importcfg $WORK/b021/importcfg -pack $GOROOT/src/internal/runtime/gc/malloc.go $GOROOT/src/internal/runtime/gc/scan.go $GOROOT/src/internal/runtime/gc/sizeclasses.go
+cp $WORK/b041/_pkg_.a $REPO/.cache/step1/gocache/76/7619d57613f7574758287d30b3480c33fc2c9b6335309929f08f0bdcba7743dd-d # internal
+cd $GOROOT/src/sync/atomic
+$GOROOT/pkg/tool/darwin_arm64/asm -p sync/atomic -trimpath "$WORK/b037=>" -I $WORK/b037/ -I $GOROOT/pkg/include -D GOOS_darwin -D GOARCH_arm64 -shared -std -o $WORK/b037/asm.o ./asm.s
+mkdir -p $WORK/b046/
+echo -n > $WORK/b046/go_asm.h # internal
+cd $GOROOT/src/math
+$GOROOT/pkg/tool/darwin_arm64/asm -p math -trimpath "$WORK/b046=>" -I $WORK/b046/ -I $GOROOT/pkg/include -D GOOS_darwin -D GOARCH_arm64 -shared -std -gensymabis -o $WORK/b046/symabis ./dim_arm64.s ./exp_arm64.s ./floor_arm64.s
+cat >$REPO/.cache/step1/tmp/go-build3768285036/b005/importcfg << 'EOF' # internal
+# import config
+packagefile internal/goarch=$REPO/.cache/step1/tmp/go-build3768285036/b006/_pkg_.a
+EOF
+cd $REPO
+$GOROOT/pkg/tool/darwin_arm64/compile -o $WORK/b005/_pkg_.a -trimpath "$WORK/b005=>" -p internal/abi -lang=go1.27 -std -buildid mSOSm1IablbsAYCGAfjT/mSOSm1IablbsAYCGAfjT -goversion go1.27.1 -symabis $WORK/b005/symabis -c=8 -shared -nolocalimports -importcfg $WORK/b005/importcfg -pack -asmhdr $WORK/b005/go_asm.h $GOROOT/src/internal/abi/abi.go $GOROOT/src/internal/abi/abi_arm64.go $GOROOT/src/internal/abi/bounds.go $GOROOT/src/internal/abi/compiletype.go $GOROOT/src/internal/abi/escape.go $GOROOT/src/internal/abi/funcpc.go $GOROOT/src/internal/abi/iface.go $GOROOT/src/internal/abi/map.go $GOROOT/src/internal/abi/rangefuncconsts.go $GOROOT/src/internal/abi/runtime.go $GOROOT/src/internal/abi/stack.go $GOROOT/src/internal/abi/switch.go $GOROOT/src/internal/abi/symtab.go $GOROOT/src/internal/abi/type.go
+cd $GOROOT/src/internal/cpu
+$GOROOT/pkg/tool/darwin_arm64/asm -p internal/cpu -trimpath "$WORK/b011=>" -I $WORK/b011/ -I $GOROOT/pkg/include -D GOOS_darwin -D GOARCH_arm64 -shared -std -o $WORK/b011/cpu.o ./cpu.s
+go tool buildid -w $WORK/b021/_pkg_.a # internal
+go tool buildid -w $WORK/b028/_pkg_.a # internal
+cp $WORK/b021/_pkg_.a $REPO/.cache/step1/gocache/e1/e1eadedcfc1580fbd6be3f12834ae47e096eb2bd2bc49a59b08168c95293a4d5-d # internal
+cp $WORK/b028/_pkg_.a $REPO/.cache/step1/gocache/b3/b31f87d1336c1d047cd767bf8c0b62d34f50d11f8437573132c1fbaf0426bd03-d # internal
+cat >$REPO/.cache/step1/tmp/go-build3768285036/b046/importcfg << 'EOF' # internal
+# import config
+packagefile math/bits=$REPO/.cache/step1/tmp/go-build3768285036/b029/_pkg_.a
+EOF
+cd $REPO
+$GOROOT/pkg/tool/darwin_arm64/compile -o $WORK/b046/_pkg_.a -trimpath "$WORK/b046=>" -p math -lang=go1.27 -std -buildid fdnfIQ-Fj3LYCpu6wSQ4/fdnfIQ-Fj3LYCpu6wSQ4 -goversion go1.27.1 -symabis $WORK/b046/symabis -c=15 -shared -nolocalimports -importcfg $WORK/b046/importcfg -pack -asmhdr $WORK/b046/go_asm.h $GOROOT/src/math/abs.go $GOROOT/src/math/acosh.go $GOROOT/src/math/asin.go $GOROOT/src/math/asinh.go $GOROOT/src/math/atan.go $GOROOT/src/math/atan2.go $GOROOT/src/math/atanh.go $GOROOT/src/math/bits.go $GOROOT/src/math/cbrt.go $GOROOT/src/math/const.go $GOROOT/src/math/copysign.go $GOROOT/src/math/dim.go $GOROOT/src/math/dim_asm.go $GOROOT/src/math/erf.go $GOROOT/src/math/erfinv.go $GOROOT/src/math/exp.go $GOROOT/src/math/exp2_asm.go $GOROOT/src/math/exp_asm.go $GOROOT/src/math/expm1.go $GOROOT/src/math/floor.go $GOROOT/src/math/floor_asm.go $GOROOT/src/math/fma.go $GOROOT/src/math/frexp.go $GOROOT/src/math/gamma.go $GOROOT/src/math/hypot.go $GOROOT/src/math/hypot_noasm.go $GOROOT/src/math/j0.go $GOROOT/src/math/j1.go $GOROOT/src/math/jn.go $GOROOT/src/math/ldexp.go $GOROOT/src/math/lgamma.go $GOROOT/src/math/log.go $GOROOT/src/math/log10.go $GOROOT/src/math/log1p.go $GOROOT/src/math/log_stub.go $GOROOT/src/math/logb.go $GOROOT/src/math/mod.go $GOROOT/src/math/modf.go $GOROOT/src/math/nextafter.go $GOROOT/src/math/pow.go $GOROOT/src/math/pow10.go $GOROOT/src/math/remainder.go $GOROOT/src/math/signbit.go $GOROOT/src/math/sin.go $GOROOT/src/math/sincos.go $GOROOT/src/math/sinh.go $GOROOT/src/math/sqrt.go $GOROOT/src/math/stubs.go $GOROOT/src/math/tan.go $GOROOT/src/math/tanh.go $GOROOT/src/math/trig_reduce.go $GOROOT/src/math/unsafe.go
+cd $GOROOT/src/sync/atomic
+go tool pack r $WORK/b037/_pkg_.a $WORK/b037/asm.o # internal
+go tool buildid -w $WORK/b037/_pkg_.a # internal
+cp $WORK/b037/_pkg_.a $REPO/.cache/step1/gocache/a1/a1faea9e5c8d1255a6dbc51d6a818e27619c34553fb29926af4996dec91a381e-d # internal
+go tool buildid -w $WORK/b040/_pkg_.a # internal
+cd $GOROOT/src/internal/cpu
+$GOROOT/pkg/tool/darwin_arm64/asm -p internal/cpu -trimpath "$WORK/b011=>" -I $WORK/b011/ -I $GOROOT/pkg/include -D GOOS_darwin -D GOARCH_arm64 -shared -std -o $WORK/b011/cpu_arm64.o ./cpu_arm64.s
+cp $WORK/b040/_pkg_.a $REPO/.cache/step1/gocache/04/04f585aeb2bda10afeedb637ca45acbb62739ccbef55ce39daec4f8656f2a534-d # internal
+go tool pack r $WORK/b011/_pkg_.a $WORK/b011/cpu.o $WORK/b011/cpu_arm64.o # internal
+go tool buildid -w $WORK/b011/_pkg_.a # internal
+cp $WORK/b011/_pkg_.a $REPO/.cache/step1/gocache/15/151f103690dcb811e904caa6780438026b66ce622804c9d146b66c7bc4db0767-d # internal
+mkdir -p $WORK/b010/
+mkdir -p $WORK/b013/
+echo -n > $WORK/b010/go_asm.h # internal
+mkdir -p $WORK/b023/
+cd $GOROOT/src/internal/bytealg
+$GOROOT/pkg/tool/darwin_arm64/asm -p internal/bytealg -trimpath "$WORK/b010=>" -I $WORK/b010/ -I $GOROOT/pkg/include -D GOOS_darwin -D GOARCH_arm64 -shared -std -gensymabis -o $WORK/b010/symabis ./compare_arm64.s ./count_arm64.s ./equal_arm64.s ./index_arm64.s ./indexbyte_arm64.s
+echo -n > $WORK/b013/go_asm.h # internal
+cd $GOROOT/src/internal/chacha8rand
+$GOROOT/pkg/tool/darwin_arm64/asm -p internal/chacha8rand -trimpath "$WORK/b013=>" -I $WORK/b013/ -I $GOROOT/pkg/include -D GOOS_darwin -D GOARCH_arm64 -shared -std -gensymabis -o $WORK/b013/symabis ./chacha8_arm64.s
+mkdir -p $WORK/b019/
+echo -n > $WORK/b019/go_asm.h # internal
+cd $GOROOT/src/internal/runtime/atomic
+$GOROOT/pkg/tool/darwin_arm64/asm -p internal/runtime/atomic -trimpath "$WORK/b019=>" -I $WORK/b019/ -I $GOROOT/pkg/include -D GOOS_darwin -D GOARCH_arm64 -shared -std -gensymabis -o $WORK/b019/symabis ./atomic_arm64.s
+echo -n > $WORK/b023/go_asm.h # internal
+go tool buildid -w $WORK/b031/_pkg_.a # internal
+cd $GOROOT/src/internal/runtime/sys
+$GOROOT/pkg/tool/darwin_arm64/asm -p internal/runtime/sys -trimpath "$WORK/b023=>" -I $WORK/b023/ -I $GOROOT/pkg/include -D GOOS_darwin -D GOARCH_arm64 -shared -std -gensymabis -o $WORK/b023/symabis ./dit_arm64.s ./empty.s
+cp $WORK/b031/_pkg_.a $REPO/.cache/step1/gocache/73/73ec912f7a6c3775afb4ac80412ead20b6c3c9ce54cdf63bf66a3b69e6cf6a0c-d # internal
+cat >$REPO/.cache/step1/tmp/go-build3768285036/b010/importcfg << 'EOF' # internal
+# import config
+packagefile internal/cpu=$REPO/.cache/step1/tmp/go-build3768285036/b011/_pkg_.a
+EOF
+cd $REPO
+$GOROOT/pkg/tool/darwin_arm64/compile -o $WORK/b010/_pkg_.a -trimpath "$WORK/b010=>" -p internal/bytealg -lang=go1.27 -std -buildid XPJbTNYpEsrWtQtapnDq/XPJbTNYpEsrWtQtapnDq -goversion go1.27.1 -symabis $WORK/b010/symabis -c=10 -shared -nolocalimports -importcfg $WORK/b010/importcfg -pack -asmhdr $WORK/b010/go_asm.h $GOROOT/src/internal/bytealg/bytealg.go $GOROOT/src/internal/bytealg/compare_native.go $GOROOT/src/internal/bytealg/count_native.go $GOROOT/src/internal/bytealg/equal_generic.go $GOROOT/src/internal/bytealg/equal_native.go $GOROOT/src/internal/bytealg/index_arm64.go $GOROOT/src/internal/bytealg/index_native.go $GOROOT/src/internal/bytealg/indexbyte_native.go $GOROOT/src/internal/bytealg/lastindexbyte_generic.go
+cat >$REPO/.cache/step1/tmp/go-build3768285036/b019/importcfg << 'EOF' # internal
+# import config
+packagefile internal/cpu=$REPO/.cache/step1/tmp/go-build3768285036/b011/_pkg_.a
+packagefile internal/goarch=$REPO/.cache/step1/tmp/go-build3768285036/b006/_pkg_.a
+EOF
+cat >$REPO/.cache/step1/tmp/go-build3768285036/b013/importcfg << 'EOF' # internal
+# import config
+packagefile internal/byteorder=$REPO/.cache/step1/tmp/go-build3768285036/b012/_pkg_.a
+packagefile internal/cpu=$REPO/.cache/step1/tmp/go-build3768285036/b011/_pkg_.a
+packagefile internal/goarch=$REPO/.cache/step1/tmp/go-build3768285036/b006/_pkg_.a
+EOF
+cat >$REPO/.cache/step1/tmp/go-build3768285036/b023/importcfg << 'EOF' # internal
+# import config
+packagefile internal/cpu=$REPO/.cache/step1/tmp/go-build3768285036/b011/_pkg_.a
+packagefile internal/goarch=$REPO/.cache/step1/tmp/go-build3768285036/b006/_pkg_.a
+packagefile internal/goos=$REPO/.cache/step1/tmp/go-build3768285036/b017/_pkg_.a
+EOF
+$GOROOT/pkg/tool/darwin_arm64/compile -o $WORK/b023/_pkg_.a -trimpath "$WORK/b023=>" -p internal/runtime/sys -lang=go1.27 -std -buildid THpDdBfVkn7NxYl0k_KE/THpDdBfVkn7NxYl0k_KE -goversion go1.27.1 -symabis $WORK/b023/symabis -c=5 -shared -nolocalimports -importcfg $WORK/b023/importcfg -pack -asmhdr $WORK/b023/go_asm.h $GOROOT/src/internal/runtime/sys/consts.go $GOROOT/src/internal/runtime/sys/consts_norace.go $GOROOT/src/internal/runtime/sys/dit_arm64.go $GOROOT/src/internal/runtime/sys/intrinsics.go $GOROOT/src/internal/runtime/sys/nih.go $GOROOT/src/internal/runtime/sys/sys.go $GOROOT/src/internal/runtime/sys/zversion.go
+$GOROOT/pkg/tool/darwin_arm64/compile -o $WORK/b013/_pkg_.a -trimpath "$WORK/b013=>" -p internal/chacha8rand -lang=go1.27 -std -buildid SdIOZ3oXGzRK_6DPfXf5/SdIOZ3oXGzRK_6DPfXf5 -goversion go1.27.1 -symabis $WORK/b013/symabis -c=6 -shared -nolocalimports -importcfg $WORK/b013/importcfg -pack -asmhdr $WORK/b013/go_asm.h $GOROOT/src/internal/chacha8rand/chacha8.go $GOROOT/src/internal/chacha8rand/chacha8_generic.go
+$GOROOT/pkg/tool/darwin_arm64/compile -o $WORK/b019/_pkg_.a -trimpath "$WORK/b019=>" -p internal/runtime/atomic -lang=go1.27 -std -buildid dmrHvpBWoM8coEmFROkT/dmrHvpBWoM8coEmFROkT -goversion go1.27.1 -symabis $WORK/b019/symabis -c=7 -shared -nolocalimports -importcfg $WORK/b019/importcfg -pack -asmhdr $WORK/b019/go_asm.h $GOROOT/src/internal/runtime/atomic/atomic_arm64.go $GOROOT/src/internal/runtime/atomic/doc.go $GOROOT/src/internal/runtime/atomic/linkname.go $GOROOT/src/internal/runtime/atomic/stubs.go $GOROOT/src/internal/runtime/atomic/types.go $GOROOT/src/internal/runtime/atomic/types_64bit.go $GOROOT/src/internal/runtime/atomic/unaligned.go $GOROOT/src/internal/runtime/atomic/xchg8.go
+cd $GOROOT/src/internal/bytealg
+$GOROOT/pkg/tool/darwin_arm64/asm -p internal/bytealg -trimpath "$WORK/b010=>" -I $WORK/b010/ -I $GOROOT/pkg/include -D GOOS_darwin -D GOARCH_arm64 -shared -std -o $WORK/b010/compare_arm64.o ./compare_arm64.s
+cd $GOROOT/src/math
+$GOROOT/pkg/tool/darwin_arm64/asm -p math -trimpath "$WORK/b046=>" -I $WORK/b046/ -I $GOROOT/pkg/include -D GOOS_darwin -D GOARCH_arm64 -shared -std -o $WORK/b046/dim_arm64.o ./dim_arm64.s
+cd $GOROOT/src/internal/runtime/sys
+$GOROOT/pkg/tool/darwin_arm64/asm -p internal/runtime/sys -trimpath "$WORK/b023=>" -I $WORK/b023/ -I $GOROOT/pkg/include -D GOOS_darwin -D GOARCH_arm64 -shared -std -o $WORK/b023/dit_arm64.o ./dit_arm64.s
+cd $GOROOT/src/internal/chacha8rand
+$GOROOT/pkg/tool/darwin_arm64/asm -p internal/chacha8rand -trimpath "$WORK/b013=>" -I $WORK/b013/ -I $GOROOT/pkg/include -D GOOS_darwin -D GOARCH_arm64 -shared -std -o $WORK/b013/chacha8_arm64.o ./chacha8_arm64.s
+cd $GOROOT/src/internal/bytealg
+$GOROOT/pkg/tool/darwin_arm64/asm -p internal/bytealg -trimpath "$WORK/b010=>" -I $WORK/b010/ -I $GOROOT/pkg/include -D GOOS_darwin -D GOARCH_arm64 -shared -std -o $WORK/b010/count_arm64.o ./count_arm64.s
+cd $GOROOT/src/math
+$GOROOT/pkg/tool/darwin_arm64/asm -p math -trimpath "$WORK/b046=>" -I $WORK/b046/ -I $GOROOT/pkg/include -D GOOS_darwin -D GOARCH_arm64 -shared -std -o $WORK/b046/exp_arm64.o ./exp_arm64.s
+cd $GOROOT/src/internal/runtime/sys
+$GOROOT/pkg/tool/darwin_arm64/asm -p internal/runtime/sys -trimpath "$WORK/b023=>" -I $WORK/b023/ -I $GOROOT/pkg/include -D GOOS_darwin -D GOARCH_arm64 -shared -std -o $WORK/b023/empty.o ./empty.s
+cd $GOROOT/src/internal/chacha8rand
+go tool pack r $WORK/b013/_pkg_.a $WORK/b013/chacha8_arm64.o # internal
+go tool buildid -w $WORK/b013/_pkg_.a # internal
+cp $WORK/b013/_pkg_.a $REPO/.cache/step1/gocache/f8/f8f678d7d133f530aab314634ccc61d99602fbb2578c3c5533ef485bcd7f663f-d # internal
+cd $GOROOT/src/internal/bytealg
+$GOROOT/pkg/tool/darwin_arm64/asm -p internal/bytealg -trimpath "$WORK/b010=>" -I $WORK/b010/ -I $GOROOT/pkg/include -D GOOS_darwin -D GOARCH_arm64 -shared -std -o $WORK/b010/equal_arm64.o ./equal_arm64.s
+cd $GOROOT/src/math
+$GOROOT/pkg/tool/darwin_arm64/asm -p math -trimpath "$WORK/b046=>" -I $WORK/b046/ -I $GOROOT/pkg/include -D GOOS_darwin -D GOARCH_arm64 -shared -std -o $WORK/b046/floor_arm64.o ./floor_arm64.s
+cd $GOROOT/src/internal/runtime/sys
+go tool pack r $WORK/b023/_pkg_.a $WORK/b023/dit_arm64.o $WORK/b023/empty.o # internal
+go tool buildid -w $WORK/b023/_pkg_.a # internal
+cp $WORK/b023/_pkg_.a $REPO/.cache/step1/gocache/41/41fefc8f0b4c07e5e39209bf6acc3843244c579592b78fb648198d7ecf899048-d # internal
+mkdir -p $WORK/b022/
+cat >$REPO/.cache/step1/tmp/go-build3768285036/b022/importcfg << 'EOF' # internal
+# import config
+packagefile internal/goarch=$REPO/.cache/step1/tmp/go-build3768285036/b006/_pkg_.a
+packagefile internal/runtime/gc=$REPO/.cache/step1/tmp/go-build3768285036/b021/_pkg_.a
+packagefile internal/runtime/sys=$REPO/.cache/step1/tmp/go-build3768285036/b023/_pkg_.a
+EOF
+cd $REPO
+$GOROOT/pkg/tool/darwin_arm64/compile -o $WORK/b022/_pkg_.a -trimpath "$WORK/b022=>" -p internal/runtime/gc/scan -lang=go1.27 -std -complete -buildid dBzBT5241qIThJvWyxKp/dBzBT5241qIThJvWyxKp -goversion go1.27.1 -c=14 -shared -nolocalimports -importcfg $WORK/b022/importcfg -pack $GOROOT/src/internal/runtime/gc/scan/expand_reference.go $GOROOT/src/internal/runtime/gc/scan/filter.go $GOROOT/src/internal/runtime/gc/scan/scan_generic.go $GOROOT/src/internal/runtime/gc/scan/scan_go.go $GOROOT/src/internal/runtime/gc/scan/scan_reference.go
+cd $GOROOT/src/internal/bytealg
+$GOROOT/pkg/tool/darwin_arm64/asm -p internal/bytealg -trimpath "$WORK/b010=>" -I $WORK/b010/ -I $GOROOT/pkg/include -D GOOS_darwin -D GOARCH_arm64 -shared -std -o $WORK/b010/index_arm64.o ./index_arm64.s
+cd $GOROOT/src/math
+go tool pack r $WORK/b046/_pkg_.a $WORK/b046/dim_arm64.o $WORK/b046/exp_arm64.o $WORK/b046/floor_arm64.o # internal
+go tool buildid -w $WORK/b046/_pkg_.a # internal
+cp $WORK/b046/_pkg_.a $REPO/.cache/step1/gocache/7a/7a05a619437ed8a6b19c034ae1974a2374e05f7333130e818df4fc1998c87013-d # internal
+cd $GOROOT/src/internal/bytealg
+$GOROOT/pkg/tool/darwin_arm64/asm -p internal/bytealg -trimpath "$WORK/b010=>" -I $WORK/b010/ -I $GOROOT/pkg/include -D GOOS_darwin -D GOARCH_arm64 -shared -std -o $WORK/b010/indexbyte_arm64.o ./indexbyte_arm64.s
+cd $GOROOT/src/internal/runtime/atomic
+$GOROOT/pkg/tool/darwin_arm64/asm -p internal/runtime/atomic -trimpath "$WORK/b019=>" -I $WORK/b019/ -I $GOROOT/pkg/include -D GOOS_darwin -D GOARCH_arm64 -shared -std -o $WORK/b019/atomic_arm64.o ./atomic_arm64.s
+cd $GOROOT/src/internal/abi
+$GOROOT/pkg/tool/darwin_arm64/asm -p internal/abi -trimpath "$WORK/b005=>" -I $WORK/b005/ -I $GOROOT/pkg/include -D GOOS_darwin -D GOARCH_arm64 -shared -std -o $WORK/b005/abi_test.o ./abi_test.s
+go tool buildid -w $WORK/b022/_pkg_.a # internal
+cd $GOROOT/src/internal/runtime/atomic
+go tool pack r $WORK/b019/_pkg_.a $WORK/b019/atomic_arm64.o # internal
+go tool buildid -w $WORK/b019/_pkg_.a # internal
+cp $WORK/b022/_pkg_.a $REPO/.cache/step1/gocache/cf/cf8708e8f846c7e04842a764a7ae5851b99587d490762ec5fbb7777ffb33270c-d # internal
+cd $GOROOT/src/internal/bytealg
+go tool pack r $WORK/b010/_pkg_.a $WORK/b010/compare_arm64.o $WORK/b010/count_arm64.o $WORK/b010/equal_arm64.o $WORK/b010/index_arm64.o $WORK/b010/indexbyte_arm64.o # internal
+go tool buildid -w $WORK/b010/_pkg_.a # internal
+cp $WORK/b019/_pkg_.a $REPO/.cache/step1/gocache/92/924c5c58ce6f619ccbd375be85bdcdcc2a3aeab094369dfe771890da486d159f-d # internal
+cp $WORK/b010/_pkg_.a $REPO/.cache/step1/gocache/1f/1faa234928684e249a06609bdfcda5e7882787029d4871d60fc261a52a305dbd-d # internal
+mkdir -p $WORK/b020/
+mkdir -p $WORK/b032/
+cd $GOROOT/src/internal/abi
+$GOROOT/pkg/tool/darwin_arm64/asm -p internal/abi -trimpath "$WORK/b005=>" -I $WORK/b005/ -I $GOROOT/pkg/include -D GOOS_darwin -D GOARCH_arm64 -shared -std -o $WORK/b005/stub.o ./stub.s
+cat >$REPO/.cache/step1/tmp/go-build3768285036/b020/importcfg << 'EOF' # internal
+# import config
+packagefile internal/runtime/atomic=$REPO/.cache/step1/tmp/go-build3768285036/b019/_pkg_.a
+EOF
+cat >$REPO/.cache/step1/tmp/go-build3768285036/b032/importcfg << 'EOF' # internal
+# import config
+packagefile internal/bytealg=$REPO/.cache/step1/tmp/go-build3768285036/b010/_pkg_.a
+EOF
+cd $REPO
+$GOROOT/pkg/tool/darwin_arm64/compile -o $WORK/b020/_pkg_.a -trimpath "$WORK/b020=>" -p internal/runtime/exithook -lang=go1.27 -std -complete -buildid KkDtupRkr0KWKbqAP5Nc/KkDtupRkr0KWKbqAP5Nc -goversion go1.27.1 -c=16 -shared -nolocalimports -importcfg $WORK/b020/importcfg -pack $GOROOT/src/internal/runtime/exithook/hooks.go
+$GOROOT/pkg/tool/darwin_arm64/compile -o $WORK/b032/_pkg_.a -trimpath "$WORK/b032=>" -p internal/stringslite -lang=go1.27 -std -complete -buildid PWUmV2IbR48mHwYTVjhv/PWUmV2IbR48mHwYTVjhv -goversion go1.27.1 -c=12 -shared -nolocalimports -importcfg $WORK/b032/importcfg -pack $GOROOT/src/internal/stringslite/strings.go
+cd $GOROOT/src/internal/abi
+go tool pack r $WORK/b005/_pkg_.a $WORK/b005/abi_test.o $WORK/b005/stub.o # internal
+go tool buildid -w $WORK/b005/_pkg_.a # internal
+cp $WORK/b005/_pkg_.a $REPO/.cache/step1/gocache/22/22b29fbdbc80ede3b38964a20f3114c4147a1c49a4266871b2402e82b954f41b-d # internal
+mkdir -p $WORK/b027/
+mkdir -p $WORK/b038/
+cat >$REPO/.cache/step1/tmp/go-build3768285036/b027/importcfg << 'EOF' # internal
+# import config
+packagefile internal/abi=$REPO/.cache/step1/tmp/go-build3768285036/b005/_pkg_.a
+EOF
+cd $REPO
+$GOROOT/pkg/tool/darwin_arm64/compile -o $WORK/b027/_pkg_.a -trimpath "$WORK/b027=>" -p internal/race -lang=go1.27 -std -complete -buildid R7Bfe8n6RgLjqNCGKizy/R7Bfe8n6RgLjqNCGKizy -goversion go1.27.1 -c=8 -shared -nolocalimports -importcfg $WORK/b027/importcfg -pack $GOROOT/src/internal/race/doc.go $GOROOT/src/internal/race/norace.go
+cat >$REPO/.cache/step1/tmp/go-build3768285036/b038/importcfg << 'EOF' # internal
+# import config
+packagefile internal/abi=$REPO/.cache/step1/tmp/go-build3768285036/b005/_pkg_.a
+EOF
+$GOROOT/pkg/tool/darwin_arm64/compile -o $WORK/b038/_pkg_.a -trimpath "$WORK/b038=>" -p internal/synctest -lang=go1.27 -std -complete -buildid MnlARxUNY0_ifqejMgNY/MnlARxUNY0_ifqejMgNY -goversion go1.27.1 -c=6 -shared -nolocalimports -importcfg $WORK/b038/importcfg -pack $GOROOT/src/internal/synctest/synctest.go
+go tool buildid -w $WORK/b020/_pkg_.a # internal
+cp $WORK/b020/_pkg_.a $REPO/.cache/step1/gocache/e4/e4b9180dbec76e7b628551941bdd563f42ed18fb5d8fce29185904938f900e4b-d # internal
+go tool buildid -w $WORK/b032/_pkg_.a # internal
+cp $WORK/b032/_pkg_.a $REPO/.cache/step1/gocache/c2/c2a67f7d9893e7dc8c8d711fea64590cf1a27beef635dfa9498fc24e50592d22-d # internal
+go tool buildid -w $WORK/b027/_pkg_.a # internal
+go tool buildid -w $WORK/b038/_pkg_.a # internal
+cp $WORK/b038/_pkg_.a $REPO/.cache/step1/gocache/3c/3cdc220d86128a267fda1c44b084b5a0af22aee77a79bfb1d0d60bdac6852e4d-d # internal
+cp $WORK/b027/_pkg_.a $REPO/.cache/step1/gocache/36/36ecbeed0ebbd7bc9494ccea0908038dfdf0f9362e351eecf1a368bb9dd3fe5c-d # internal
+mkdir -p $WORK/b036/
+cat >$REPO/.cache/step1/tmp/go-build3768285036/b036/importcfg << 'EOF' # internal
+# import config
+packagefile internal/abi=$REPO/.cache/step1/tmp/go-build3768285036/b005/_pkg_.a
+packagefile internal/goarch=$REPO/.cache/step1/tmp/go-build3768285036/b006/_pkg_.a
+packagefile internal/race=$REPO/.cache/step1/tmp/go-build3768285036/b027/_pkg_.a
+packagefile sync/atomic=$REPO/.cache/step1/tmp/go-build3768285036/b037/_pkg_.a
+EOF
+$GOROOT/pkg/tool/darwin_arm64/compile -o $WORK/b036/_pkg_.a -trimpath "$WORK/b036=>" -p internal/sync -lang=go1.27 -std -complete -buildid fjWmlL7jVB_Lek1EX9sd/fjWmlL7jVB_Lek1EX9sd -goversion go1.27.1 -c=16 -shared -nolocalimports -importcfg $WORK/b036/importcfg -pack $GOROOT/src/internal/sync/hashtriemap.go $GOROOT/src/internal/sync/mutex.go $GOROOT/src/internal/sync/runtime.go
+mkdir -p $WORK/b024/
+echo -n > $WORK/b024/go_asm.h # internal
+cd $GOROOT/src/internal/runtime/maps
+$GOROOT/pkg/tool/darwin_arm64/asm -p internal/runtime/maps -trimpath "$WORK/b024=>" -I $WORK/b024/ -I $GOROOT/pkg/include -D GOOS_darwin -D GOARCH_arm64 -shared -std -gensymabis -o $WORK/b024/symabis ./memhash_arm64.s
+cat >$REPO/.cache/step1/tmp/go-build3768285036/b024/importcfg << 'EOF' # internal
+# import config
+packagefile internal/abi=$REPO/.cache/step1/tmp/go-build3768285036/b005/_pkg_.a
+packagefile internal/asan=$REPO/.cache/step1/tmp/go-build3768285036/b025/_pkg_.a
+packagefile internal/byteorder=$REPO/.cache/step1/tmp/go-build3768285036/b012/_pkg_.a
+packagefile internal/cpu=$REPO/.cache/step1/tmp/go-build3768285036/b011/_pkg_.a
+packagefile internal/goarch=$REPO/.cache/step1/tmp/go-build3768285036/b006/_pkg_.a
+packagefile internal/goexperiment=$REPO/.cache/step1/tmp/go-build3768285036/b016/_pkg_.a
+packagefile internal/msan=$REPO/.cache/step1/tmp/go-build3768285036/b026/_pkg_.a
+packagefile internal/race=$REPO/.cache/step1/tmp/go-build3768285036/b027/_pkg_.a
+packagefile internal/runtime/math=$REPO/.cache/step1/tmp/go-build3768285036/b028/_pkg_.a
+packagefile internal/runtime/sys=$REPO/.cache/step1/tmp/go-build3768285036/b023/_pkg_.a
+packagefile math/bits=$REPO/.cache/step1/tmp/go-build3768285036/b029/_pkg_.a
+EOF
+cd $REPO
+$GOROOT/pkg/tool/darwin_arm64/compile -o $WORK/b024/_pkg_.a -trimpath "$WORK/b024=>" -p internal/runtime/maps -lang=go1.27 -std -buildid JmyZUAHoXJKKJV0zhZPV/JmyZUAHoXJKKJV0zhZPV -goversion go1.27.1 -symabis $WORK/b024/symabis -c=12 -shared -nolocalimports -importcfg $WORK/b024/importcfg -pack -asmhdr $WORK/b024/go_asm.h $GOROOT/src/internal/runtime/maps/group.go $GOROOT/src/internal/runtime/maps/map.go $GOROOT/src/internal/runtime/maps/memhash_aes.go $GOROOT/src/internal/runtime/maps/memhash_aes_asm.go $GOROOT/src/internal/runtime/maps/memhash_align_nocheck.go $GOROOT/src/internal/runtime/maps/runtime.go $GOROOT/src/internal/runtime/maps/runtime_alg.go $GOROOT/src/internal/runtime/maps/runtime_fast32.go $GOROOT/src/internal/runtime/maps/runtime_fast64.go $GOROOT/src/internal/runtime/maps/runtime_faststr.go $GOROOT/src/internal/runtime/maps/runtime_hash64.go $GOROOT/src/internal/runtime/maps/table.go $GOROOT/src/internal/runtime/maps/table_debug.go
+go tool buildid -w $WORK/b036/_pkg_.a # internal
+cp $WORK/b036/_pkg_.a $REPO/.cache/step1/gocache/6b/6b3a6c369baba4898086d0b79fb00dce4ca9c0f15e669816704decd1b8b117ea-d # internal
+cd $GOROOT/src/internal/runtime/maps
+$GOROOT/pkg/tool/darwin_arm64/asm -p internal/runtime/maps -trimpath "$WORK/b024=>" -I $WORK/b024/ -I $GOROOT/pkg/include -D GOOS_darwin -D GOARCH_arm64 -shared -std -o $WORK/b024/memhash_arm64.o ./memhash_arm64.s
+go tool pack r $WORK/b024/_pkg_.a $WORK/b024/memhash_arm64.o # internal
+go tool buildid -w $WORK/b024/_pkg_.a # internal
+cp $WORK/b024/_pkg_.a $REPO/.cache/step1/gocache/39/396b1535a3bae68ece31f1b7e704ba2007b3f1481fedd06d369642702cb63ba1-d # internal
+mkdir -p $WORK/b009/
+echo -n > $WORK/b009/go_asm.h # internal
+cd $GOROOT/src/runtime
+$GOROOT/pkg/tool/darwin_arm64/asm -p runtime -trimpath "$WORK/b009=>" -I $WORK/b009/ -I $GOROOT/pkg/include -D GOOS_darwin -D GOARCH_arm64 -shared -std -gensymabis -o $WORK/b009/symabis ./asm.s ./asm_arm64.s ./atomic_arm64.s ./ints.s ./memclr_arm64.s ./memmove_arm64.s ./preempt_arm64.s ./rt0_darwin_arm64.s ./secret_arm64.s ./sys_darwin_arm64.s ./tls_arm64.s
+cat >$REPO/.cache/step1/tmp/go-build3768285036/b009/importcfg << 'EOF' # internal
+# import config
+packagefile internal/abi=$REPO/.cache/step1/tmp/go-build3768285036/b005/_pkg_.a
+packagefile internal/bytealg=$REPO/.cache/step1/tmp/go-build3768285036/b010/_pkg_.a
+packagefile internal/byteorder=$REPO/.cache/step1/tmp/go-build3768285036/b012/_pkg_.a
+packagefile internal/chacha8rand=$REPO/.cache/step1/tmp/go-build3768285036/b013/_pkg_.a
+packagefile internal/coverage/rtcov=$REPO/.cache/step1/tmp/go-build3768285036/b014/_pkg_.a
+packagefile internal/cpu=$REPO/.cache/step1/tmp/go-build3768285036/b011/_pkg_.a
+packagefile internal/goarch=$REPO/.cache/step1/tmp/go-build3768285036/b006/_pkg_.a
+packagefile internal/godebugs=$REPO/.cache/step1/tmp/go-build3768285036/b015/_pkg_.a
+packagefile internal/goexperiment=$REPO/.cache/step1/tmp/go-build3768285036/b016/_pkg_.a
+packagefile internal/goos=$REPO/.cache/step1/tmp/go-build3768285036/b017/_pkg_.a
+packagefile internal/profilerecord=$REPO/.cache/step1/tmp/go-build3768285036/b018/_pkg_.a
+packagefile internal/runtime/atomic=$REPO/.cache/step1/tmp/go-build3768285036/b019/_pkg_.a
+packagefile internal/runtime/exithook=$REPO/.cache/step1/tmp/go-build3768285036/b020/_pkg_.a
+packagefile internal/runtime/gc=$REPO/.cache/step1/tmp/go-build3768285036/b021/_pkg_.a
+packagefile internal/runtime/gc/scan=$REPO/.cache/step1/tmp/go-build3768285036/b022/_pkg_.a
+packagefile internal/runtime/maps=$REPO/.cache/step1/tmp/go-build3768285036/b024/_pkg_.a
+packagefile internal/runtime/math=$REPO/.cache/step1/tmp/go-build3768285036/b028/_pkg_.a
+packagefile internal/runtime/pprof/label=$REPO/.cache/step1/tmp/go-build3768285036/b030/_pkg_.a
+packagefile internal/runtime/sys=$REPO/.cache/step1/tmp/go-build3768285036/b023/_pkg_.a
+packagefile internal/strconv=$REPO/.cache/step1/tmp/go-build3768285036/b031/_pkg_.a
+packagefile internal/stringslite=$REPO/.cache/step1/tmp/go-build3768285036/b032/_pkg_.a
+packagefile internal/trace/tracev2=$REPO/.cache/step1/tmp/go-build3768285036/b033/_pkg_.a
+packagefile math/bits=$REPO/.cache/step1/tmp/go-build3768285036/b029/_pkg_.a
+EOF
+cd $REPO
+$GOROOT/pkg/tool/darwin_arm64/compile -o $WORK/b009/_pkg_.a -trimpath "$WORK/b009=>" -p runtime -lang=go1.27 -std -buildid ADNaNVg0sXt9AEaZOwAT/ADNaNVg0sXt9AEaZOwAT -goversion go1.27.1 -symabis $WORK/b009/symabis -c=16 -shared -nolocalimports -importcfg $WORK/b009/importcfg -pack -asmhdr $WORK/b009/go_asm.h $GOROOT/src/runtime/alg.go $GOROOT/src/runtime/arena.go $GOROOT/src/runtime/asan0.go $GOROOT/src/runtime/atomic_pointer.go $GOROOT/src/runtime/badlinkname.go $GOROOT/src/runtime/cgo.go $GOROOT/src/runtime/cgocall.go $GOROOT/src/runtime/cgocallback.go $GOROOT/src/runtime/cgocheck.go $GOROOT/src/runtime/cgroup_stubs.go $GOROOT/src/runtime/chan.go $GOROOT/src/runtime/checkptr.go $GOROOT/src/runtime/compiler.go $GOROOT/src/runtime/complex.go $GOROOT/src/runtime/coro.go $GOROOT/src/runtime/covercounter.go $GOROOT/src/runtime/covermeta.go $GOROOT/src/runtime/cpuflags.go $GOROOT/src/runtime/cpuflags_arm64.go $GOROOT/src/runtime/cpuprof.go $GOROOT/src/runtime/create_file_unix.go $GOROOT/src/runtime/debug.go $GOROOT/src/runtime/debugcall.go $GOROOT/src/runtime/debuglog.go $GOROOT/src/runtime/debuglog_off.go $GOROOT/src/runtime/defs_darwin_arm64.go $GOROOT/src/runtime/dit.go $GOROOT/src/runtime/env_posix.go $GOROOT/src/runtime/error.go $GOROOT/src/runtime/extern.go $GOROOT/src/runtime/fastlog2.go $GOROOT/src/runtime/fastlog2table.go $GOROOT/src/runtime/fds_unix.go $GOROOT/src/runtime/fipsbypass.go $GOROOT/src/runtime/float.go $GOROOT/src/runtime/heapdump.go $GOROOT/src/runtime/hexdump.go $GOROOT/src/runtime/histogram.go $GOROOT/src/runtime/iface.go $GOROOT/src/runtime/lfstack.go $GOROOT/src/runtime/libinit.go $GOROOT/src/runtime/linkname.go $GOROOT/src/runtime/linkname_shim.go $GOROOT/src/runtime/linkname_unix.go $GOROOT/src/runtime/list.go $GOROOT/src/runtime/list_manual.go $GOROOT/src/runtime/lock_sema.go $GOROOT/src/runtime/lock_spinbit.go $GOROOT/src/runtime/lockrank.go $GOROOT/src/runtime/lockrank_off.go $GOROOT/src/runtime/malloc.go $GOROOT/src/runtime/malloc_generated.go $GOROOT/src/runtime/malloc_stubs.go $GOROOT/src/runtime/malloc_tables_generated.go $GOROOT/src/runtime/map.go $GOROOT/src/runtime/map_fast32.go $GOROOT/src/runtime/map_fast64.go $GOROOT/src/runtime/map_faststr.go $GOROOT/src/runtime/mbarrier.go $GOROOT/src/runtime/mbitmap.go $GOROOT/src/runtime/mcache.go $GOROOT/src/runtime/mcentral.go $GOROOT/src/runtime/mcheckmark.go $GOROOT/src/runtime/mcleanup.go $GOROOT/src/runtime/mem.go $GOROOT/src/runtime/mem_darwin.go $GOROOT/src/runtime/mem_nonsbrk.go $GOROOT/src/runtime/metrics.go $GOROOT/src/runtime/mfinal.go $GOROOT/src/runtime/mfixalloc.go $GOROOT/src/runtime/mgc.go $GOROOT/src/runtime/mgclimit.go $GOROOT/src/runtime/mgcmark.go $GOROOT/src/runtime/mgcmark_greenteagc.go $GOROOT/src/runtime/mgcpacer.go $GOROOT/src/runtime/mgcscavenge.go $GOROOT/src/runtime/mgcstack.go $GOROOT/src/runtime/mgcsweep.go $GOROOT/src/runtime/mgcwork.go $GOROOT/src/runtime/mheap.go $GOROOT/src/runtime/minmax.go $GOROOT/src/runtime/mpagealloc.go $GOROOT/src/runtime/mpagealloc_64bit.go $GOROOT/src/runtime/mpagecache.go $GOROOT/src/runtime/mpallocbits.go $GOROOT/src/runtime/mprof.go $GOROOT/src/runtime/mranges.go $GOROOT/src/runtime/msan0.go $GOROOT/src/runtime/msize.go $GOROOT/src/runtime/mspanset.go $GOROOT/src/runtime/mstats.go $GOROOT/src/runtime/mwbbuf.go $GOROOT/src/runtime/nbpipe_pipe.go $GOROOT/src/runtime/netpoll.go $GOROOT/src/runtime/netpoll_kqueue.go $GOROOT/src/runtime/netpoll_kqueue_event.go $GOROOT/src/runtime/nonwindows_stub.go $GOROOT/src/runtime/note_other.go $GOROOT/src/runtime/os_darwin.go $GOROOT/src/runtime/os_darwin_arm64.go $GOROOT/src/runtime/os_nonopenbsd.go $GOROOT/src/runtime/os_unix.go $GOROOT/src/runtime/os_unix_nonlinux.go $GOROOT/src/runtime/os_workdir_stub.go $GOROOT/src/runtime/panic.go $GOROOT/src/runtime/pinner.go $GOROOT/src/runtime/plugin.go $GOROOT/src/runtime/preempt.go $GOROOT/src/runtime/preempt_arm64.go $GOROOT/src/runtime/preempt_nonwindows.go $GOROOT/src/runtime/preempt_xreg.go $GOROOT/src/runtime/print.go $GOROOT/src/runtime/proc.go $GOROOT/src/runtime/profbuf.go $GOROOT/src/runtime/proflabel.go $GOROOT/src/runtime/race0.go $GOROOT/src/runtime/rand.go $GOROOT/src/runtime/rdebug.go $GOROOT/src/runtime/retry.go $GOROOT/src/runtime/runtime.go $GOROOT/src/runtime/runtime1.go $GOROOT/src/runtime/runtime2.go $GOROOT/src/runtime/runtime_boring.go $GOROOT/src/runtime/runtime_noclearenv.go $GOROOT/src/runtime/rwmutex.go $GOROOT/src/runtime/secret_asm.go $GOROOT/src/runtime/secret_nosecret.go $GOROOT/src/runtime/security_issetugid.go $GOROOT/src/runtime/security_unix.go $GOROOT/src/runtime/select.go $GOROOT/src/runtime/sema.go $GOROOT/src/runtime/set_vma_name_stub.go $GOROOT/src/runtime/signal_arm64.go $GOROOT/src/runtime/signal_darwin.go $GOROOT/src/runtime/signal_darwin_arm64.go $GOROOT/src/runtime/signal_unix.go $GOROOT/src/runtime/sigqueue.go $GOROOT/src/runtime/slice.go $GOROOT/src/runtime/softfloat64.go $GOROOT/src/runtime/stack.go $GOROOT/src/runtime/stkframe.go $GOROOT/src/runtime/string.go $GOROOT/src/runtime/stubs.go $GOROOT/src/runtime/stubs_arm64.go $GOROOT/src/runtime/stubs_nonlinux.go $GOROOT/src/runtime/stubs_nonwasm.go $GOROOT/src/runtime/symtab.go $GOROOT/src/runtime/symtabinl.go $GOROOT/src/runtime/synctest.go $GOROOT/src/runtime/sys_arm64.go $GOROOT/src/runtime/sys_darwin.go $GOROOT/src/runtime/sys_darwin_arm64.go $GOROOT/src/runtime/sys_libc.go $GOROOT/src/runtime/sys_nonppc64x.go $GOROOT/src/runtime/tagptr.go $GOROOT/src/runtime/tagptr_64bit.go $GOROOT/src/runtime/test_stubs.go $GOROOT/src/runtime/time.go $GOROOT/src/runtime/time_nofake.go $GOROOT/src/runtime/timestub.go $GOROOT/src/runtime/tls_stub.go $GOROOT/src/runtime/trace.go $GOROOT/src/runtime/traceallocfree.go $GOROOT/src/runtime/traceback.go $GOROOT/src/runtime/tracebuf.go $GOROOT/src/runtime/tracecpu.go $GOROOT/src/runtime/traceevent.go $GOROOT/src/runtime/tracemap.go $GOROOT/src/runtime/traceregion.go $GOROOT/src/runtime/traceruntime.go $GOROOT/src/runtime/tracestack.go $GOROOT/src/runtime/tracestatus.go $GOROOT/src/runtime/tracestring.go $GOROOT/src/runtime/tracetime.go $GOROOT/src/runtime/tracetype.go $GOROOT/src/runtime/type.go $GOROOT/src/runtime/unsafe.go $GOROOT/src/runtime/utf8.go $GOROOT/src/runtime/valgrind0.go $GOROOT/src/runtime/vdso_in_none.go $GOROOT/src/runtime/vgetrandom_unsupported.go $GOROOT/src/runtime/write_err.go
+cp $GOROOT/src/runtime/tls_arm64.h $WORK/b009/tls_GOARCH.h
+cd $GOROOT/src/runtime
+$GOROOT/pkg/tool/darwin_arm64/asm -p runtime -trimpath "$WORK/b009=>" -I $WORK/b009/ -I $GOROOT/pkg/include -D GOOS_darwin -D GOARCH_arm64 -shared -std -o $WORK/b009/asm.o ./asm.s
+$GOROOT/pkg/tool/darwin_arm64/asm -p runtime -trimpath "$WORK/b009=>" -I $WORK/b009/ -I $GOROOT/pkg/include -D GOOS_darwin -D GOARCH_arm64 -shared -std -o $WORK/b009/asm_arm64.o ./asm_arm64.s
+$GOROOT/pkg/tool/darwin_arm64/asm -p runtime -trimpath "$WORK/b009=>" -I $WORK/b009/ -I $GOROOT/pkg/include -D GOOS_darwin -D GOARCH_arm64 -shared -std -o $WORK/b009/atomic_arm64.o ./atomic_arm64.s
+$GOROOT/pkg/tool/darwin_arm64/asm -p runtime -trimpath "$WORK/b009=>" -I $WORK/b009/ -I $GOROOT/pkg/include -D GOOS_darwin -D GOARCH_arm64 -shared -std -o $WORK/b009/ints.o ./ints.s
+$GOROOT/pkg/tool/darwin_arm64/asm -p runtime -trimpath "$WORK/b009=>" -I $WORK/b009/ -I $GOROOT/pkg/include -D GOOS_darwin -D GOARCH_arm64 -shared -std -o $WORK/b009/memclr_arm64.o ./memclr_arm64.s
+$GOROOT/pkg/tool/darwin_arm64/asm -p runtime -trimpath "$WORK/b009=>" -I $WORK/b009/ -I $GOROOT/pkg/include -D GOOS_darwin -D GOARCH_arm64 -shared -std -o $WORK/b009/memmove_arm64.o ./memmove_arm64.s
+$GOROOT/pkg/tool/darwin_arm64/asm -p runtime -trimpath "$WORK/b009=>" -I $WORK/b009/ -I $GOROOT/pkg/include -D GOOS_darwin -D GOARCH_arm64 -shared -std -o $WORK/b009/preempt_arm64.o ./preempt_arm64.s
+$GOROOT/pkg/tool/darwin_arm64/asm -p runtime -trimpath "$WORK/b009=>" -I $WORK/b009/ -I $GOROOT/pkg/include -D GOOS_darwin -D GOARCH_arm64 -shared -std -o $WORK/b009/rt0_darwin_arm64.o ./rt0_darwin_arm64.s
+$GOROOT/pkg/tool/darwin_arm64/asm -p runtime -trimpath "$WORK/b009=>" -I $WORK/b009/ -I $GOROOT/pkg/include -D GOOS_darwin -D GOARCH_arm64 -shared -std -o $WORK/b009/secret_arm64.o ./secret_arm64.s
+$GOROOT/pkg/tool/darwin_arm64/asm -p runtime -trimpath "$WORK/b009=>" -I $WORK/b009/ -I $GOROOT/pkg/include -D GOOS_darwin -D GOARCH_arm64 -shared -std -o $WORK/b009/sys_darwin_arm64.o ./sys_darwin_arm64.s
+$GOROOT/pkg/tool/darwin_arm64/asm -p runtime -trimpath "$WORK/b009=>" -I $WORK/b009/ -I $GOROOT/pkg/include -D GOOS_darwin -D GOARCH_arm64 -shared -std -o $WORK/b009/tls_arm64.o ./tls_arm64.s
+go tool pack r $WORK/b009/_pkg_.a $WORK/b009/asm.o $WORK/b009/asm_arm64.o $WORK/b009/atomic_arm64.o $WORK/b009/ints.o $WORK/b009/memclr_arm64.o $WORK/b009/memmove_arm64.o $WORK/b009/preempt_arm64.o $WORK/b009/rt0_darwin_arm64.o $WORK/b009/secret_arm64.o $WORK/b009/sys_darwin_arm64.o $WORK/b009/tls_arm64.o # internal
+go tool buildid -w $WORK/b009/_pkg_.a # internal
+cp $WORK/b009/_pkg_.a $REPO/.cache/step1/gocache/dc/dcf88eca5d12d1312b09fd2a87799f8d43b17c6b7f8e94bc355e2e648474abb8-d # internal
+mkdir -p $WORK/b039/
+mkdir -p $WORK/b004/
+cat >$REPO/.cache/step1/tmp/go-build3768285036/b039/importcfg << 'EOF' # internal
+# import config
+packagefile internal/race=$REPO/.cache/step1/tmp/go-build3768285036/b027/_pkg_.a
+packagefile runtime=$REPO/.cache/step1/tmp/go-build3768285036/b009/_pkg_.a
+EOF
+cd $REPO
+$GOROOT/pkg/tool/darwin_arm64/compile -o $WORK/b039/_pkg_.a -trimpath "$WORK/b039=>" -p iter -lang=go1.27 -std -complete -buildid Oft3OLC1t5vAMvoJ2Krj/Oft3OLC1t5vAMvoJ2Krj -goversion go1.27.1 -c=16 -shared -nolocalimports -importcfg $WORK/b039/importcfg -pack $GOROOT/src/iter/iter.go
+mkdir -p $WORK/b035/
+echo -n > $WORK/b004/go_asm.h # internal
+cd $GOROOT/src/internal/reflectlite
+$GOROOT/pkg/tool/darwin_arm64/asm -p internal/reflectlite -trimpath "$WORK/b004=>" -I $WORK/b004/ -I $GOROOT/pkg/include -D GOOS_darwin -D GOARCH_arm64 -shared -std -gensymabis -o $WORK/b004/symabis ./asm.s
+cat >$REPO/.cache/step1/tmp/go-build3768285036/b035/importcfg << 'EOF' # internal
+# import config
+packagefile internal/race=$REPO/.cache/step1/tmp/go-build3768285036/b027/_pkg_.a
+packagefile internal/runtime/atomic=$REPO/.cache/step1/tmp/go-build3768285036/b019/_pkg_.a
+packagefile internal/sync=$REPO/.cache/step1/tmp/go-build3768285036/b036/_pkg_.a
+packagefile internal/synctest=$REPO/.cache/step1/tmp/go-build3768285036/b038/_pkg_.a
+packagefile runtime=$REPO/.cache/step1/tmp/go-build3768285036/b009/_pkg_.a
+packagefile sync/atomic=$REPO/.cache/step1/tmp/go-build3768285036/b037/_pkg_.a
+EOF
+cd $REPO
+$GOROOT/pkg/tool/darwin_arm64/compile -o $WORK/b035/_pkg_.a -trimpath "$WORK/b035=>" -p sync -lang=go1.27 -std -buildid 26mNyOw2Ta4zo2-Ne4ZU/26mNyOw2Ta4zo2-Ne4ZU -goversion go1.27.1 -c=12 -shared -nolocalimports -importcfg $WORK/b035/importcfg -pack $GOROOT/src/sync/cond.go $GOROOT/src/sync/map.go $GOROOT/src/sync/mutex.go $GOROOT/src/sync/once.go $GOROOT/src/sync/oncefunc.go $GOROOT/src/sync/pool.go $GOROOT/src/sync/poolqueue.go $GOROOT/src/sync/runtime.go $GOROOT/src/sync/runtime2.go $GOROOT/src/sync/rwmutex.go $GOROOT/src/sync/waitgroup.go
+cat >$REPO/.cache/step1/tmp/go-build3768285036/b004/importcfg << 'EOF' # internal
+# import config
+packagefile internal/abi=$REPO/.cache/step1/tmp/go-build3768285036/b005/_pkg_.a
+packagefile internal/goarch=$REPO/.cache/step1/tmp/go-build3768285036/b006/_pkg_.a
+packagefile internal/unsafeheader=$REPO/.cache/step1/tmp/go-build3768285036/b008/_pkg_.a
+packagefile runtime=$REPO/.cache/step1/tmp/go-build3768285036/b009/_pkg_.a
+EOF
+$GOROOT/pkg/tool/darwin_arm64/compile -o $WORK/b004/_pkg_.a -trimpath "$WORK/b004=>" -p internal/reflectlite -lang=go1.27 -std -buildid bZ68vsAZGooRqAKBg0KQ/bZ68vsAZGooRqAKBg0KQ -goversion go1.27.1 -symabis $WORK/b004/symabis -c=8 -shared -nolocalimports -importcfg $WORK/b004/importcfg -pack -asmhdr $WORK/b004/go_asm.h $GOROOT/src/internal/reflectlite/swapper.go $GOROOT/src/internal/reflectlite/type.go $GOROOT/src/internal/reflectlite/value.go
+go tool buildid -w $WORK/b039/_pkg_.a # internal
+cp $WORK/b039/_pkg_.a $REPO/.cache/step1/gocache/d8/d854a9e4d99beb0797afea1d091a91793f8a4bc94732aff08d2dc91bd5afeaf9-d # internal
+mkdir -p $WORK/b048/
+cat >$REPO/.cache/step1/tmp/go-build3768285036/b048/importcfg << 'EOF' # internal
+# import config
+packagefile cmp=$REPO/.cache/step1/tmp/go-build3768285036/b044/_pkg_.a
+packagefile iter=$REPO/.cache/step1/tmp/go-build3768285036/b039/_pkg_.a
+packagefile math/bits=$REPO/.cache/step1/tmp/go-build3768285036/b029/_pkg_.a
+EOF
+$GOROOT/pkg/tool/darwin_arm64/compile -o $WORK/b048/_pkg_.a -trimpath "$WORK/b048=>" -p slices -lang=go1.27 -std -complete -buildid KPfXXNIcr8U239g4ropb/KPfXXNIcr8U239g4ropb -goversion go1.27.1 -c=12 -shared -nolocalimports -importcfg $WORK/b048/importcfg -pack $GOROOT/src/slices/iter.go $GOROOT/src/slices/slices.go $GOROOT/src/slices/sort.go $GOROOT/src/slices/zsortanyfunc.go $GOROOT/src/slices/zsortordered.go
+go tool buildid -w $WORK/b048/_pkg_.a # internal
+cp $WORK/b048/_pkg_.a $REPO/.cache/step1/gocache/2f/2fbde08b00dfd76981339141f77c01e03154e1e23a1846cd09cdf9ea9baeb397-d # internal
+go tool buildid -w $WORK/b035/_pkg_.a # internal
+cp $WORK/b035/_pkg_.a $REPO/.cache/step1/gocache/da/daf2aff715ea01b3731846c8cea66daf20ece04327676517bac82fde6ff03a19-d # internal
+mkdir -p $WORK/b059/
+cat >$REPO/.cache/step1/tmp/go-build3768285036/b059/importcfg << 'EOF' # internal
+# import config
+packagefile sync=$REPO/.cache/step1/tmp/go-build3768285036/b035/_pkg_.a
+packagefile sync/atomic=$REPO/.cache/step1/tmp/go-build3768285036/b037/_pkg_.a
+EOF
+$GOROOT/pkg/tool/darwin_arm64/compile -o $WORK/b059/_pkg_.a -trimpath "$WORK/b059=>" -p internal/testlog -lang=go1.27 -std -complete -buildid ZpkOL5TYTnJJLu7tuNwG/ZpkOL5TYTnJJLu7tuNwG -goversion go1.27.1 -c=16 -shared -nolocalimports -importcfg $WORK/b059/importcfg -pack $GOROOT/src/internal/testlog/exit.go $GOROOT/src/internal/testlog/log.go
+cd $GOROOT/src/internal/reflectlite
+$GOROOT/pkg/tool/darwin_arm64/asm -p internal/reflectlite -trimpath "$WORK/b004=>" -I $WORK/b004/ -I $GOROOT/pkg/include -D GOOS_darwin -D GOARCH_arm64 -shared -std -o $WORK/b004/asm.o ./asm.s
+go tool pack r $WORK/b004/_pkg_.a $WORK/b004/asm.o # internal
+go tool buildid -w $WORK/b004/_pkg_.a # internal
+cp $WORK/b004/_pkg_.a $REPO/.cache/step1/gocache/37/37824c91db1b761e307e57b814a503c34081cc4dba80149f8700896bd72f2354-d # internal
+mkdir -p $WORK/b003/
+cat >$REPO/.cache/step1/tmp/go-build3768285036/b003/importcfg << 'EOF' # internal
+# import config
+packagefile internal/reflectlite=$REPO/.cache/step1/tmp/go-build3768285036/b004/_pkg_.a
+EOF
+cd $REPO
+$GOROOT/pkg/tool/darwin_arm64/compile -o $WORK/b003/_pkg_.a -trimpath "$WORK/b003=>" -p errors -lang=go1.27 -std -complete -buildid 34XO0RuyDoo3BWYLVcoJ/34XO0RuyDoo3BWYLVcoJ -goversion go1.27.1 -c=12 -shared -nolocalimports -importcfg $WORK/b003/importcfg -pack $GOROOT/src/errors/errors.go $GOROOT/src/errors/join.go $GOROOT/src/errors/wrap.go
+go tool buildid -w $WORK/b059/_pkg_.a # internal
+cp $WORK/b059/_pkg_.a $REPO/.cache/step1/gocache/f9/f9450eb9b895f8bee08aa10345e08a505f1e98c2f55d741e351dc3c98c84d46b-d # internal
+go tool buildid -w $WORK/b003/_pkg_.a # internal
+cp $WORK/b003/_pkg_.a $REPO/.cache/step1/gocache/f4/f4b406ade4ddda46896d45b79b778d1ba36a49f6f246fb4537212662104256fe-d # internal
+mkdir -p $WORK/b052/
+mkdir -p $WORK/b053/
+mkdir -p $WORK/b034/
+mkdir -p $WORK/b047/
+cat >$REPO/.cache/step1/tmp/go-build3768285036/b052/importcfg << 'EOF' # internal
+# import config
+packagefile errors=$REPO/.cache/step1/tmp/go-build3768285036/b003/_pkg_.a
+EOF
+cat >$REPO/.cache/step1/tmp/go-build3768285036/b053/importcfg << 'EOF' # internal
+# import config
+packagefile errors=$REPO/.cache/step1/tmp/go-build3768285036/b003/_pkg_.a
+packagefile internal/bytealg=$REPO/.cache/step1/tmp/go-build3768285036/b010/_pkg_.a
+packagefile unicode/utf8=$REPO/.cache/step1/tmp/go-build3768285036/b041/_pkg_.a
+EOF
+$GOROOT/pkg/tool/darwin_arm64/compile -o $WORK/b052/_pkg_.a -trimpath "$WORK/b052=>" -p internal/oserror -lang=go1.27 -std -complete -buildid 3iFGjIjhb46Rd5bNgiPp/3iFGjIjhb46Rd5bNgiPp -goversion go1.27.1 -c=16 -shared -nolocalimports -importcfg $WORK/b052/importcfg -pack $GOROOT/src/internal/oserror/errors.go
+cat >$REPO/.cache/step1/tmp/go-build3768285036/b034/importcfg << 'EOF' # internal
+# import config
+packagefile errors=$REPO/.cache/step1/tmp/go-build3768285036/b003/_pkg_.a
+packagefile sync=$REPO/.cache/step1/tmp/go-build3768285036/b035/_pkg_.a
+EOF
+$GOROOT/pkg/tool/darwin_arm64/compile -o $WORK/b053/_pkg_.a -trimpath "$WORK/b053=>" -p path -lang=go1.27 -std -complete -buildid Tc2NyyR8woqB2Hvt5L-h/Tc2NyyR8woqB2Hvt5L-h -goversion go1.27.1 -c=12 -shared -nolocalimports -importcfg $WORK/b053/importcfg -pack $GOROOT/src/path/match.go $GOROOT/src/path/path.go
+cat >$REPO/.cache/step1/tmp/go-build3768285036/b047/importcfg << 'EOF' # internal
+# import config
+packagefile errors=$REPO/.cache/step1/tmp/go-build3768285036/b003/_pkg_.a
+packagefile internal/bytealg=$REPO/.cache/step1/tmp/go-build3768285036/b010/_pkg_.a
+packagefile internal/strconv=$REPO/.cache/step1/tmp/go-build3768285036/b031/_pkg_.a
+packagefile internal/stringslite=$REPO/.cache/step1/tmp/go-build3768285036/b032/_pkg_.a
+packagefile unicode/utf8=$REPO/.cache/step1/tmp/go-build3768285036/b041/_pkg_.a
+EOF
+$GOROOT/pkg/tool/darwin_arm64/compile -o $WORK/b034/_pkg_.a -trimpath "$WORK/b034=>" -p io -lang=go1.27 -std -complete -buildid ox8-8FtjQcEMDC4_aQrn/ox8-8FtjQcEMDC4_aQrn -goversion go1.27.1 -c=8 -shared -nolocalimports -importcfg $WORK/b034/importcfg -pack $GOROOT/src/io/io.go $GOROOT/src/io/multi.go $GOROOT/src/io/pipe.go
+$GOROOT/pkg/tool/darwin_arm64/compile -o $WORK/b047/_pkg_.a -trimpath "$WORK/b047=>" -p strconv -lang=go1.27 -std -complete -buildid oOvlp_MacbDqS3ll-JHD/oOvlp_MacbDqS3ll-JHD -goversion go1.27.1 -c=6 -shared -nolocalimports -importcfg $WORK/b047/importcfg -pack $GOROOT/src/strconv/bytealg.go $GOROOT/src/strconv/doc.go $GOROOT/src/strconv/isprint.go $GOROOT/src/strconv/number.go $GOROOT/src/strconv/quote.go
+go tool buildid -w $WORK/b052/_pkg_.a # internal
+cp $WORK/b052/_pkg_.a $REPO/.cache/step1/gocache/37/37c13fd4353f3e4e296cc3114127b6a16899ab371c004f4db752aadbfa4788bb-d # internal
+mkdir -p $WORK/b055/
+echo -n > $WORK/b055/go_asm.h # internal
+cd $GOROOT/src/syscall
+$GOROOT/pkg/tool/darwin_arm64/asm -p syscall -trimpath "$WORK/b055=>" -I $WORK/b055/ -I $GOROOT/pkg/include -D GOOS_darwin -D GOARCH_arm64 -shared -std -gensymabis -o $WORK/b055/symabis ./asm_darwin_arm64.s ./zsyscall_darwin_arm64.s
+go tool buildid -w $WORK/b053/_pkg_.a # internal
+cp $WORK/b053/_pkg_.a $REPO/.cache/step1/gocache/99/9914cc073d807c1595a1a62955ed329652945b546f416cd6d782742290734234-d # internal
+cat >$REPO/.cache/step1/tmp/go-build3768285036/b055/importcfg << 'EOF' # internal
+# import config
+packagefile errors=$REPO/.cache/step1/tmp/go-build3768285036/b003/_pkg_.a
+packagefile internal/abi=$REPO/.cache/step1/tmp/go-build3768285036/b005/_pkg_.a
+packagefile internal/asan=$REPO/.cache/step1/tmp/go-build3768285036/b025/_pkg_.a
+packagefile internal/bytealg=$REPO/.cache/step1/tmp/go-build3768285036/b010/_pkg_.a
+packagefile internal/byteorder=$REPO/.cache/step1/tmp/go-build3768285036/b012/_pkg_.a
+packagefile internal/goarch=$REPO/.cache/step1/tmp/go-build3768285036/b006/_pkg_.a
+packagefile internal/msan=$REPO/.cache/step1/tmp/go-build3768285036/b026/_pkg_.a
+packagefile internal/oserror=$REPO/.cache/step1/tmp/go-build3768285036/b052/_pkg_.a
+packagefile internal/race=$REPO/.cache/step1/tmp/go-build3768285036/b027/_pkg_.a
+packagefile internal/strconv=$REPO/.cache/step1/tmp/go-build3768285036/b031/_pkg_.a
+packagefile runtime=$REPO/.cache/step1/tmp/go-build3768285036/b009/_pkg_.a
+packagefile sync=$REPO/.cache/step1/tmp/go-build3768285036/b035/_pkg_.a
+packagefile sync/atomic=$REPO/.cache/step1/tmp/go-build3768285036/b037/_pkg_.a
+EOF
+cd $REPO
+$GOROOT/pkg/tool/darwin_arm64/compile -o $WORK/b055/_pkg_.a -trimpath "$WORK/b055=>" -p syscall -lang=go1.27 -std -buildid 3Cl_MEwIeFf9_Opg5qFx/3Cl_MEwIeFf9_Opg5qFx -goversion go1.27.1 -symabis $WORK/b055/symabis -c=15 -shared -nolocalimports -importcfg $WORK/b055/importcfg -pack -asmhdr $WORK/b055/go_asm.h $GOROOT/src/syscall/badlinkname_unix.go $GOROOT/src/syscall/bpf_bsd.go $GOROOT/src/syscall/dirent.go $GOROOT/src/syscall/env_unix.go $GOROOT/src/syscall/exec_libc2.go $GOROOT/src/syscall/exec_unix.go $GOROOT/src/syscall/flock_bsd.go $GOROOT/src/syscall/forkpipe.go $GOROOT/src/syscall/linkname_bsd.go $GOROOT/src/syscall/linkname_darwin.go $GOROOT/src/syscall/linkname_libc.go $GOROOT/src/syscall/linkname_unix.go $GOROOT/src/syscall/net.go $GOROOT/src/syscall/rlimit.go $GOROOT/src/syscall/rlimit_darwin.go $GOROOT/src/syscall/route_bsd.go $GOROOT/src/syscall/route_darwin.go $GOROOT/src/syscall/sockcmsg_unix.go $GOROOT/src/syscall/sockcmsg_unix_other.go $GOROOT/src/syscall/syscall.go $GOROOT/src/syscall/syscall_bsd.go $GOROOT/src/syscall/syscall_darwin.go $GOROOT/src/syscall/syscall_darwin_arm64.go $GOROOT/src/syscall/syscall_unix.go $GOROOT/src/syscall/time_nofake.go $GOROOT/src/syscall/timestruct.go $GOROOT/src/syscall/zerrors_darwin_arm64.go $GOROOT/src/syscall/zsyscall_darwin_arm64.go $GOROOT/src/syscall/zsysnum_darwin_arm64.go $GOROOT/src/syscall/ztypes_darwin_arm64.go
+go tool buildid -w $WORK/b047/_pkg_.a # internal
+go tool buildid -w $WORK/b034/_pkg_.a # internal
+cp $WORK/b047/_pkg_.a $REPO/.cache/step1/gocache/4c/4c3092b06b9f690c7f63fa18a5edebad6eddd5a5207b83734bd214fe9912fb87-d # internal
+cp $WORK/b034/_pkg_.a $REPO/.cache/step1/gocache/38/38f326849b66f3d7f6914e1d051f6b69768a526fcae33acc84f675de229ad210-d # internal
+mkdir -p $WORK/b045/
+mkdir -p $WORK/b002/
+echo -n > $WORK/b045/go_asm.h # internal
+cd $GOROOT/src/reflect
+$GOROOT/pkg/tool/darwin_arm64/asm -p reflect -trimpath "$WORK/b045=>" -I $WORK/b045/ -I $GOROOT/pkg/include -D GOOS_darwin -D GOARCH_arm64 -shared -std -gensymabis -o $WORK/b045/symabis ./asm_arm64.s
+cat >$REPO/.cache/step1/tmp/go-build3768285036/b002/importcfg << 'EOF' # internal
+# import config
+packagefile errors=$REPO/.cache/step1/tmp/go-build3768285036/b003/_pkg_.a
+packagefile internal/bytealg=$REPO/.cache/step1/tmp/go-build3768285036/b010/_pkg_.a
+packagefile io=$REPO/.cache/step1/tmp/go-build3768285036/b034/_pkg_.a
+packagefile iter=$REPO/.cache/step1/tmp/go-build3768285036/b039/_pkg_.a
+packagefile math/bits=$REPO/.cache/step1/tmp/go-build3768285036/b029/_pkg_.a
+packagefile unicode=$REPO/.cache/step1/tmp/go-build3768285036/b040/_pkg_.a
+packagefile unicode/utf8=$REPO/.cache/step1/tmp/go-build3768285036/b041/_pkg_.a
+EOF
+cd $REPO
+$GOROOT/pkg/tool/darwin_arm64/compile -o $WORK/b002/_pkg_.a -trimpath "$WORK/b002=>" -p bytes -lang=go1.27 -std -buildid Gqt2zuxo-_hSg7RTJ1F8/Gqt2zuxo-_hSg7RTJ1F8 -goversion go1.27.1 -c=12 -shared -nolocalimports -importcfg $WORK/b002/importcfg -pack $GOROOT/src/bytes/buffer.go $GOROOT/src/bytes/bytes.go $GOROOT/src/bytes/iter.go $GOROOT/src/bytes/reader.go
+cat >$REPO/.cache/step1/tmp/go-build3768285036/b045/importcfg << 'EOF' # internal
+# import config
+packagefile errors=$REPO/.cache/step1/tmp/go-build3768285036/b003/_pkg_.a
+packagefile internal/abi=$REPO/.cache/step1/tmp/go-build3768285036/b005/_pkg_.a
+packagefile internal/bytealg=$REPO/.cache/step1/tmp/go-build3768285036/b010/_pkg_.a
+packagefile internal/goarch=$REPO/.cache/step1/tmp/go-build3768285036/b006/_pkg_.a
+packagefile internal/goexperiment=$REPO/.cache/step1/tmp/go-build3768285036/b016/_pkg_.a
+packagefile internal/race=$REPO/.cache/step1/tmp/go-build3768285036/b027/_pkg_.a
+packagefile internal/runtime/maps=$REPO/.cache/step1/tmp/go-build3768285036/b024/_pkg_.a
+packagefile internal/runtime/sys=$REPO/.cache/step1/tmp/go-build3768285036/b023/_pkg_.a
+packagefile internal/strconv=$REPO/.cache/step1/tmp/go-build3768285036/b031/_pkg_.a
+packagefile internal/unsafeheader=$REPO/.cache/step1/tmp/go-build3768285036/b008/_pkg_.a
+packagefile iter=$REPO/.cache/step1/tmp/go-build3768285036/b039/_pkg_.a
+packagefile math=$REPO/.cache/step1/tmp/go-build3768285036/b046/_pkg_.a
+packagefile runtime=$REPO/.cache/step1/tmp/go-build3768285036/b009/_pkg_.a
+packagefile strconv=$REPO/.cache/step1/tmp/go-build3768285036/b047/_pkg_.a
+packagefile sync=$REPO/.cache/step1/tmp/go-build3768285036/b035/_pkg_.a
+packagefile unicode=$REPO/.cache/step1/tmp/go-build3768285036/b040/_pkg_.a
+packagefile unicode/utf8=$REPO/.cache/step1/tmp/go-build3768285036/b041/_pkg_.a
+EOF
+$GOROOT/pkg/tool/darwin_arm64/compile -o $WORK/b045/_pkg_.a -trimpath "$WORK/b045=>" -p reflect -lang=go1.27 -std -buildid TRn4R7wjRtqq0gZ68Vq6/TRn4R7wjRtqq0gZ68Vq6 -goversion go1.27.1 -symabis $WORK/b045/symabis -c=8 -shared -nolocalimports -importcfg $WORK/b045/importcfg -pack -asmhdr $WORK/b045/go_asm.h $GOROOT/src/reflect/abi.go $GOROOT/src/reflect/badlinkname.go $GOROOT/src/reflect/deepequal.go $GOROOT/src/reflect/float32reg_generic.go $GOROOT/src/reflect/iter.go $GOROOT/src/reflect/makefunc.go $GOROOT/src/reflect/map.go $GOROOT/src/reflect/swapper.go $GOROOT/src/reflect/type.go $GOROOT/src/reflect/value.go $GOROOT/src/reflect/visiblefields.go
+go tool buildid -w $WORK/b002/_pkg_.a # internal
+cp $WORK/b002/_pkg_.a $REPO/.cache/step1/gocache/1c/1ca887959ea20327217a5448a4c2b14b29ba89f914c69eebc7856bc23b6fb668-d # internal
+cd $GOROOT/src/syscall
+$GOROOT/pkg/tool/darwin_arm64/asm -p syscall -trimpath "$WORK/b055=>" -I $WORK/b055/ -I $GOROOT/pkg/include -D GOOS_darwin -D GOARCH_arm64 -shared -std -o $WORK/b055/asm_darwin_arm64.o ./asm_darwin_arm64.s
+$GOROOT/pkg/tool/darwin_arm64/asm -p syscall -trimpath "$WORK/b055=>" -I $WORK/b055/ -I $GOROOT/pkg/include -D GOOS_darwin -D GOARCH_arm64 -shared -std -o $WORK/b055/zsyscall_darwin_arm64.o ./zsyscall_darwin_arm64.s
+go tool pack r $WORK/b055/_pkg_.a $WORK/b055/asm_darwin_arm64.o $WORK/b055/zsyscall_darwin_arm64.o # internal
+go tool buildid -w $WORK/b055/_pkg_.a # internal
+cp $WORK/b055/_pkg_.a $REPO/.cache/step1/gocache/2e/2e8332933c4fc9344f0a78ce9580e6ee99ff22ce8660f3924d6553a52f74f776-d # internal
+mkdir -p $WORK/b058/
+mkdir -p $WORK/b054/
+mkdir -p $WORK/b057/
+cat >$REPO/.cache/step1/tmp/go-build3768285036/b054/importcfg << 'EOF' # internal
+# import config
+packagefile errors=$REPO/.cache/step1/tmp/go-build3768285036/b003/_pkg_.a
+packagefile internal/bytealg=$REPO/.cache/step1/tmp/go-build3768285036/b010/_pkg_.a
+packagefile internal/stringslite=$REPO/.cache/step1/tmp/go-build3768285036/b032/_pkg_.a
+packagefile math/bits=$REPO/.cache/step1/tmp/go-build3768285036/b029/_pkg_.a
+packagefile runtime=$REPO/.cache/step1/tmp/go-build3768285036/b009/_pkg_.a
+packagefile sync=$REPO/.cache/step1/tmp/go-build3768285036/b035/_pkg_.a
+packagefile syscall=$REPO/.cache/step1/tmp/go-build3768285036/b055/_pkg_.a
+EOF
+echo -n > $WORK/b057/go_asm.h # internal
+cat >$REPO/.cache/step1/tmp/go-build3768285036/b058/importcfg << 'EOF' # internal
+# import config
+packagefile syscall=$REPO/.cache/step1/tmp/go-build3768285036/b055/_pkg_.a
+EOF
+cd $GOROOT/src/internal/syscall/unix
+$GOROOT/pkg/tool/darwin_arm64/asm -p internal/syscall/unix -trimpath "$WORK/b057=>" -I $WORK/b057/ -I $GOROOT/pkg/include -D GOOS_darwin -D GOARCH_arm64 -shared -std -gensymabis -o $WORK/b057/symabis ./asm_darwin.s
+cd $REPO
+$GOROOT/pkg/tool/darwin_arm64/compile -o $WORK/b054/_pkg_.a -trimpath "$WORK/b054=>" -p time -lang=go1.27 -std -buildid -05iKMXWKFJBeOXfNyZl/-05iKMXWKFJBeOXfNyZl -goversion go1.27.1 -c=16 -shared -nolocalimports -importcfg $WORK/b054/importcfg -pack $GOROOT/src/time/format.go $GOROOT/src/time/format_rfc3339.go $GOROOT/src/time/sleep.go $GOROOT/src/time/sys_unix.go $GOROOT/src/time/tick.go $GOROOT/src/time/time.go $GOROOT/src/time/zoneinfo.go $GOROOT/src/time/zoneinfo_goroot.go $GOROOT/src/time/zoneinfo_read.go $GOROOT/src/time/zoneinfo_unix.go
+$GOROOT/pkg/tool/darwin_arm64/compile -o $WORK/b058/_pkg_.a -trimpath "$WORK/b058=>" -p internal/syscall/execenv -lang=go1.27 -std -complete -buildid HCybUCgbSD9p9jLEtBfl/HCybUCgbSD9p9jLEtBfl -goversion go1.27.1 -c=10 -shared -nolocalimports -importcfg $WORK/b058/importcfg -pack $GOROOT/src/internal/syscall/execenv/execenv_default.go
+cat >$REPO/.cache/step1/tmp/go-build3768285036/b057/importcfg << 'EOF' # internal
+# import config
+packagefile internal/abi=$REPO/.cache/step1/tmp/go-build3768285036/b005/_pkg_.a
+packagefile runtime=$REPO/.cache/step1/tmp/go-build3768285036/b009/_pkg_.a
+packagefile syscall=$REPO/.cache/step1/tmp/go-build3768285036/b055/_pkg_.a
+EOF
+$GOROOT/pkg/tool/darwin_arm64/compile -o $WORK/b057/_pkg_.a -trimpath "$WORK/b057=>" -p internal/syscall/unix -lang=go1.27 -std -buildid yp_7-qAnPLUEPYgBjcaW/yp_7-qAnPLUEPYgBjcaW -goversion go1.27.1 -symabis $WORK/b057/symabis -c=7 -shared -nolocalimports -importcfg $WORK/b057/importcfg -pack -asmhdr $WORK/b057/go_asm.h $GOROOT/src/internal/syscall/unix/arc4random_darwin.go $GOROOT/src/internal/syscall/unix/at_darwin.go $GOROOT/src/internal/syscall/unix/at_libc2.go $GOROOT/src/internal/syscall/unix/at_sysnum_darwin.go $GOROOT/src/internal/syscall/unix/constants.go $GOROOT/src/internal/syscall/unix/eaccess.go $GOROOT/src/internal/syscall/unix/faccessat_darwin.go $GOROOT/src/internal/syscall/unix/fcntl_unix.go $GOROOT/src/internal/syscall/unix/kernel_version_ge.go $GOROOT/src/internal/syscall/unix/kernel_version_other.go $GOROOT/src/internal/syscall/unix/net.go $GOROOT/src/internal/syscall/unix/net_darwin.go $GOROOT/src/internal/syscall/unix/nofollow_posix.go $GOROOT/src/internal/syscall/unix/nonblocking_unix.go $GOROOT/src/internal/syscall/unix/pty_darwin.go $GOROOT/src/internal/syscall/unix/syscall.go $GOROOT/src/internal/syscall/unix/tcsetpgrp_bsd.go $GOROOT/src/internal/syscall/unix/user_darwin.go $GOROOT/src/internal/syscall/unix/utimes.go
+go tool buildid -w $WORK/b058/_pkg_.a # internal
+cp $WORK/b058/_pkg_.a $REPO/.cache/step1/gocache/df/dfc40228bdd4b944ad1693356fd776af360e87ff35ef81c83f11ec4516ab6ada-d # internal
+cd $GOROOT/src/internal/syscall/unix
+$GOROOT/pkg/tool/darwin_arm64/asm -p internal/syscall/unix -trimpath "$WORK/b057=>" -I $WORK/b057/ -I $GOROOT/pkg/include -D GOOS_darwin -D GOARCH_arm64 -shared -std -o $WORK/b057/asm_darwin.o ./asm_darwin.s
+go tool pack r $WORK/b057/_pkg_.a $WORK/b057/asm_darwin.o # internal
+go tool buildid -w $WORK/b057/_pkg_.a # internal
+cp $WORK/b057/_pkg_.a $REPO/.cache/step1/gocache/28/2856681c813a962b2bdfb07a383e8430b5a222e7106edb57f3b1336e8bd5f142-d # internal
+go tool buildid -w $WORK/b054/_pkg_.a # internal
+cp $WORK/b054/_pkg_.a $REPO/.cache/step1/gocache/76/761695e95a765d6660327f5d12937fd7f6e3a86cb9668b73b2a4ed2a7b1222b2-d # internal
+mkdir -p $WORK/b051/
+mkdir -p $WORK/b056/
+cat >$REPO/.cache/step1/tmp/go-build3768285036/b051/importcfg << 'EOF' # internal
+# import config
+packagefile errors=$REPO/.cache/step1/tmp/go-build3768285036/b003/_pkg_.a
+packagefile internal/bytealg=$REPO/.cache/step1/tmp/go-build3768285036/b010/_pkg_.a
+packagefile internal/oserror=$REPO/.cache/step1/tmp/go-build3768285036/b052/_pkg_.a
+packagefile io=$REPO/.cache/step1/tmp/go-build3768285036/b034/_pkg_.a
+packagefile path=$REPO/.cache/step1/tmp/go-build3768285036/b053/_pkg_.a
+packagefile slices=$REPO/.cache/step1/tmp/go-build3768285036/b048/_pkg_.a
+packagefile time=$REPO/.cache/step1/tmp/go-build3768285036/b054/_pkg_.a
+packagefile unicode/utf8=$REPO/.cache/step1/tmp/go-build3768285036/b041/_pkg_.a
+EOF
+cat >$REPO/.cache/step1/tmp/go-build3768285036/b056/importcfg << 'EOF' # internal
+# import config
+packagefile errors=$REPO/.cache/step1/tmp/go-build3768285036/b003/_pkg_.a
+packagefile internal/strconv=$REPO/.cache/step1/tmp/go-build3768285036/b031/_pkg_.a
+packagefile internal/syscall/unix=$REPO/.cache/step1/tmp/go-build3768285036/b057/_pkg_.a
+packagefile io=$REPO/.cache/step1/tmp/go-build3768285036/b034/_pkg_.a
+packagefile runtime=$REPO/.cache/step1/tmp/go-build3768285036/b009/_pkg_.a
+packagefile sync=$REPO/.cache/step1/tmp/go-build3768285036/b035/_pkg_.a
+packagefile sync/atomic=$REPO/.cache/step1/tmp/go-build3768285036/b037/_pkg_.a
+packagefile syscall=$REPO/.cache/step1/tmp/go-build3768285036/b055/_pkg_.a
+packagefile time=$REPO/.cache/step1/tmp/go-build3768285036/b054/_pkg_.a
+EOF
+cd $REPO
+$GOROOT/pkg/tool/darwin_arm64/compile -o $WORK/b051/_pkg_.a -trimpath "$WORK/b051=>" -p io/fs -lang=go1.27 -std -complete -buildid _C_1Elqqrt_ttKrIvqcm/_C_1Elqqrt_ttKrIvqcm -goversion go1.27.1 -c=16 -shared -nolocalimports -importcfg $WORK/b051/importcfg -pack $GOROOT/src/io/fs/format.go $GOROOT/src/io/fs/fs.go $GOROOT/src/io/fs/glob.go $GOROOT/src/io/fs/readdir.go $GOROOT/src/io/fs/readfile.go $GOROOT/src/io/fs/readlink.go $GOROOT/src/io/fs/stat.go $GOROOT/src/io/fs/sub.go $GOROOT/src/io/fs/walk.go
+$GOROOT/pkg/tool/darwin_arm64/compile -o $WORK/b056/_pkg_.a -trimpath "$WORK/b056=>" -p internal/poll -lang=go1.27 -std -buildid Bw32W_UYgk_YrpopQP3n/Bw32W_UYgk_YrpopQP3n -goversion go1.27.1 -c=10 -shared -nolocalimports -importcfg $WORK/b056/importcfg -pack $GOROOT/src/internal/poll/errno_unix.go $GOROOT/src/internal/poll/fd.go $GOROOT/src/internal/poll/fd_fsync_darwin.go $GOROOT/src/internal/poll/fd_mutex.go $GOROOT/src/internal/poll/fd_opendir_darwin.go $GOROOT/src/internal/poll/fd_poll_runtime.go $GOROOT/src/internal/poll/fd_posix.go $GOROOT/src/internal/poll/fd_unix.go $GOROOT/src/internal/poll/fd_unixjs.go $GOROOT/src/internal/poll/fd_writev_libc.go $GOROOT/src/internal/poll/fstatat_unix.go $GOROOT/src/internal/poll/hook_unix.go $GOROOT/src/internal/poll/iovec_unix.go $GOROOT/src/internal/poll/sendfile.go $GOROOT/src/internal/poll/sendfile_unix.go $GOROOT/src/internal/poll/sockopt.go $GOROOT/src/internal/poll/sockopt_unix.go $GOROOT/src/internal/poll/sockoptip.go $GOROOT/src/internal/poll/sys_cloexec.go $GOROOT/src/internal/poll/writev.go
+cd $GOROOT/src/reflect
+$GOROOT/pkg/tool/darwin_arm64/asm -p reflect -trimpath "$WORK/b045=>" -I $WORK/b045/ -I $GOROOT/pkg/include -D GOOS_darwin -D GOARCH_arm64 -shared -std -o $WORK/b045/asm_arm64.o ./asm_arm64.s
+go tool buildid -w $WORK/b051/_pkg_.a # internal
+go tool pack r $WORK/b045/_pkg_.a $WORK/b045/asm_arm64.o # internal
+go tool buildid -w $WORK/b045/_pkg_.a # internal
+cp $WORK/b051/_pkg_.a $REPO/.cache/step1/gocache/3b/3b952b3d2d9edb28b673476183fc0bad17e74caa7cbe09695f717b1502ca991e-d # internal
+mkdir -p $WORK/b050/
+cat >$REPO/.cache/step1/tmp/go-build3768285036/b050/importcfg << 'EOF' # internal
+# import config
+packagefile errors=$REPO/.cache/step1/tmp/go-build3768285036/b003/_pkg_.a
+packagefile internal/bytealg=$REPO/.cache/step1/tmp/go-build3768285036/b010/_pkg_.a
+packagefile internal/stringslite=$REPO/.cache/step1/tmp/go-build3768285036/b032/_pkg_.a
+packagefile io/fs=$REPO/.cache/step1/tmp/go-build3768285036/b051/_pkg_.a
+packagefile slices=$REPO/.cache/step1/tmp/go-build3768285036/b048/_pkg_.a
+EOF
+cd $REPO
+$GOROOT/pkg/tool/darwin_arm64/compile -o $WORK/b050/_pkg_.a -trimpath "$WORK/b050=>" -p internal/filepathlite -lang=go1.27 -std -complete -buildid 444510K00bM5TS8BGC8v/444510K00bM5TS8BGC8v -goversion go1.27.1 -c=15 -shared -nolocalimports -importcfg $WORK/b050/importcfg -pack $GOROOT/src/internal/filepathlite/path.go $GOROOT/src/internal/filepathlite/path_nonwindows.go $GOROOT/src/internal/filepathlite/path_unix.go
+go tool buildid -w $WORK/b056/_pkg_.a # internal
+cp $WORK/b045/_pkg_.a $REPO/.cache/step1/gocache/62/625769e87e22d6931ddf752e8cf516848eeb7469b7886046288f5a7a427c68ed-d # internal
+mkdir -p $WORK/b043/
+cat >$REPO/.cache/step1/tmp/go-build3768285036/b043/importcfg << 'EOF' # internal
+# import config
+packagefile cmp=$REPO/.cache/step1/tmp/go-build3768285036/b044/_pkg_.a
+packagefile reflect=$REPO/.cache/step1/tmp/go-build3768285036/b045/_pkg_.a
+packagefile slices=$REPO/.cache/step1/tmp/go-build3768285036/b048/_pkg_.a
+EOF
+$GOROOT/pkg/tool/darwin_arm64/compile -o $WORK/b043/_pkg_.a -trimpath "$WORK/b043=>" -p internal/fmtsort -lang=go1.27 -std -complete -buildid D2O1hIlTuwR9_gAc9A0g/D2O1hIlTuwR9_gAc9A0g -goversion go1.27.1 -c=12 -shared -nolocalimports -importcfg $WORK/b043/importcfg -pack $GOROOT/src/internal/fmtsort/sort.go
+cp $WORK/b056/_pkg_.a $REPO/.cache/step1/gocache/af/afa619dfa97687464cfe556b486d538a25660cd6ba3f25d4b666ed96610a6d47-d # internal
+go tool buildid -w $WORK/b050/_pkg_.a # internal
+cp $WORK/b050/_pkg_.a $REPO/.cache/step1/gocache/9d/9d69e493ce44e255366de37bba7061d887144361afd133a5064736fbb5fc2a89-d # internal
+mkdir -p $WORK/b049/
+cat >$REPO/.cache/step1/tmp/go-build3768285036/b049/importcfg << 'EOF' # internal
+# import config
+packagefile errors=$REPO/.cache/step1/tmp/go-build3768285036/b003/_pkg_.a
+packagefile internal/bytealg=$REPO/.cache/step1/tmp/go-build3768285036/b010/_pkg_.a
+packagefile internal/filepathlite=$REPO/.cache/step1/tmp/go-build3768285036/b050/_pkg_.a
+packagefile internal/poll=$REPO/.cache/step1/tmp/go-build3768285036/b056/_pkg_.a
+packagefile internal/strconv=$REPO/.cache/step1/tmp/go-build3768285036/b031/_pkg_.a
+packagefile internal/stringslite=$REPO/.cache/step1/tmp/go-build3768285036/b032/_pkg_.a
+packagefile internal/syscall/execenv=$REPO/.cache/step1/tmp/go-build3768285036/b058/_pkg_.a
+packagefile internal/syscall/unix=$REPO/.cache/step1/tmp/go-build3768285036/b057/_pkg_.a
+packagefile internal/testlog=$REPO/.cache/step1/tmp/go-build3768285036/b059/_pkg_.a
+packagefile io=$REPO/.cache/step1/tmp/go-build3768285036/b034/_pkg_.a
+packagefile io/fs=$REPO/.cache/step1/tmp/go-build3768285036/b051/_pkg_.a
+packagefile runtime=$REPO/.cache/step1/tmp/go-build3768285036/b009/_pkg_.a
+packagefile slices=$REPO/.cache/step1/tmp/go-build3768285036/b048/_pkg_.a
+packagefile sync=$REPO/.cache/step1/tmp/go-build3768285036/b035/_pkg_.a
+packagefile sync/atomic=$REPO/.cache/step1/tmp/go-build3768285036/b037/_pkg_.a
+packagefile syscall=$REPO/.cache/step1/tmp/go-build3768285036/b055/_pkg_.a
+packagefile time=$REPO/.cache/step1/tmp/go-build3768285036/b054/_pkg_.a
+EOF
+$GOROOT/pkg/tool/darwin_arm64/compile -o $WORK/b049/_pkg_.a -trimpath "$WORK/b049=>" -p os -lang=go1.27 -std -buildid GFNh8Z2RbBRd8uDMU0vU/GFNh8Z2RbBRd8uDMU0vU -goversion go1.27.1 -c=14 -shared -nolocalimports -importcfg $WORK/b049/importcfg -pack $GOROOT/src/os/dir.go $GOROOT/src/os/dir_darwin.go $GOROOT/src/os/eloop_other.go $GOROOT/src/os/env.go $GOROOT/src/os/error.go $GOROOT/src/os/error_errno.go $GOROOT/src/os/exec.go $GOROOT/src/os/exec_nohandle.go $GOROOT/src/os/exec_posix.go $GOROOT/src/os/exec_unix.go $GOROOT/src/os/executable.go $GOROOT/src/os/executable_darwin.go $GOROOT/src/os/file.go $GOROOT/src/os/file_open_unix.go $GOROOT/src/os/file_posix.go $GOROOT/src/os/file_unix.go $GOROOT/src/os/getwd.go $GOROOT/src/os/path.go $GOROOT/src/os/path_unix.go $GOROOT/src/os/pidfd_other.go $GOROOT/src/os/pipe_unix.go $GOROOT/src/os/proc.go $GOROOT/src/os/rawconn.go $GOROOT/src/os/removeall_at.go $GOROOT/src/os/removeall_unix.go $GOROOT/src/os/root.go $GOROOT/src/os/root_nonwindows.go $GOROOT/src/os/root_openat.go $GOROOT/src/os/root_unix.go $GOROOT/src/os/stat.go $GOROOT/src/os/stat_darwin.go $GOROOT/src/os/stat_unix.go $GOROOT/src/os/statat.go $GOROOT/src/os/statat_unix.go $GOROOT/src/os/sticky_bsd.go $GOROOT/src/os/sys.go $GOROOT/src/os/sys_bsd.go $GOROOT/src/os/sys_unix.go $GOROOT/src/os/tempfile.go $GOROOT/src/os/types.go $GOROOT/src/os/types_unix.go $GOROOT/src/os/wait_unimp.go $GOROOT/src/os/zero_copy_posix.go $GOROOT/src/os/zero_copy_stub.go
+go tool buildid -w $WORK/b043/_pkg_.a # internal
+cp $WORK/b043/_pkg_.a $REPO/.cache/step1/gocache/d3/d3c0156385b041c592704d6cd547779918437b3618c0d876f7f6e412047c62a2-d # internal
+go tool buildid -w $WORK/b049/_pkg_.a # internal
+cp $WORK/b049/_pkg_.a $REPO/.cache/step1/gocache/2f/2fc2103ade736fbbf76326ab3a4e2904888412d55a3bf25a83e2a427705d7070-d # internal
+mkdir -p $WORK/b042/
+cat >$REPO/.cache/step1/tmp/go-build3768285036/b042/importcfg << 'EOF' # internal
+# import config
+packagefile errors=$REPO/.cache/step1/tmp/go-build3768285036/b003/_pkg_.a
+packagefile internal/fmtsort=$REPO/.cache/step1/tmp/go-build3768285036/b043/_pkg_.a
+packagefile internal/stringslite=$REPO/.cache/step1/tmp/go-build3768285036/b032/_pkg_.a
+packagefile io=$REPO/.cache/step1/tmp/go-build3768285036/b034/_pkg_.a
+packagefile math=$REPO/.cache/step1/tmp/go-build3768285036/b046/_pkg_.a
+packagefile os=$REPO/.cache/step1/tmp/go-build3768285036/b049/_pkg_.a
+packagefile reflect=$REPO/.cache/step1/tmp/go-build3768285036/b045/_pkg_.a
+packagefile slices=$REPO/.cache/step1/tmp/go-build3768285036/b048/_pkg_.a
+packagefile strconv=$REPO/.cache/step1/tmp/go-build3768285036/b047/_pkg_.a
+packagefile sync=$REPO/.cache/step1/tmp/go-build3768285036/b035/_pkg_.a
+packagefile unicode/utf8=$REPO/.cache/step1/tmp/go-build3768285036/b041/_pkg_.a
+EOF
+$GOROOT/pkg/tool/darwin_arm64/compile -o $WORK/b042/_pkg_.a -trimpath "$WORK/b042=>" -p fmt -lang=go1.27 -std -complete -buildid vSl9Da9NKp4NKDdu73Eq/vSl9Da9NKp4NKDdu73Eq -goversion go1.27.1 -c=16 -shared -nolocalimports -importcfg $WORK/b042/importcfg -pack $GOROOT/src/fmt/doc.go $GOROOT/src/fmt/errors.go $GOROOT/src/fmt/format.go $GOROOT/src/fmt/print.go $GOROOT/src/fmt/scan.go
+go tool buildid -w $WORK/b042/_pkg_.a # internal
+cp $WORK/b042/_pkg_.a $REPO/.cache/step1/gocache/8f/8f579c63e7d774419e96f983739bdbd72c5ef1251ecc9970dc793018d48cc58d-d # internal
+mkdir -p $WORK/b060/
+cat >$REPO/.cache/step1/tmp/go-build3768285036/b060/importcfg << 'EOF' # internal
+# import config
+packagefile fmt=$REPO/.cache/step1/tmp/go-build3768285036/b042/_pkg_.a
+packagefile os=$REPO/.cache/step1/tmp/go-build3768285036/b049/_pkg_.a
+packagefile time=$REPO/.cache/step1/tmp/go-build3768285036/b054/_pkg_.a
+EOF
+$GOROOT/pkg/tool/darwin_arm64/compile -o $WORK/b060/_pkg_.a -trimpath "$WORK/b060=>" -p github.com/kakkoyun/hooking-into-the-go-toolchain/greet -lang=go1.25 -complete -buildid Y602TBb6rvQquW0wA5xM/Y602TBb6rvQquW0wA5xM -goversion go1.27.1 -c=16 -shared -nolocalimports -importcfg $WORK/b060/importcfg -pack ./greet/greet.go
+go tool buildid -w $WORK/b060/_pkg_.a # internal
+cp $WORK/b060/_pkg_.a $REPO/.cache/step1/gocache/10/10c8ebdd7eba335ed3cdf163dc54d1bc456d86cf1fe39d9cfff7667bd0c88cca-d # internal
+mkdir -p $WORK/b001/
+cat >$REPO/.cache/step1/tmp/go-build3768285036/b001/importcfg << 'EOF' # internal
+# import config
+packagefile bytes=$REPO/.cache/step1/tmp/go-build3768285036/b002/_pkg_.a
+packagefile fmt=$REPO/.cache/step1/tmp/go-build3768285036/b042/_pkg_.a
+packagefile github.com/kakkoyun/hooking-into-the-go-toolchain/greet=$REPO/.cache/step1/tmp/go-build3768285036/b060/_pkg_.a
+packagefile os=$REPO/.cache/step1/tmp/go-build3768285036/b049/_pkg_.a
+packagefile time=$REPO/.cache/step1/tmp/go-build3768285036/b054/_pkg_.a
+packagefile runtime=$REPO/.cache/step1/tmp/go-build3768285036/b009/_pkg_.a
+EOF
+$GOROOT/pkg/tool/darwin_arm64/compile -o $WORK/b001/_pkg_.a -trimpath "$WORK/b001=>" -p main -lang=go1.25 -complete -buildid kIewNeZLieJMDX0sK6uO/kIewNeZLieJMDX0sK6uO -goversion go1.27.1 -c=16 -shared -nolocalimports -importcfg $WORK/b001/importcfg -pack ./app/main.go
+go tool buildid -w $WORK/b001/_pkg_.a # internal
+cp $WORK/b001/_pkg_.a $REPO/.cache/step1/gocache/8b/8ba50024acd56d383a265b52bbde9e1b2d94307f1bbcfd25bf2c1f60b5b362a4-d # internal
+cat >$REPO/.cache/step1/tmp/go-build3768285036/b001/importcfg.link << 'EOF' # internal
+packagefile github.com/kakkoyun/hooking-into-the-go-toolchain/app=$REPO/.cache/step1/tmp/go-build3768285036/b001/_pkg_.a
+packagefile bytes=$REPO/.cache/step1/tmp/go-build3768285036/b002/_pkg_.a
+packagefile fmt=$REPO/.cache/step1/tmp/go-build3768285036/b042/_pkg_.a
+packagefile github.com/kakkoyun/hooking-into-the-go-toolchain/greet=$REPO/.cache/step1/tmp/go-build3768285036/b060/_pkg_.a
+packagefile os=$REPO/.cache/step1/tmp/go-build3768285036/b049/_pkg_.a
+packagefile time=$REPO/.cache/step1/tmp/go-build3768285036/b054/_pkg_.a
+packagefile runtime=$REPO/.cache/step1/tmp/go-build3768285036/b009/_pkg_.a
+packagefile errors=$REPO/.cache/step1/tmp/go-build3768285036/b003/_pkg_.a
+packagefile internal/bytealg=$REPO/.cache/step1/tmp/go-build3768285036/b010/_pkg_.a
+packagefile io=$REPO/.cache/step1/tmp/go-build3768285036/b034/_pkg_.a
+packagefile iter=$REPO/.cache/step1/tmp/go-build3768285036/b039/_pkg_.a
+packagefile math/bits=$REPO/.cache/step1/tmp/go-build3768285036/b029/_pkg_.a
+packagefile unicode=$REPO/.cache/step1/tmp/go-build3768285036/b040/_pkg_.a
+packagefile unicode/utf8=$REPO/.cache/step1/tmp/go-build3768285036/b041/_pkg_.a
+packagefile internal/fmtsort=$REPO/.cache/step1/tmp/go-build3768285036/b043/_pkg_.a
+packagefile internal/stringslite=$REPO/.cache/step1/tmp/go-build3768285036/b032/_pkg_.a
+packagefile math=$REPO/.cache/step1/tmp/go-build3768285036/b046/_pkg_.a
+packagefile reflect=$REPO/.cache/step1/tmp/go-build3768285036/b045/_pkg_.a
+packagefile slices=$REPO/.cache/step1/tmp/go-build3768285036/b048/_pkg_.a
+packagefile strconv=$REPO/.cache/step1/tmp/go-build3768285036/b047/_pkg_.a
+packagefile sync=$REPO/.cache/step1/tmp/go-build3768285036/b035/_pkg_.a
+packagefile internal/filepathlite=$REPO/.cache/step1/tmp/go-build3768285036/b050/_pkg_.a
+packagefile internal/poll=$REPO/.cache/step1/tmp/go-build3768285036/b056/_pkg_.a
+packagefile internal/strconv=$REPO/.cache/step1/tmp/go-build3768285036/b031/_pkg_.a
+packagefile internal/syscall/execenv=$REPO/.cache/step1/tmp/go-build3768285036/b058/_pkg_.a
+packagefile internal/syscall/unix=$REPO/.cache/step1/tmp/go-build3768285036/b057/_pkg_.a
+packagefile internal/testlog=$REPO/.cache/step1/tmp/go-build3768285036/b059/_pkg_.a
+packagefile io/fs=$REPO/.cache/step1/tmp/go-build3768285036/b051/_pkg_.a
+packagefile sync/atomic=$REPO/.cache/step1/tmp/go-build3768285036/b037/_pkg_.a
+packagefile syscall=$REPO/.cache/step1/tmp/go-build3768285036/b055/_pkg_.a
+packagefile internal/abi=$REPO/.cache/step1/tmp/go-build3768285036/b005/_pkg_.a
+packagefile internal/byteorder=$REPO/.cache/step1/tmp/go-build3768285036/b012/_pkg_.a
+packagefile internal/chacha8rand=$REPO/.cache/step1/tmp/go-build3768285036/b013/_pkg_.a
+packagefile internal/coverage/rtcov=$REPO/.cache/step1/tmp/go-build3768285036/b014/_pkg_.a
+packagefile internal/cpu=$REPO/.cache/step1/tmp/go-build3768285036/b011/_pkg_.a
+packagefile internal/goarch=$REPO/.cache/step1/tmp/go-build3768285036/b006/_pkg_.a
+packagefile internal/godebugs=$REPO/.cache/step1/tmp/go-build3768285036/b015/_pkg_.a
+packagefile internal/goexperiment=$REPO/.cache/step1/tmp/go-build3768285036/b016/_pkg_.a
+packagefile internal/goos=$REPO/.cache/step1/tmp/go-build3768285036/b017/_pkg_.a
+packagefile internal/profilerecord=$REPO/.cache/step1/tmp/go-build3768285036/b018/_pkg_.a
+packagefile internal/runtime/atomic=$REPO/.cache/step1/tmp/go-build3768285036/b019/_pkg_.a
+packagefile internal/runtime/exithook=$REPO/.cache/step1/tmp/go-build3768285036/b020/_pkg_.a
+packagefile internal/runtime/gc=$REPO/.cache/step1/tmp/go-build3768285036/b021/_pkg_.a
+packagefile internal/runtime/gc/scan=$REPO/.cache/step1/tmp/go-build3768285036/b022/_pkg_.a
+packagefile internal/runtime/maps=$REPO/.cache/step1/tmp/go-build3768285036/b024/_pkg_.a
+packagefile internal/runtime/math=$REPO/.cache/step1/tmp/go-build3768285036/b028/_pkg_.a
+packagefile internal/runtime/pprof/label=$REPO/.cache/step1/tmp/go-build3768285036/b030/_pkg_.a
+packagefile internal/runtime/sys=$REPO/.cache/step1/tmp/go-build3768285036/b023/_pkg_.a
+packagefile internal/trace/tracev2=$REPO/.cache/step1/tmp/go-build3768285036/b033/_pkg_.a
+packagefile internal/reflectlite=$REPO/.cache/step1/tmp/go-build3768285036/b004/_pkg_.a
+packagefile internal/race=$REPO/.cache/step1/tmp/go-build3768285036/b027/_pkg_.a
+packagefile cmp=$REPO/.cache/step1/tmp/go-build3768285036/b044/_pkg_.a
+packagefile internal/unsafeheader=$REPO/.cache/step1/tmp/go-build3768285036/b008/_pkg_.a
+packagefile internal/sync=$REPO/.cache/step1/tmp/go-build3768285036/b036/_pkg_.a
+packagefile internal/synctest=$REPO/.cache/step1/tmp/go-build3768285036/b038/_pkg_.a
+packagefile internal/oserror=$REPO/.cache/step1/tmp/go-build3768285036/b052/_pkg_.a
+packagefile path=$REPO/.cache/step1/tmp/go-build3768285036/b053/_pkg_.a
+packagefile internal/asan=$REPO/.cache/step1/tmp/go-build3768285036/b025/_pkg_.a
+packagefile internal/msan=$REPO/.cache/step1/tmp/go-build3768285036/b026/_pkg_.a
+modinfo "0w\xaf\f\x92t\b\x02A\xe1\xc1\a\xe6\xd6\x18\xe6path\tgithub.com/kakkoyun/hooking-into-the-go-toolchain/app\nmod\tgithub.com/kakkoyun/hooking-into-the-go-toolchain\t(devel)\t\nbuild\t-buildmode=exe\nbuild\t-compiler=gc\nbuild\tDefaultGODEBUG=cryptocustomrand=1,tlssecpmlkem=0,tracebacklabels=0,urlstrictcolons=0,x509sslcertoverrideplatform=0\nbuild\tCGO_ENABLED=1\nbuild\tCGO_CFLAGS=\nbuild\tCGO_CPPFLAGS=\nbuild\tCGO_CXXFLAGS=\nbuild\tCGO_LDFLAGS=\nbuild\tGOARCH=arm64\nbuild\tGOOS=darwin\nbuild\tGOARM64=v8.0\nbuild\tvcs=git\nbuild\tvcs.modified=true\n\xf92C1\x86\x18 r\x00\x82B\x10A\x16\xd8\xf2"
+EOF
+mkdir -p $WORK/b001/exe/
+cd .
+GOROOT='$GOROOT' $GOROOT/pkg/tool/darwin_arm64/link -o $WORK/b001/exe/a.out -importcfg $WORK/b001/importcfg.link -X=runtime.godebugDefault=cryptocustomrand=1,tlssecpmlkem=0,tracebacklabels=0,urlstrictcolons=0,x509sslcertoverrideplatform=0 -buildmode=pie -buildid=RE1JnYvVM2xI8FBwdfVk/kIewNeZLieJMDX0sK6uO/Ue4-fnjJs9iipndM7s5S/RE1JnYvVM2xI8FBwdfVk -extld=cc $WORK/b001/_pkg_.a
+go tool buildid -w $WORK/b001/exe/a.out # internal
+mkdir -p $REPO/.cache/step1/
+mv $WORK/b001/exe/a.out $REPO/.cache/step1/app

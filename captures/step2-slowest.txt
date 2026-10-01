@@ -1,0 +1,6 @@
+    ms  package
+   860  runtime
+   379  reflect
+   261  internal/abi
+   230  syscall
+   195  math

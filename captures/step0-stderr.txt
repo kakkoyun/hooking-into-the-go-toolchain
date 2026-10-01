@@ -1,0 +1,216 @@
+# internal/unsafeheader
+        0.02 real         0.00 user         0.00 sys
+# internal/goarch
+        0.03 real         0.00 user         0.00 sys
+# internal/coverage/rtcov
+        0.02 real         0.00 user         0.00 sys
+# internal/byteorder
+        0.02 real         0.01 user         0.00 sys
+# internal/godebugs
+        0.02 real         0.00 user         0.00 sys
+# internal/asan
+        0.02 real         0.00 user         0.00 sys
+# internal/runtime/gc
+        0.01 real         0.00 user         0.00 sys
+# internal/goexperiment
+        0.02 real         0.00 user         0.00 sys
+# internal/msan
+        0.02 real         0.00 user         0.00 sys
+# internal/goos
+        0.02 real         0.00 user         0.00 sys
+# math/bits
+        0.03 real         0.01 user         0.00 sys
+# internal/runtime/math
+        0.03 real         0.00 user         0.00 sys
+# cmp
+        0.03 real         0.00 user         0.00 sys
+# unicode/utf8
+        0.04 real         0.01 user         0.00 sys
+# internal/profilerecord
+        0.02 real         0.00 user         0.00 sys
+# internal/runtime/pprof/label
+        0.02 real         0.00 user         0.00 sys
+# internal/trace/tracev2
+        0.02 real         0.01 user         0.00 sys
+# internal/strconv
+        0.06 real         0.08 user         0.01 sys
+# unicode
+        0.11 real         0.06 user         0.01 sys
+# sync/atomic
+        0.00 real         0.00 user         0.00 sys
+# sync/atomic
+        0.01 real         0.02 user         0.00 sys
+# sync/atomic
+        0.01 real         0.00 user         0.00 sys
+# internal/cpu
+        0.00 real         0.00 user         0.00 sys
+# internal/cpu
+        0.01 real         0.01 user         0.00 sys
+# internal/cpu
+        0.00 real         0.00 user         0.00 sys
+# internal/cpu
+        0.01 real         0.00 user         0.00 sys
+# math
+        0.00 real         0.00 user         0.00 sys
+# math
+        0.04 real         0.07 user         0.01 sys
+# math
+        0.00 real         0.00 user         0.00 sys
+# math
+        0.01 real         0.00 user         0.00 sys
+# math
+        0.00 real         0.00 user         0.00 sys
+# internal/chacha8rand
+        0.00 real         0.00 user         0.00 sys
+# internal/chacha8rand
+        0.01 real         0.01 user         0.00 sys
+# internal/chacha8rand
+        0.01 real         0.00 user         0.00 sys
+# internal/abi
+        0.00 real         0.00 user         0.00 sys
+# internal/abi
+        0.05 real         0.07 user         0.01 sys
+# internal/abi
+        0.00 real         0.00 user         0.00 sys
+# internal/abi
+        0.00 real         0.00 user         0.00 sys
+# internal/runtime/atomic
+        0.01 real         0.00 user         0.00 sys
+# internal/runtime/atomic
+        0.02 real         0.01 user         0.00 sys
+# internal/runtime/atomic
+        0.00 real         0.00 user         0.00 sys
+# internal/runtime/sys
+        0.00 real         0.00 user         0.00 sys
+# internal/runtime/sys
+        0.01 real         0.00 user         0.00 sys
+# internal/runtime/sys
+        0.00 real         0.00 user         0.00 sys
+# internal/runtime/sys
+        0.00 real         0.00 user         0.00 sys
+# internal/synctest
+        0.01 real         0.00 user         0.00 sys
+# internal/race
+        0.01 real         0.00 user         0.00 sys
+# internal/runtime/exithook
+        0.01 real         0.00 user         0.00 sys
+# internal/runtime/gc/scan
+        0.01 real         0.01 user         0.00 sys
+# internal/bytealg
+        0.00 real         0.00 user         0.00 sys
+# internal/bytealg
+        0.01 real         0.00 user         0.00 sys
+# internal/bytealg
+        0.01 real         0.00 user         0.00 sys
+# internal/bytealg
+        0.00 real         0.00 user         0.00 sys
+# internal/bytealg
+        0.00 real         0.00 user         0.00 sys
+# internal/bytealg
+        0.00 real         0.00 user         0.00 sys
+# internal/bytealg
+        0.00 real         0.00 user         0.00 sys
+# internal/sync
+        0.01 real         0.01 user         0.00 sys
+# internal/stringslite
+        0.01 real         0.01 user         0.00 sys
+# internal/runtime/maps
+        0.00 real         0.00 user         0.00 sys
+# internal/runtime/maps
+        0.05 real         0.11 user         0.01 sys
+# internal/runtime/maps
+        0.00 real         0.00 user         0.00 sys
+# runtime
+        0.01 real         0.00 user         0.00 sys
+# runtime
+        0.70 real         2.28 user         0.10 sys
+# runtime
+        0.00 real         0.00 user         0.00 sys
+# runtime
+        0.01 real         0.00 user         0.00 sys
+# runtime
+        0.01 real         0.00 user         0.00 sys
+# runtime
+        0.00 real         0.00 user         0.00 sys
+# runtime
+        0.00 real         0.00 user         0.00 sys
+# runtime
+        0.00 real         0.00 user         0.00 sys
+# runtime
+        0.00 real         0.00 user         0.00 sys
+# runtime
+        0.00 real         0.00 user         0.00 sys
+# runtime
+        0.00 real         0.00 user         0.00 sys
+# runtime
+        0.01 real         0.00 user         0.00 sys
+# runtime
+        0.00 real         0.00 user         0.00 sys
+# iter
+        0.01 real         0.00 user         0.00 sys
+# slices
+        0.01 real         0.01 user         0.00 sys
+# sync
+        0.04 real         0.06 user         0.01 sys
+# internal/reflectlite
+        0.00 real         0.00 user         0.00 sys
+# internal/reflectlite
+        0.03 real         0.06 user         0.01 sys
+# internal/reflectlite
+        0.00 real         0.00 user         0.00 sys
+# internal/testlog
+        0.01 real         0.01 user         0.00 sys
+# errors
+        0.01 real         0.01 user         0.00 sys
+# internal/oserror
+        0.01 real         0.00 user         0.00 sys
+# strconv
+        0.03 real         0.03 user         0.00 sys
+# path
+        0.01 real         0.01 user         0.00 sys
+# io
+        0.03 real         0.03 user         0.00 sys
+# bytes
+        0.03 real         0.07 user         0.01 sys
+# syscall
+        0.00 real         0.00 user         0.00 sys
+# syscall
+        0.09 real         0.21 user         0.02 sys
+# syscall
+        0.00 real         0.00 user         0.00 sys
+# syscall
+        0.00 real         0.00 user         0.00 sys
+# internal/syscall/execenv
+        0.01 real         0.00 user         0.00 sys
+# internal/syscall/unix
+        0.00 real         0.00 user         0.00 sys
+# internal/syscall/unix
+        0.09 real         0.02 user         0.00 sys
+# internal/syscall/unix
+        0.01 real         0.00 user         0.00 sys
+# time
+        0.18 real         0.23 user         0.03 sys
+# reflect
+        0.00 real         0.00 user         0.00 sys
+# reflect
+        0.35 real         0.49 user         0.04 sys
+# reflect
+        0.01 real         0.00 user         0.00 sys
+# io/fs
+        0.04 real         0.05 user         0.01 sys
+# internal/poll
+        0.07 real         0.08 user         0.01 sys
+# internal/filepathlite
+        0.02 real         0.02 user         0.00 sys
+# internal/fmtsort
+        0.03 real         0.03 user         0.00 sys
+# os
+        0.23 real         0.38 user         0.04 sys
+# fmt
+        0.08 real         0.18 user         0.02 sys
+# github.com/kakkoyun/hooking-into-the-go-toolchain/greet
+        0.01 real         0.01 user         0.00 sys
+# github.com/kakkoyun/hooking-into-the-go-toolchain/app
+        0.02 real         0.01 user         0.00 sys
+# github.com/kakkoyun/hooking-into-the-go-toolchain/app
+        0.05 real         0.06 user         0.01 sys

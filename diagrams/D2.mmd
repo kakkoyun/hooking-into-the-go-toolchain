@@ -1,0 +1,25 @@
+flowchart TD
+    cmd["otelc go build -o hello ."]
+
+    subgraph setup["Phase 1: setup (otelc itself)"]
+        lock["take the build lock<br/>back up go.mod and go.sum"]
+        plan["dry run: go build -a -x -n<br/>list of compile commands, build-plan.log"]
+        pin["auto-pin: write otel.instrumentation.go,<br/>edit go.mod for the hook modules"]
+        match["match hook rules against<br/>the packages in the plan"]
+        gen["generate otelc.runtime.go<br/>for the main package"]
+        store[".otelc-build/matched.json"]
+        lock --> plan --> pin --> match --> gen --> store
+    end
+
+    subgraph instrument["Phase 2: instrument (go build -work -toolexec='otelc toolexec')"]
+        probe["tool -V=full<br/>answer gets an otelc marker,<br/>so cache keys differ from plain builds"]
+        compile["compile of a matched package:<br/>rewrite the AST (trampoline calls,<br/>//go:linkname declarations, struct fields),<br/>add files, patch importcfg, strip -complete"]
+        link["link: add the packages the<br/>compile step introduced to importcfg"]
+        probe --> compile --> link
+    end
+
+    restore["restore go.mod and go.sum,<br/>keep .otelc-build/ for inspection"]
+
+    cmd --> lock
+    store --> probe
+    link --> restore

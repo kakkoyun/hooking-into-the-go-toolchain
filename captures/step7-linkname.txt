@@ -1,0 +1,5 @@
+//go:linkname BeforeServeHTTP go.opentelemetry.io/otelc/instrumentation/net/http/server.BeforeServeHTTP
+func BeforeServeHTTP(hookContext HookContext, recv0 interface{}, param0 ResponseWriter, param1 *Request)
+--
+//go:linkname AfterServeHTTP go.opentelemetry.io/otelc/instrumentation/net/http/server.AfterServeHTTP
+func AfterServeHTTP(hookContext HookContext)

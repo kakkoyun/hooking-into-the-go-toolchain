@@ -1,0 +1,6 @@
+plain:
+compile version go1.27.1
+through toyhook (TOYHOOK_MARK=1):
+compile version go1.27.1 toyhook@v1/0e25ba9b
+link, through toyhook (TOYHOOK_MARK=1):
+link version go1.27.1 toyhook@v1/0e25ba9b

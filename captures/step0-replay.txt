@@ -1,0 +1,720 @@
+### 1. cold: go build -toolexec=/usr/bin/time ./app (fresh GOCACHE)
+# internal/runtime/pprof/label
+        0.01 real         0.00 user         0.00 sys
+# internal/msan
+        0.01 real         0.00 user         0.00 sys
+# internal/coverage/rtcov
+        0.01 real         0.00 user         0.00 sys
+# internal/godebugs
+        0.01 real         0.00 user         0.00 sys
+# internal/unsafeheader
+        0.01 real         0.00 user         0.00 sys
+# internal/byteorder
+        0.01 real         0.01 user         0.00 sys
+# internal/profilerecord
+        0.01 real         0.00 user         0.00 sys
+# internal/goarch
+        0.01 real         0.00 user         0.00 sys
+# math/bits
+        0.02 real         0.01 user         0.00 sys
+# cmp
+        0.01 real         0.00 user         0.00 sys
+# internal/goos
+        0.02 real         0.00 user         0.00 sys
+# unicode/utf8
+        0.03 real         0.02 user         0.00 sys
+# unicode
+        0.08 real         0.06 user         0.01 sys
+# internal/goexperiment
+        0.02 real         0.00 user         0.00 sys
+# internal/trace/tracev2
+        0.02 real         0.01 user         0.00 sys
+# internal/asan
+        0.01 real         0.00 user         0.00 sys
+# internal/runtime/math
+        0.01 real         0.00 user         0.00 sys
+# internal/runtime/gc
+        0.01 real         0.00 user         0.00 sys
+# internal/strconv
+        0.04 real         0.07 user         0.01 sys
+# internal/cpu
+        0.01 real         0.00 user         0.00 sys
+# internal/cpu
+        0.03 real         0.01 user         0.00 sys
+# internal/cpu
+        0.01 real         0.00 user         0.00 sys
+# internal/cpu
+        0.00 real         0.00 user         0.00 sys
+# sync/atomic
+        0.01 real         0.00 user         0.00 sys
+# sync/atomic
+        0.02 real         0.02 user         0.00 sys
+# sync/atomic
+        0.01 real         0.00 user         0.00 sys
+# internal/abi
+        0.01 real         0.00 user         0.00 sys
+# internal/abi
+        0.06 real         0.08 user         0.01 sys
+# internal/abi
+        0.00 real         0.00 user         0.00 sys
+# internal/abi
+        0.00 real         0.00 user         0.00 sys
+# internal/chacha8rand
+        0.01 real         0.00 user         0.00 sys
+# internal/chacha8rand
+        0.01 real         0.01 user         0.00 sys
+# internal/chacha8rand
+        0.00 real         0.00 user         0.00 sys
+# internal/runtime/atomic
+        0.01 real         0.00 user         0.00 sys
+# internal/runtime/atomic
+        0.02 real         0.02 user         0.00 sys
+# internal/runtime/atomic
+        0.01 real         0.00 user         0.00 sys
+# internal/synctest
+        0.02 real         0.00 user         0.00 sys
+# internal/race
+        0.02 real         0.00 user         0.00 sys
+# math
+        0.00 real         0.00 user         0.00 sys
+# math
+        0.05 real         0.07 user         0.01 sys
+# math
+        0.00 real         0.00 user         0.00 sys
+# math
+        0.01 real         0.00 user         0.00 sys
+# math
+        0.01 real         0.00 user         0.00 sys
+# internal/runtime/sys
+        0.00 real         0.00 user         0.00 sys
+# internal/runtime/sys
+        0.02 real         0.00 user         0.00 sys
+# internal/runtime/sys
+        0.01 real         0.00 user         0.00 sys
+# internal/runtime/sys
+        0.01 real         0.00 user         0.00 sys
+# internal/runtime/exithook
+        0.02 real         0.00 user         0.00 sys
+# internal/sync
+        0.02 real         0.01 user         0.00 sys
+# internal/runtime/gc/scan
+        0.02 real         0.01 user         0.00 sys
+# internal/bytealg
+        0.00 real         0.00 user         0.00 sys
+# internal/bytealg
+        0.01 real         0.00 user         0.00 sys
+# internal/bytealg
+        0.01 real         0.00 user         0.00 sys
+# internal/bytealg
+        0.01 real         0.00 user         0.00 sys
+# internal/bytealg
+        0.01 real         0.00 user         0.00 sys
+# internal/bytealg
+        0.01 real         0.00 user         0.00 sys
+# internal/bytealg
+        0.01 real         0.00 user         0.00 sys
+# internal/stringslite
+        0.02 real         0.01 user         0.00 sys
+# internal/runtime/maps
+        0.01 real         0.00 user         0.00 sys
+# internal/runtime/maps
+        0.16 real         0.12 user         0.02 sys
+# internal/runtime/maps
+        0.01 real         0.00 user         0.00 sys
+# runtime
+        0.01 real         0.00 user         0.00 sys
+# runtime
+        0.80 real         2.15 user         0.11 sys
+# runtime
+        0.00 real         0.00 user         0.00 sys
+# runtime
+        0.00 real         0.00 user         0.00 sys
+# runtime
+        0.00 real         0.00 user         0.00 sys
+# runtime
+        0.02 real         0.00 user         0.00 sys
+# runtime
+        0.00 real         0.00 user         0.00 sys
+# runtime
+        0.00 real         0.00 user         0.00 sys
+# runtime
+        0.00 real         0.00 user         0.00 sys
+# runtime
+        0.00 real         0.00 user         0.00 sys
+# runtime
+        0.00 real         0.00 user         0.00 sys
+# runtime
+        0.00 real         0.00 user         0.00 sys
+# runtime
+        0.00 real         0.00 user         0.00 sys
+# iter
+        0.02 real         0.00 user         0.00 sys
+# sync
+        0.05 real         0.07 user         0.01 sys
+# slices
+        0.01 real         0.01 user         0.00 sys
+# internal/testlog
+        0.01 real         0.01 user         0.00 sys
+# internal/reflectlite
+        0.01 real         0.00 user         0.00 sys
+# internal/reflectlite
+        0.04 real         0.06 user         0.01 sys
+# internal/reflectlite
+        0.06 real         0.00 user         0.00 sys
+# errors
+        0.01 real         0.01 user         0.00 sys
+# internal/oserror
+        0.01 real         0.00 user         0.00 sys
+# path
+        0.02 real         0.02 user         0.00 sys
+# io
+        0.02 real         0.04 user         0.00 sys
+# strconv
+        0.02 real         0.03 user         0.00 sys
+# bytes
+        0.04 real         0.07 user         0.01 sys
+# syscall
+        0.00 real         0.00 user         0.00 sys
+# syscall
+        0.10 real         0.23 user         0.02 sys
+# syscall
+        0.00 real         0.00 user         0.00 sys
+# syscall
+        0.01 real         0.00 user         0.00 sys
+# internal/syscall/execenv
+        0.02 real         0.00 user         0.00 sys
+# internal/syscall/unix
+        0.02 real         0.00 user         0.00 sys
+# internal/syscall/unix
+        0.02 real         0.02 user         0.01 sys
+# internal/syscall/unix
+        0.02 real         0.00 user         0.00 sys
+# reflect
+        0.00 real         0.00 user         0.00 sys
+# reflect
+        0.22 real         0.55 user         0.03 sys
+# reflect
+        0.01 real         0.00 user         0.00 sys
+# time
+        0.11 real         0.25 user         0.02 sys
+# internal/fmtsort
+        0.02 real         0.03 user         0.00 sys
+# io/fs
+        0.03 real         0.06 user         0.01 sys
+# internal/poll
+        0.04 real         0.08 user         0.01 sys
+# internal/filepathlite
+        0.02 real         0.02 user         0.00 sys
+# os
+        0.36 real         0.38 user         0.05 sys
+# fmt
+        0.10 real         0.20 user         0.02 sys
+# github.com/kakkoyun/hooking-into-the-go-toolchain/greet
+        0.01 real         0.01 user         0.00 sys
+# github.com/kakkoyun/hooking-into-the-go-toolchain/app
+        0.01 real         0.01 user         0.00 sys
+# github.com/kakkoyun/hooking-into-the-go-toolchain/app
+        0.05 real         0.06 user         0.01 sys
+### 2. plain: go build ./app (no -toolexec, same GOCACHE)
+# internal/godebugs
+        0.01 real         0.00 user         0.00 sys
+# internal/coverage/rtcov
+        0.01 real         0.00 user         0.00 sys
+# internal/unsafeheader
+        0.01 real         0.00 user         0.00 sys
+# internal/asan
+        0.01 real         0.00 user         0.00 sys
+# internal/runtime/pprof/label
+        0.01 real         0.00 user         0.00 sys
+# internal/msan
+        0.01 real         0.00 user         0.00 sys
+# internal/trace/tracev2
+        0.02 real         0.01 user         0.00 sys
+# internal/goarch
+        0.01 real         0.00 user         0.00 sys
+# cmp
+        0.01 real         0.00 user         0.00 sys
+# math/bits
+        0.02 real         0.01 user         0.00 sys
+# internal/profilerecord
+        0.01 real         0.00 user         0.00 sys
+# internal/runtime/math
+        0.01 real         0.00 user         0.00 sys
+# unicode/utf8
+        0.03 real         0.02 user         0.00 sys
+# internal/byteorder
+        0.01 real         0.01 user         0.00 sys
+# internal/goos
+        0.02 real         0.00 user         0.00 sys
+# internal/runtime/gc
+        0.01 real         0.00 user         0.00 sys
+# unicode
+        0.08 real         0.06 user         0.01 sys
+# internal/strconv
+        0.04 real         0.07 user         0.01 sys
+# internal/goexperiment
+        0.02 real         0.00 user         0.00 sys
+# sync/atomic
+        0.01 real         0.00 user         0.00 sys
+# sync/atomic
+        0.02 real         0.02 user         0.00 sys
+# sync/atomic
+        0.01 real         0.00 user         0.00 sys
+# internal/cpu
+        0.01 real         0.00 user         0.00 sys
+# internal/cpu
+        0.03 real         0.01 user         0.00 sys
+# internal/cpu
+        0.01 real         0.00 user         0.00 sys
+# internal/cpu
+        0.00 real         0.00 user         0.00 sys
+# internal/chacha8rand
+        0.01 real         0.00 user         0.00 sys
+# internal/chacha8rand
+        0.01 real         0.01 user         0.00 sys
+# internal/chacha8rand
+        0.00 real         0.00 user         0.00 sys
+# internal/abi
+        0.01 real         0.00 user         0.00 sys
+# internal/abi
+        0.06 real         0.08 user         0.01 sys
+# internal/abi
+        0.00 real         0.00 user         0.00 sys
+# internal/abi
+        0.00 real         0.00 user         0.00 sys
+# internal/runtime/sys
+        0.00 real         0.00 user         0.00 sys
+# internal/runtime/sys
+        0.02 real         0.00 user         0.00 sys
+# internal/runtime/sys
+        0.01 real         0.00 user         0.00 sys
+# internal/runtime/sys
+        0.01 real         0.00 user         0.00 sys
+# internal/runtime/atomic
+        0.01 real         0.00 user         0.00 sys
+# internal/runtime/atomic
+        0.02 real         0.02 user         0.00 sys
+# internal/runtime/atomic
+        0.01 real         0.00 user         0.00 sys
+# internal/synctest
+        0.02 real         0.00 user         0.00 sys
+# internal/race
+        0.02 real         0.00 user         0.00 sys
+# internal/runtime/exithook
+        0.02 real         0.00 user         0.00 sys
+# internal/bytealg
+        0.00 real         0.00 user         0.00 sys
+# internal/bytealg
+        0.01 real         0.00 user         0.00 sys
+# internal/bytealg
+        0.01 real         0.00 user         0.00 sys
+# internal/bytealg
+        0.01 real         0.00 user         0.00 sys
+# internal/bytealg
+        0.01 real         0.00 user         0.00 sys
+# internal/bytealg
+        0.01 real         0.00 user         0.00 sys
+# internal/bytealg
+        0.01 real         0.00 user         0.00 sys
+# internal/runtime/gc/scan
+        0.02 real         0.01 user         0.00 sys
+# internal/sync
+        0.02 real         0.01 user         0.00 sys
+# internal/stringslite
+        0.02 real         0.01 user         0.00 sys
+# internal/runtime/maps
+        0.01 real         0.00 user         0.00 sys
+# internal/runtime/maps
+        0.16 real         0.12 user         0.02 sys
+# internal/runtime/maps
+        0.01 real         0.00 user         0.00 sys
+# math
+        0.00 real         0.00 user         0.00 sys
+# math
+        0.05 real         0.07 user         0.01 sys
+# math
+        0.00 real         0.00 user         0.00 sys
+# math
+        0.01 real         0.00 user         0.00 sys
+# math
+        0.01 real         0.00 user         0.00 sys
+# runtime
+        0.01 real         0.00 user         0.00 sys
+# runtime
+        0.80 real         2.15 user         0.11 sys
+# runtime
+        0.00 real         0.00 user         0.00 sys
+# runtime
+        0.00 real         0.00 user         0.00 sys
+# runtime
+        0.00 real         0.00 user         0.00 sys
+# runtime
+        0.02 real         0.00 user         0.00 sys
+# runtime
+        0.00 real         0.00 user         0.00 sys
+# runtime
+        0.00 real         0.00 user         0.00 sys
+# runtime
+        0.00 real         0.00 user         0.00 sys
+# runtime
+        0.00 real         0.00 user         0.00 sys
+# runtime
+        0.00 real         0.00 user         0.00 sys
+# runtime
+        0.00 real         0.00 user         0.00 sys
+# runtime
+        0.00 real         0.00 user         0.00 sys
+# iter
+        0.02 real         0.00 user         0.00 sys
+# internal/reflectlite
+        0.01 real         0.00 user         0.00 sys
+# internal/reflectlite
+        0.04 real         0.06 user         0.01 sys
+# internal/reflectlite
+        0.06 real         0.00 user         0.00 sys
+# errors
+        0.01 real         0.01 user         0.00 sys
+# slices
+        0.01 real         0.01 user         0.00 sys
+# internal/oserror
+        0.01 real         0.00 user         0.00 sys
+# path
+        0.02 real         0.02 user         0.00 sys
+# sync
+        0.05 real         0.07 user         0.01 sys
+# strconv
+        0.02 real         0.03 user         0.00 sys
+# internal/testlog
+        0.01 real         0.01 user         0.00 sys
+# io
+        0.02 real         0.04 user         0.00 sys
+# bytes
+        0.04 real         0.07 user         0.01 sys
+# reflect
+        0.00 real         0.00 user         0.00 sys
+# reflect
+        0.22 real         0.55 user         0.03 sys
+# reflect
+        0.01 real         0.00 user         0.00 sys
+# internal/fmtsort
+        0.02 real         0.03 user         0.00 sys
+# syscall
+        0.00 real         0.00 user         0.00 sys
+# syscall
+        0.10 real         0.23 user         0.02 sys
+# syscall
+        0.00 real         0.00 user         0.00 sys
+# syscall
+        0.01 real         0.00 user         0.00 sys
+# internal/syscall/execenv
+        0.02 real         0.00 user         0.00 sys
+# time
+        0.11 real         0.25 user         0.02 sys
+# internal/syscall/unix
+        0.02 real         0.00 user         0.00 sys
+# internal/syscall/unix
+        0.02 real         0.02 user         0.01 sys
+# internal/syscall/unix
+        0.02 real         0.00 user         0.00 sys
+# io/fs
+        0.03 real         0.06 user         0.01 sys
+# internal/filepathlite
+        0.02 real         0.02 user         0.00 sys
+# internal/poll
+        0.04 real         0.08 user         0.01 sys
+# os
+        0.36 real         0.38 user         0.05 sys
+# fmt
+        0.10 real         0.20 user         0.02 sys
+# github.com/kakkoyun/hooking-into-the-go-toolchain/greet
+        0.01 real         0.01 user         0.00 sys
+# github.com/kakkoyun/hooking-into-the-go-toolchain/app
+        0.01 real         0.01 user         0.00 sys
+# github.com/kakkoyun/hooking-into-the-go-toolchain/app
+        0.05 real         0.06 user         0.01 sys
+### 3. go build -x ./app (no -toolexec, same GOCACHE)
+WORK=$REPO/.cache/step0-replay/tmp/go-build3465664335
+cd $REPO
+git status --porcelain
+cd $REPO
+git -c log.showsignature=false log -1 --format=%H:%ct
+cd $REPO; git config extensions.objectformat
+0.009s # cd $REPO; git config extensions.objectformat
+cd $REPO; git tag -l
+0.009s # cd $REPO; git tag -l
+cat $REPO/.cache/step0-replay/gocache/12/12ca198f067699906901d4c290d6a051529a6256b7b44d5169c0f122ef833284-d  # internal
+# internal/byteorder
+        0.01 real         0.01 user         0.00 sys
+cat $REPO/.cache/step0-replay/gocache/be/be54475f5c4c1409a5aa8a252ef08ad8a108ef5667ff2e02609116b9f796dce1-d  # internal
+# internal/unsafeheader
+        0.01 real         0.00 user         0.00 sys
+cat $REPO/.cache/step0-replay/gocache/7a/7a25506005be404a7443f6bdbd6a61e18b502395e281a632fa28cde26aaf0d7d-d  # internal
+# internal/godebugs
+        0.01 real         0.00 user         0.00 sys
+cat $REPO/.cache/step0-replay/gocache/d7/d7245efff2eb93cdae986c746898bc30cb9ad45f281ab1d66da1881e52d66997-d  # internal
+# internal/msan
+        0.01 real         0.00 user         0.00 sys
+cat $REPO/.cache/step0-replay/gocache/68/68ca7328f433c1f309f13579e9a8fcc12769969eccee0a6e989828da3d78c48f-d  # internal
+# internal/coverage/rtcov
+        0.01 real         0.00 user         0.00 sys
+cat $REPO/.cache/step0-replay/gocache/cf/cfd2cd353ca65d4f7f857a8db59916ecfbb17110250b8fec436c55c1d63f9224-d  # internal
+# internal/profilerecord
+        0.01 real         0.00 user         0.00 sys
+cat $REPO/.cache/step0-replay/gocache/56/563c5c0a12bd9e5a45eabd1ab1f6b153a1363c5930b68105e9fd29ff74148b4c-d  # internal
+# unicode/utf8
+        0.03 real         0.02 user         0.00 sys
+cat $REPO/.cache/step0-replay/gocache/19/19bcbdb48adb54a4c3415f96e112368b6fb994aee2e03da3f4692ab6a7acca9f-d  # internal
+# internal/goos
+        0.02 real         0.00 user         0.00 sys
+cat $REPO/.cache/step0-replay/gocache/cb/cbb6ad270042c13e4fa29781fa629683a62d47f65c07b8390804f6f058b4e92f-d  # internal
+# cmp
+        0.01 real         0.00 user         0.00 sys
+cat $REPO/.cache/step0-replay/gocache/f5/f57d1473fd4ed226821314a851db6521167e618c7399ebfcd20d348c064e04b5-d  # internal
+# internal/runtime/pprof/label
+        0.01 real         0.00 user         0.00 sys
+cat $REPO/.cache/step0-replay/gocache/d9/d9deacc1e0a6941980288b2e153107ad64f225d8387e33a27996780e6e9b7e14-d  # internal
+# internal/goarch
+        0.01 real         0.00 user         0.00 sys
+cat $REPO/.cache/step0-replay/gocache/05/05a09dd3655c2fcda0d3a927151b9c4cac9f4ddbf95a346a350e6b4742787705-d  # internal
+# internal/asan
+        0.01 real         0.00 user         0.00 sys
+cat $REPO/.cache/step0-replay/gocache/6e/6e0c9595338fc139e14bee0586ad202c4be522827284413eb5ab237e38883f9c-d  # internal
+# internal/trace/tracev2
+        0.02 real         0.01 user         0.00 sys
+cat $REPO/.cache/step0-replay/gocache/bf/bf84375e012312e3db781d78521973a31e25b6e22c0bc29387f9e1a628b5ea43-d  # internal
+# math/bits
+        0.02 real         0.01 user         0.00 sys
+cat $REPO/.cache/step0-replay/gocache/8a/8a00c20832a9b9a8b350f067fff82ad4dee39358d747a6dbd3edf83297810ba0-d  # internal
+# unicode
+        0.08 real         0.06 user         0.01 sys
+cat $REPO/.cache/step0-replay/gocache/68/68e0a86dfaa9616a6106dc08f55d796b78b4824571096832a7ad66f8fb73ece9-d  # internal
+# internal/runtime/math
+        0.01 real         0.00 user         0.00 sys
+cat $REPO/.cache/step0-replay/gocache/dc/dc3661c330f2423104727313de93614dd2766a092459bddd90990b34c9c038e8-d  # internal
+# internal/runtime/gc
+        0.01 real         0.00 user         0.00 sys
+cat $REPO/.cache/step0-replay/gocache/71/712b552d6055d8efdb1e23c69a6368ff7718c55fe81ca559b30cd3153c4b4ab8-d  # internal
+# internal/strconv
+        0.04 real         0.07 user         0.01 sys
+cat $REPO/.cache/step0-replay/gocache/b7/b7775fe189c93dfa34cfe67b17491caab3b4aad1daf18a50bc4daf71bd88af52-d  # internal
+# internal/goexperiment
+        0.02 real         0.00 user         0.00 sys
+cat $REPO/.cache/step0-replay/gocache/1f/1f7ddbd13ad87ce9facf9d01df90e04e0cce64176ae31019ad5d403778be9d06-d  # internal
+# sync/atomic
+        0.01 real         0.00 user         0.00 sys
+# sync/atomic
+        0.02 real         0.02 user         0.00 sys
+# sync/atomic
+        0.01 real         0.00 user         0.00 sys
+cat $REPO/.cache/step0-replay/gocache/8a/8aada216eadc926567958f40266584e7660259222e19370a123bed2d95a846bb-d  # internal
+# internal/cpu
+        0.01 real         0.00 user         0.00 sys
+# internal/cpu
+        0.03 real         0.01 user         0.00 sys
+# internal/cpu
+        0.01 real         0.00 user         0.00 sys
+# internal/cpu
+        0.00 real         0.00 user         0.00 sys
+cat $REPO/.cache/step0-replay/gocache/14/146d011cb991a258264d4f6d64b5da5b33bff402763bb5580cb8d5a69b9dce36-d  # internal
+# internal/chacha8rand
+        0.01 real         0.00 user         0.00 sys
+# internal/chacha8rand
+        0.01 real         0.01 user         0.00 sys
+# internal/chacha8rand
+        0.00 real         0.00 user         0.00 sys
+cat $REPO/.cache/step0-replay/gocache/dd/dd0a8b756cae9f23c206c7b98c8126074c32a15ffe0925e2a672228c5902debe-d  # internal
+# internal/abi
+        0.01 real         0.00 user         0.00 sys
+# internal/abi
+        0.06 real         0.08 user         0.01 sys
+# internal/abi
+        0.00 real         0.00 user         0.00 sys
+# internal/abi
+        0.00 real         0.00 user         0.00 sys
+cat $REPO/.cache/step0-replay/gocache/6a/6acdcd91d4a33788bbb964abd9fa4d33f4f63cf06e7d549e10842b273b3b5ae1-d  # internal
+# internal/runtime/sys
+        0.00 real         0.00 user         0.00 sys
+# internal/runtime/sys
+        0.02 real         0.00 user         0.00 sys
+# internal/runtime/sys
+        0.01 real         0.00 user         0.00 sys
+# internal/runtime/sys
+        0.01 real         0.00 user         0.00 sys
+cat $REPO/.cache/step0-replay/gocache/62/6291234feb4a4639a2f3c8a9497a3dbe5b8d995975c59432893e40552b91383f-d  # internal
+# internal/runtime/atomic
+        0.01 real         0.00 user         0.00 sys
+# internal/runtime/atomic
+        0.02 real         0.02 user         0.00 sys
+# internal/runtime/atomic
+        0.01 real         0.00 user         0.00 sys
+cat $REPO/.cache/step0-replay/gocache/cf/cfc35ca65aad38a52de9eeb10dc7179e925565362231a36195db8be8f32664cb-d  # internal
+# internal/synctest
+        0.02 real         0.00 user         0.00 sys
+cat $REPO/.cache/step0-replay/gocache/ef/ef91024eef4f216a21d843ae1aa894d2ca7fe18837fe38b81e545807c61d4708-d  # internal
+# internal/runtime/exithook
+        0.02 real         0.00 user         0.00 sys
+cat $REPO/.cache/step0-replay/gocache/fa/fa45966934424e666c8246544eb36497b4ca6dd4fca52949738733afc9cf07f6-d  # internal
+# internal/race
+        0.02 real         0.00 user         0.00 sys
+cat $REPO/.cache/step0-replay/gocache/a0/a0fd65cbff4482ab92b210c1b6fb3237c53191395d471b5cffe1810c8b68abcc-d  # internal
+# internal/bytealg
+        0.00 real         0.00 user         0.00 sys
+# internal/bytealg
+        0.01 real         0.00 user         0.00 sys
+# internal/bytealg
+        0.01 real         0.00 user         0.00 sys
+# internal/bytealg
+        0.01 real         0.00 user         0.00 sys
+# internal/bytealg
+        0.01 real         0.00 user         0.00 sys
+# internal/bytealg
+        0.01 real         0.00 user         0.00 sys
+# internal/bytealg
+        0.01 real         0.00 user         0.00 sys
+cat $REPO/.cache/step0-replay/gocache/8c/8c1e83b2092235fc6dcd114826bf771b442b2ad78d1fa5a022c40e455a264a29-d  # internal
+# internal/runtime/gc/scan
+        0.02 real         0.01 user         0.00 sys
+cat $REPO/.cache/step0-replay/gocache/45/456b6993e6af59bf1d3ccb3d1d5a51b7ec5ce2a682331cafa62a92a9a844046a-d  # internal
+# internal/sync
+        0.02 real         0.01 user         0.00 sys
+cat $REPO/.cache/step0-replay/gocache/0e/0ec2a27871389d84f88aa5eb77546b3f4312c1846d099789aab98bdebdcf1748-d  # internal
+# internal/stringslite
+        0.02 real         0.01 user         0.00 sys
+cat $REPO/.cache/step0-replay/gocache/6c/6ceb92383608cff41c8cadc584f9994561fb6a250cd5556c8aea9e16b1d1a15f-d  # internal
+# internal/runtime/maps
+        0.01 real         0.00 user         0.00 sys
+# internal/runtime/maps
+        0.16 real         0.12 user         0.02 sys
+# internal/runtime/maps
+        0.01 real         0.00 user         0.00 sys
+cat $REPO/.cache/step0-replay/gocache/40/40df00b985966526a0fd4e9176f12086030a8ca8b327f207c1df3c738e2e6f95-d  # internal
+# math
+        0.00 real         0.00 user         0.00 sys
+# math
+        0.05 real         0.07 user         0.01 sys
+# math
+        0.00 real         0.00 user         0.00 sys
+# math
+        0.01 real         0.00 user         0.00 sys
+# math
+        0.01 real         0.00 user         0.00 sys
+cat $REPO/.cache/step0-replay/gocache/45/45720a794e83b6e9cd4d553aa1c0611874c1e5221ba39848886835c81666c713-d  # internal
+# runtime
+        0.01 real         0.00 user         0.00 sys
+# runtime
+        0.80 real         2.15 user         0.11 sys
+# runtime
+        0.00 real         0.00 user         0.00 sys
+# runtime
+        0.00 real         0.00 user         0.00 sys
+# runtime
+        0.00 real         0.00 user         0.00 sys
+# runtime
+        0.02 real         0.00 user         0.00 sys
+# runtime
+        0.00 real         0.00 user         0.00 sys
+# runtime
+        0.00 real         0.00 user         0.00 sys
+# runtime
+        0.00 real         0.00 user         0.00 sys
+# runtime
+        0.00 real         0.00 user         0.00 sys
+# runtime
+        0.00 real         0.00 user         0.00 sys
+# runtime
+        0.00 real         0.00 user         0.00 sys
+# runtime
+        0.00 real         0.00 user         0.00 sys
+cat $REPO/.cache/step0-replay/gocache/ad/ada98563278a3755ef698fba930d28480d4e6906bece79acd76cdbdbfe39377d-d  # internal
+# iter
+        0.02 real         0.00 user         0.00 sys
+cat $REPO/.cache/step0-replay/gocache/7e/7e217461c4e57ac858348137d06564249aff71cd8759bddb5292fc27b2db63df-d  # internal
+# internal/reflectlite
+        0.01 real         0.00 user         0.00 sys
+# internal/reflectlite
+        0.04 real         0.06 user         0.01 sys
+# internal/reflectlite
+        0.06 real         0.00 user         0.00 sys
+cat $REPO/.cache/step0-replay/gocache/8b/8b340ba1b60c73d8d427f6b49cd9ed460e98d107d468429c12fc668c1350aa76-d  # internal
+# slices
+        0.01 real         0.01 user         0.00 sys
+cat $REPO/.cache/step0-replay/gocache/03/03e5a3eb26469680ea16799af577b6f521ecd7cb93fba4c717280a4377560bdb-d  # internal
+# errors
+        0.01 real         0.01 user         0.00 sys
+cat $REPO/.cache/step0-replay/gocache/c0/c0f99648b62e61a719b70330e73793e13db671ab024d03c0bffa78ef86b20c38-d  # internal
+# sync
+        0.05 real         0.07 user         0.01 sys
+cat $REPO/.cache/step0-replay/gocache/cf/cf5697d213b49f2a758bbc5f2872c965b82581969008982b487cc9b965b28e23-d  # internal
+# internal/oserror
+        0.01 real         0.00 user         0.00 sys
+cat $REPO/.cache/step0-replay/gocache/37/3747464ec163c18e7a9b3702f21127486b15ff1862933335955a9e6153dd38b8-d  # internal
+# path
+        0.02 real         0.02 user         0.00 sys
+cat $REPO/.cache/step0-replay/gocache/72/7224533c33bd4651141380474d38cd1e83c01f3b1f6a0a69f9a4cdda6cf71e05-d  # internal
+# io
+        0.02 real         0.04 user         0.00 sys
+cat $REPO/.cache/step0-replay/gocache/2e/2ea6aaed3f208077ba58c3c00187733033db491a83ded5e16144a903674de33a-d  # internal
+# strconv
+        0.02 real         0.03 user         0.00 sys
+cat $REPO/.cache/step0-replay/gocache/8a/8a72bce271659582c80e2848e83962691ed719a6dbb49a5731c5114b0aaad615-d  # internal
+# internal/testlog
+        0.01 real         0.01 user         0.00 sys
+cat $REPO/.cache/step0-replay/gocache/5b/5b160ded6f9140dbb0d775dc818e1f685f0a803c6e6dee1586002559b047baff-d  # internal
+# bytes
+        0.04 real         0.07 user         0.01 sys
+cat $REPO/.cache/step0-replay/gocache/87/878c04d1093a52ddd78e58f7b550718e7d50880ada6d6dfaf06d7013aaddad04-d  # internal
+# reflect
+        0.00 real         0.00 user         0.00 sys
+# reflect
+        0.22 real         0.55 user         0.03 sys
+# reflect
+        0.01 real         0.00 user         0.00 sys
+cat $REPO/.cache/step0-replay/gocache/10/105efe809bc5d31bb91ac4b57f706185ccb2f5024f0066a2b17bb1c010303d01-d  # internal
+# internal/fmtsort
+        0.02 real         0.03 user         0.00 sys
+cat $REPO/.cache/step0-replay/gocache/9b/9b70522adcd4b428134a3db6aee8d9cc4cc4ad7da778a69abb5945a8c42e021b-d  # internal
+# syscall
+        0.00 real         0.00 user         0.00 sys
+# syscall
+        0.10 real         0.23 user         0.02 sys
+# syscall
+        0.00 real         0.00 user         0.00 sys
+# syscall
+        0.01 real         0.00 user         0.00 sys
+cat $REPO/.cache/step0-replay/gocache/c0/c072b1f791e395e2b5ed526949500b364a739fd85341ae2e9f129ddc0330828e-d  # internal
+# internal/syscall/execenv
+        0.02 real         0.00 user         0.00 sys
+cat $REPO/.cache/step0-replay/gocache/ac/ac36b04adadf597dec6101811768f50d5333a7470ba66604cb4a9e73a7c7e3d1-d  # internal
+# time
+        0.11 real         0.25 user         0.02 sys
+cat $REPO/.cache/step0-replay/gocache/ec/ec337cbaa2f5b4282de39d4efcbec8da811013904a05f8d146c3e0dd1fa8310c-d  # internal
+# internal/syscall/unix
+        0.02 real         0.00 user         0.00 sys
+# internal/syscall/unix
+        0.02 real         0.02 user         0.01 sys
+# internal/syscall/unix
+        0.02 real         0.00 user         0.00 sys
+cat $REPO/.cache/step0-replay/gocache/6a/6a06afc5ca5e98d940ea67119489f6d17126bde675339766ccdb5fb9eebab19c-d  # internal
+# io/fs
+        0.03 real         0.06 user         0.01 sys
+cat $REPO/.cache/step0-replay/gocache/90/907916c20e2965655816fb8996c9d7a76d19c6f08009c9eb9106346bcb96cd76-d  # internal
+# internal/filepathlite
+        0.02 real         0.02 user         0.00 sys
+cat $REPO/.cache/step0-replay/gocache/64/64d2e9e595e13b6a1d7625abf241ed62477017c40029bc2268fc042a4db225fe-d  # internal
+# internal/poll
+        0.04 real         0.08 user         0.01 sys
+cat $REPO/.cache/step0-replay/gocache/98/9823c04006685f1751eed8e4d074e3f415aa07f471f9fd442b0b94d5a7078097-d  # internal
+# os
+        0.36 real         0.38 user         0.05 sys
+cat $REPO/.cache/step0-replay/gocache/86/868f2b1b72751e788549f53e360b9ca41f21c64ecd79e0920858358e43c4e294-d  # internal
+# fmt
+        0.10 real         0.20 user         0.02 sys
+cat $REPO/.cache/step0-replay/gocache/77/77f3639d0b55adef6759069738fc8b6c0ee5f12ddb7ec35312c9c7963cd3f964-d  # internal
+# github.com/kakkoyun/hooking-into-the-go-toolchain/greet
+        0.01 real         0.01 user         0.00 sys
+cat $REPO/.cache/step0-replay/gocache/9e/9e3c80c1f15893a0957eb0b6c08b9d997482d3368054f829a044ea19097e61b2-d  # internal
+# github.com/kakkoyun/hooking-into-the-go-toolchain/app
+        0.01 real         0.01 user         0.00 sys
+cat $REPO/.cache/step0-replay/gocache/77/7741b639a9ae930d4d59fc1d1cbf46ebbadecbe8e3873f9ef5209280c16be152-d  # internal
+# github.com/kakkoyun/hooking-into-the-go-toolchain/app
+        0.05 real         0.06 user         0.01 sys

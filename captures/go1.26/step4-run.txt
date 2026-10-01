@@ -1,0 +1,4 @@
+hello, toolchain
+2026/10/01 14:29:11 INFO enter func=countLines
+go.mod has 3 lines
+done in 1ms

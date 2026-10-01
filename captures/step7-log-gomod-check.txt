@@ -1,0 +1,1 @@
+result: go.mod and go.sum are byte-identical after the directive build too

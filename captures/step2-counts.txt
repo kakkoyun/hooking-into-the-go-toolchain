@@ -1,0 +1,4 @@
+tool           runs    -V=full
+asm              48          1
+compile          59          1
+link              1          1

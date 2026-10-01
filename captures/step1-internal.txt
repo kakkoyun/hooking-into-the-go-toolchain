@@ -1,0 +1,207 @@
+16:echo '# import config' > $WORK/b018/importcfg # internal
+23:echo '# import config' > $WORK/b008/importcfg # internal
+26:echo '# import config' > $WORK/b014/importcfg # internal
+29:echo '# import config' > $WORK/b017/importcfg # internal
+30:echo '# import config' > $WORK/b015/importcfg # internal
+33:echo '# import config' > $WORK/b006/importcfg # internal
+35:echo '# import config' > $WORK/b026/importcfg # internal
+36:echo '# import config' > $WORK/b025/importcfg # internal
+38:echo '# import config' > $WORK/b012/importcfg # internal
+39:echo '# import config' > $WORK/b029/importcfg # internal
+40:echo '# import config' > $WORK/b040/importcfg # internal
+42:echo '# import config' > $WORK/b033/importcfg # internal
+43:echo '# import config' > $WORK/b030/importcfg # internal
+53:echo -n > $WORK/b011/go_asm.h # internal
+54:echo '# import config' > $WORK/b016/importcfg # internal
+57:echo -n > $WORK/b037/go_asm.h # internal
+58:go tool buildid -w $WORK/b018/_pkg_.a # internal
+61:cp $WORK/b018/_pkg_.a $REPO/.cache/step1/gocache/f6/f6f4a5d241d81e8e98f65fc08602c653a4877fd0ec0328abaa0df4a77f66ad23-d # internal
+63:echo '# import config' > $WORK/b041/importcfg # internal
+67:go tool buildid -w $WORK/b025/_pkg_.a # internal
+68:go tool buildid -w $WORK/b017/_pkg_.a # internal
+69:go tool buildid -w $WORK/b015/_pkg_.a # internal
+70:cp $WORK/b017/_pkg_.a $REPO/.cache/step1/gocache/a8/a8ced9d4dbf1f5148be7c3807814a643148eedc88aa047cef6299449a3f5f51d-d # internal
+72:go tool buildid -w $WORK/b026/_pkg_.a # internal
+73:echo '# import config' > $WORK/b044/importcfg # internal
+74:go tool buildid -w $WORK/b030/_pkg_.a # internal
+75:cp $WORK/b015/_pkg_.a $REPO/.cache/step1/gocache/0a/0a674027539e3c41e04c5f3ec2e58f65e26ce94ef6fdadf41a5ff5ab6e3d29be-d # internal
+78:go tool buildid -w $WORK/b012/_pkg_.a # internal
+79:cp $WORK/b030/_pkg_.a $REPO/.cache/step1/gocache/f3/f38268685716a9fc99f75f54eb9b8e6695e5439bd2acac280fa58fed9869a89b-d # internal
+80:cp $WORK/b025/_pkg_.a $REPO/.cache/step1/gocache/05/059b197be07779ec16047827a0c6368bdfce1dc63f38ca86af3dcd28a395423a-d # internal
+81:cp $WORK/b026/_pkg_.a $REPO/.cache/step1/gocache/5f/5fdd0a9b2f09a57a8e2a8cd361b9f0d3470db4b7ddb9637acfe92496cad85bb7-d # internal
+82:go tool buildid -w $WORK/b014/_pkg_.a # internal
+83:cp $WORK/b014/_pkg_.a $REPO/.cache/step1/gocache/b3/b3a8775c5f4cfa031f3e6c09155d35657b8dc2730f95cf52cc7b43628c2615d9-d # internal
+84:go tool buildid -w $WORK/b033/_pkg_.a # internal
+85:cp $WORK/b033/_pkg_.a $REPO/.cache/step1/gocache/70/703b9b5e38aefc930330f8b1e483b7605c5777d6c53b84c16de5e557681f0fd8-d # internal
+86:cp $WORK/b012/_pkg_.a $REPO/.cache/step1/gocache/b6/b68e84185f6638b5f93a48337c7fe5bbc2558acb690a22724cf9c10fc499bd78-d # internal
+87:go tool buildid -w $WORK/b008/_pkg_.a # internal
+88:echo '# import config' > $WORK/b011/importcfg # internal
+90:cp $WORK/b008/_pkg_.a $REPO/.cache/step1/gocache/a9/a9d10302997ca9ae5d449ddc759b7a7909d23e843fd485966d3e446ca344cc8a-d # internal
+91:go tool buildid -w $WORK/b029/_pkg_.a # internal
+92:cp $WORK/b029/_pkg_.a $REPO/.cache/step1/gocache/36/36a857d0d0a7ecf95cb358c629b81d8b6147286fd2a2b75c0890d12c1a300f34-d # internal
+93:go tool buildid -w $WORK/b006/_pkg_.a # internal
+95:echo '# import config' > $WORK/b037/importcfg # internal
+97:cat >$REPO/.cache/step1/tmp/go-build3768285036/b031/importcfg << 'EOF' # internal
+101:cp $WORK/b006/_pkg_.a $REPO/.cache/step1/gocache/f4/f4f408ae75531dbfef0f14a48b7e5f48aa434a7c54bd0a327f4b68c7caf852bd-d # internal
+104:go tool buildid -w $WORK/b016/_pkg_.a # internal
+105:go tool buildid -w $WORK/b044/_pkg_.a # internal
+106:cp $WORK/b016/_pkg_.a $REPO/.cache/step1/gocache/1f/1f406f998921f77762702a28cf570091646f63d9b6e97f6947434257eb5b2a34-d # internal
+109:echo -n > $WORK/b005/go_asm.h # internal
+112:cat >$REPO/.cache/step1/tmp/go-build3768285036/b028/importcfg << 'EOF' # internal
+118:cp $WORK/b044/_pkg_.a $REPO/.cache/step1/gocache/a5/a57819ca5627dcaa7232d32aaaf81e5bac25bceb3ec2805e0f48a7296e0cdb69-d # internal
+119:go tool buildid -w $WORK/b041/_pkg_.a # internal
+120:cat >$REPO/.cache/step1/tmp/go-build3768285036/b021/importcfg << 'EOF' # internal
+125:cp $WORK/b041/_pkg_.a $REPO/.cache/step1/gocache/76/7619d57613f7574758287d30b3480c33fc2c9b6335309929f08f0bdcba7743dd-d # internal
+129:echo -n > $WORK/b046/go_asm.h # internal
+132:cat >$REPO/.cache/step1/tmp/go-build3768285036/b005/importcfg << 'EOF' # internal
+140:go tool buildid -w $WORK/b021/_pkg_.a # internal
+141:go tool buildid -w $WORK/b028/_pkg_.a # internal
+142:cp $WORK/b021/_pkg_.a $REPO/.cache/step1/gocache/e1/e1eadedcfc1580fbd6be3f12834ae47e096eb2bd2bc49a59b08168c95293a4d5-d # internal
+143:cp $WORK/b028/_pkg_.a $REPO/.cache/step1/gocache/b3/b31f87d1336c1d047cd767bf8c0b62d34f50d11f8437573132c1fbaf0426bd03-d # internal
+144:cat >$REPO/.cache/step1/tmp/go-build3768285036/b046/importcfg << 'EOF' # internal
+151:go tool pack r $WORK/b037/_pkg_.a $WORK/b037/asm.o # internal
+152:go tool buildid -w $WORK/b037/_pkg_.a # internal
+153:cp $WORK/b037/_pkg_.a $REPO/.cache/step1/gocache/a1/a1faea9e5c8d1255a6dbc51d6a818e27619c34553fb29926af4996dec91a381e-d # internal
+154:go tool buildid -w $WORK/b040/_pkg_.a # internal
+157:cp $WORK/b040/_pkg_.a $REPO/.cache/step1/gocache/04/04f585aeb2bda10afeedb637ca45acbb62739ccbef55ce39daec4f8656f2a534-d # internal
+158:go tool pack r $WORK/b011/_pkg_.a $WORK/b011/cpu.o $WORK/b011/cpu_arm64.o # internal
+159:go tool buildid -w $WORK/b011/_pkg_.a # internal
+160:cp $WORK/b011/_pkg_.a $REPO/.cache/step1/gocache/15/151f103690dcb811e904caa6780438026b66ce622804c9d146b66c7bc4db0767-d # internal
+163:echo -n > $WORK/b010/go_asm.h # internal
+167:echo -n > $WORK/b013/go_asm.h # internal
+171:echo -n > $WORK/b019/go_asm.h # internal
+174:echo -n > $WORK/b023/go_asm.h # internal
+175:go tool buildid -w $WORK/b031/_pkg_.a # internal
+178:cp $WORK/b031/_pkg_.a $REPO/.cache/step1/gocache/73/73ec912f7a6c3775afb4ac80412ead20b6c3c9ce54cdf63bf66a3b69e6cf6a0c-d # internal
+179:cat >$REPO/.cache/step1/tmp/go-build3768285036/b010/importcfg << 'EOF' # internal
+185:cat >$REPO/.cache/step1/tmp/go-build3768285036/b019/importcfg << 'EOF' # internal
+190:cat >$REPO/.cache/step1/tmp/go-build3768285036/b013/importcfg << 'EOF' # internal
+196:cat >$REPO/.cache/step1/tmp/go-build3768285036/b023/importcfg << 'EOF' # internal
+220:go tool pack r $WORK/b013/_pkg_.a $WORK/b013/chacha8_arm64.o # internal
+221:go tool buildid -w $WORK/b013/_pkg_.a # internal
+222:cp $WORK/b013/_pkg_.a $REPO/.cache/step1/gocache/f8/f8f678d7d133f530aab314634ccc61d99602fbb2578c3c5533ef485bcd7f663f-d # internal
+228:go tool pack r $WORK/b023/_pkg_.a $WORK/b023/dit_arm64.o $WORK/b023/empty.o # internal
+229:go tool buildid -w $WORK/b023/_pkg_.a # internal
+230:cp $WORK/b023/_pkg_.a $REPO/.cache/step1/gocache/41/41fefc8f0b4c07e5e39209bf6acc3843244c579592b78fb648198d7ecf899048-d # internal
+232:cat >$REPO/.cache/step1/tmp/go-build3768285036/b022/importcfg << 'EOF' # internal
+243:go tool pack r $WORK/b046/_pkg_.a $WORK/b046/dim_arm64.o $WORK/b046/exp_arm64.o $WORK/b046/floor_arm64.o # internal
+244:go tool buildid -w $WORK/b046/_pkg_.a # internal
+245:cp $WORK/b046/_pkg_.a $REPO/.cache/step1/gocache/7a/7a05a619437ed8a6b19c034ae1974a2374e05f7333130e818df4fc1998c87013-d # internal
+252:go tool buildid -w $WORK/b022/_pkg_.a # internal
+254:go tool pack r $WORK/b019/_pkg_.a $WORK/b019/atomic_arm64.o # internal
+255:go tool buildid -w $WORK/b019/_pkg_.a # internal
+256:cp $WORK/b022/_pkg_.a $REPO/.cache/step1/gocache/cf/cf8708e8f846c7e04842a764a7ae5851b99587d490762ec5fbb7777ffb33270c-d # internal
+258:go tool pack r $WORK/b010/_pkg_.a $WORK/b010/compare_arm64.o $WORK/b010/count_arm64.o $WORK/b010/equal_arm64.o $WORK/b010/index_arm64.o $WORK/b010/indexbyte_arm64.o # internal
+259:go tool buildid -w $WORK/b010/_pkg_.a # internal
+260:cp $WORK/b019/_pkg_.a $REPO/.cache/step1/gocache/92/924c5c58ce6f619ccbd375be85bdcdcc2a3aeab094369dfe771890da486d159f-d # internal
+261:cp $WORK/b010/_pkg_.a $REPO/.cache/step1/gocache/1f/1faa234928684e249a06609bdfcda5e7882787029d4871d60fc261a52a305dbd-d # internal
+266:cat >$REPO/.cache/step1/tmp/go-build3768285036/b020/importcfg << 'EOF' # internal
+270:cat >$REPO/.cache/step1/tmp/go-build3768285036/b032/importcfg << 'EOF' # internal
+278:go tool pack r $WORK/b005/_pkg_.a $WORK/b005/abi_test.o $WORK/b005/stub.o # internal
+279:go tool buildid -w $WORK/b005/_pkg_.a # internal
+280:cp $WORK/b005/_pkg_.a $REPO/.cache/step1/gocache/22/22b29fbdbc80ede3b38964a20f3114c4147a1c49a4266871b2402e82b954f41b-d # internal
+283:cat >$REPO/.cache/step1/tmp/go-build3768285036/b027/importcfg << 'EOF' # internal
+289:cat >$REPO/.cache/step1/tmp/go-build3768285036/b038/importcfg << 'EOF' # internal
+294:go tool buildid -w $WORK/b020/_pkg_.a # internal
+295:cp $WORK/b020/_pkg_.a $REPO/.cache/step1/gocache/e4/e4b9180dbec76e7b628551941bdd563f42ed18fb5d8fce29185904938f900e4b-d # internal
+296:go tool buildid -w $WORK/b032/_pkg_.a # internal
+297:cp $WORK/b032/_pkg_.a $REPO/.cache/step1/gocache/c2/c2a67f7d9893e7dc8c8d711fea64590cf1a27beef635dfa9498fc24e50592d22-d # internal
+298:go tool buildid -w $WORK/b027/_pkg_.a # internal
+299:go tool buildid -w $WORK/b038/_pkg_.a # internal
+300:cp $WORK/b038/_pkg_.a $REPO/.cache/step1/gocache/3c/3cdc220d86128a267fda1c44b084b5a0af22aee77a79bfb1d0d60bdac6852e4d-d # internal
+301:cp $WORK/b027/_pkg_.a $REPO/.cache/step1/gocache/36/36ecbeed0ebbd7bc9494ccea0908038dfdf0f9362e351eecf1a368bb9dd3fe5c-d # internal
+303:cat >$REPO/.cache/step1/tmp/go-build3768285036/b036/importcfg << 'EOF' # internal
+312:echo -n > $WORK/b024/go_asm.h # internal
+315:cat >$REPO/.cache/step1/tmp/go-build3768285036/b024/importcfg << 'EOF' # internal
+331:go tool buildid -w $WORK/b036/_pkg_.a # internal
+332:cp $WORK/b036/_pkg_.a $REPO/.cache/step1/gocache/6b/6b3a6c369baba4898086d0b79fb00dce4ca9c0f15e669816704decd1b8b117ea-d # internal
+335:go tool pack r $WORK/b024/_pkg_.a $WORK/b024/memhash_arm64.o # internal
+336:go tool buildid -w $WORK/b024/_pkg_.a # internal
+337:cp $WORK/b024/_pkg_.a $REPO/.cache/step1/gocache/39/396b1535a3bae68ece31f1b7e704ba2007b3f1481fedd06d369642702cb63ba1-d # internal
+339:echo -n > $WORK/b009/go_asm.h # internal
+342:cat >$REPO/.cache/step1/tmp/go-build3768285036/b009/importcfg << 'EOF' # internal
+383:go tool pack r $WORK/b009/_pkg_.a $WORK/b009/asm.o $WORK/b009/asm_arm64.o $WORK/b009/atomic_arm64.o $WORK/b009/ints.o $WORK/b009/memclr_arm64.o $WORK/b009/memmove_arm64.o $WORK/b009/preempt_arm64.o $WORK/b009/rt0_darwin_arm64.o $WORK/b009/secret_arm64.o $WORK/b009/sys_darwin_arm64.o $WORK/b009/tls_arm64.o # internal
+384:go tool buildid -w $WORK/b009/_pkg_.a # internal
+385:cp $WORK/b009/_pkg_.a $REPO/.cache/step1/gocache/dc/dcf88eca5d12d1312b09fd2a87799f8d43b17c6b7f8e94bc355e2e648474abb8-d # internal
+388:cat >$REPO/.cache/step1/tmp/go-build3768285036/b039/importcfg << 'EOF' # internal
+396:echo -n > $WORK/b004/go_asm.h # internal
+399:cat >$REPO/.cache/step1/tmp/go-build3768285036/b035/importcfg << 'EOF' # internal
+410:cat >$REPO/.cache/step1/tmp/go-build3768285036/b004/importcfg << 'EOF' # internal
+418:go tool buildid -w $WORK/b039/_pkg_.a # internal
+419:cp $WORK/b039/_pkg_.a $REPO/.cache/step1/gocache/d8/d854a9e4d99beb0797afea1d091a91793f8a4bc94732aff08d2dc91bd5afeaf9-d # internal
+421:cat >$REPO/.cache/step1/tmp/go-build3768285036/b048/importcfg << 'EOF' # internal
+428:go tool buildid -w $WORK/b048/_pkg_.a # internal
+429:cp $WORK/b048/_pkg_.a $REPO/.cache/step1/gocache/2f/2fbde08b00dfd76981339141f77c01e03154e1e23a1846cd09cdf9ea9baeb397-d # internal
+430:go tool buildid -w $WORK/b035/_pkg_.a # internal
+431:cp $WORK/b035/_pkg_.a $REPO/.cache/step1/gocache/da/daf2aff715ea01b3731846c8cea66daf20ece04327676517bac82fde6ff03a19-d # internal
+433:cat >$REPO/.cache/step1/tmp/go-build3768285036/b059/importcfg << 'EOF' # internal
+441:go tool pack r $WORK/b004/_pkg_.a $WORK/b004/asm.o # internal
+442:go tool buildid -w $WORK/b004/_pkg_.a # internal
+443:cp $WORK/b004/_pkg_.a $REPO/.cache/step1/gocache/37/37824c91db1b761e307e57b814a503c34081cc4dba80149f8700896bd72f2354-d # internal
+445:cat >$REPO/.cache/step1/tmp/go-build3768285036/b003/importcfg << 'EOF' # internal
+451:go tool buildid -w $WORK/b059/_pkg_.a # internal
+452:cp $WORK/b059/_pkg_.a $REPO/.cache/step1/gocache/f9/f9450eb9b895f8bee08aa10345e08a505f1e98c2f55d741e351dc3c98c84d46b-d # internal
+453:go tool buildid -w $WORK/b003/_pkg_.a # internal
+454:cp $WORK/b003/_pkg_.a $REPO/.cache/step1/gocache/f4/f4b406ade4ddda46896d45b79b778d1ba36a49f6f246fb4537212662104256fe-d # internal
+459:cat >$REPO/.cache/step1/tmp/go-build3768285036/b052/importcfg << 'EOF' # internal
+463:cat >$REPO/.cache/step1/tmp/go-build3768285036/b053/importcfg << 'EOF' # internal
+470:cat >$REPO/.cache/step1/tmp/go-build3768285036/b034/importcfg << 'EOF' # internal
+476:cat >$REPO/.cache/step1/tmp/go-build3768285036/b047/importcfg << 'EOF' # internal
+486:go tool buildid -w $WORK/b052/_pkg_.a # internal
+487:cp $WORK/b052/_pkg_.a $REPO/.cache/step1/gocache/37/37c13fd4353f3e4e296cc3114127b6a16899ab371c004f4db752aadbfa4788bb-d # internal
+489:echo -n > $WORK/b055/go_asm.h # internal
+492:go tool buildid -w $WORK/b053/_pkg_.a # internal
+493:cp $WORK/b053/_pkg_.a $REPO/.cache/step1/gocache/99/9914cc073d807c1595a1a62955ed329652945b546f416cd6d782742290734234-d # internal
+494:cat >$REPO/.cache/step1/tmp/go-build3768285036/b055/importcfg << 'EOF' # internal
+512:go tool buildid -w $WORK/b047/_pkg_.a # internal
+513:go tool buildid -w $WORK/b034/_pkg_.a # internal
+514:cp $WORK/b047/_pkg_.a $REPO/.cache/step1/gocache/4c/4c3092b06b9f690c7f63fa18a5edebad6eddd5a5207b83734bd214fe9912fb87-d # internal
+515:cp $WORK/b034/_pkg_.a $REPO/.cache/step1/gocache/38/38f326849b66f3d7f6914e1d051f6b69768a526fcae33acc84f675de229ad210-d # internal
+518:echo -n > $WORK/b045/go_asm.h # internal
+521:cat >$REPO/.cache/step1/tmp/go-build3768285036/b002/importcfg << 'EOF' # internal
+533:cat >$REPO/.cache/step1/tmp/go-build3768285036/b045/importcfg << 'EOF' # internal
+554:go tool buildid -w $WORK/b002/_pkg_.a # internal
+555:cp $WORK/b002/_pkg_.a $REPO/.cache/step1/gocache/1c/1ca887959ea20327217a5448a4c2b14b29ba89f914c69eebc7856bc23b6fb668-d # internal
+559:go tool pack r $WORK/b055/_pkg_.a $WORK/b055/asm_darwin_arm64.o $WORK/b055/zsyscall_darwin_arm64.o # internal
+560:go tool buildid -w $WORK/b055/_pkg_.a # internal
+561:cp $WORK/b055/_pkg_.a $REPO/.cache/step1/gocache/2e/2e8332933c4fc9344f0a78ce9580e6ee99ff22ce8660f3924d6553a52f74f776-d # internal
+565:cat >$REPO/.cache/step1/tmp/go-build3768285036/b054/importcfg << 'EOF' # internal
+575:echo -n > $WORK/b057/go_asm.h # internal
+576:cat >$REPO/.cache/step1/tmp/go-build3768285036/b058/importcfg << 'EOF' # internal
+585:cat >$REPO/.cache/step1/tmp/go-build3768285036/b057/importcfg << 'EOF' # internal
+592:go tool buildid -w $WORK/b058/_pkg_.a # internal
+593:cp $WORK/b058/_pkg_.a $REPO/.cache/step1/gocache/df/dfc40228bdd4b944ad1693356fd776af360e87ff35ef81c83f11ec4516ab6ada-d # internal
+596:go tool pack r $WORK/b057/_pkg_.a $WORK/b057/asm_darwin.o # internal
+597:go tool buildid -w $WORK/b057/_pkg_.a # internal
+598:cp $WORK/b057/_pkg_.a $REPO/.cache/step1/gocache/28/2856681c813a962b2bdfb07a383e8430b5a222e7106edb57f3b1336e8bd5f142-d # internal
+599:go tool buildid -w $WORK/b054/_pkg_.a # internal
+600:cp $WORK/b054/_pkg_.a $REPO/.cache/step1/gocache/76/761695e95a765d6660327f5d12937fd7f6e3a86cb9668b73b2a4ed2a7b1222b2-d # internal
+603:cat >$REPO/.cache/step1/tmp/go-build3768285036/b051/importcfg << 'EOF' # internal
+614:cat >$REPO/.cache/step1/tmp/go-build3768285036/b056/importcfg << 'EOF' # internal
+631:go tool buildid -w $WORK/b051/_pkg_.a # internal
+632:go tool pack r $WORK/b045/_pkg_.a $WORK/b045/asm_arm64.o # internal
+633:go tool buildid -w $WORK/b045/_pkg_.a # internal
+634:cp $WORK/b051/_pkg_.a $REPO/.cache/step1/gocache/3b/3b952b3d2d9edb28b673476183fc0bad17e74caa7cbe09695f717b1502ca991e-d # internal
+636:cat >$REPO/.cache/step1/tmp/go-build3768285036/b050/importcfg << 'EOF' # internal
+646:go tool buildid -w $WORK/b056/_pkg_.a # internal
+647:cp $WORK/b045/_pkg_.a $REPO/.cache/step1/gocache/62/625769e87e22d6931ddf752e8cf516848eeb7469b7886046288f5a7a427c68ed-d # internal
+649:cat >$REPO/.cache/step1/tmp/go-build3768285036/b043/importcfg << 'EOF' # internal
+656:cp $WORK/b056/_pkg_.a $REPO/.cache/step1/gocache/af/afa619dfa97687464cfe556b486d538a25660cd6ba3f25d4b666ed96610a6d47-d # internal
+657:go tool buildid -w $WORK/b050/_pkg_.a # internal
+658:cp $WORK/b050/_pkg_.a $REPO/.cache/step1/gocache/9d/9d69e493ce44e255366de37bba7061d887144361afd133a5064736fbb5fc2a89-d # internal
+660:cat >$REPO/.cache/step1/tmp/go-build3768285036/b049/importcfg << 'EOF' # internal
+681:go tool buildid -w $WORK/b043/_pkg_.a # internal
+682:cp $WORK/b043/_pkg_.a $REPO/.cache/step1/gocache/d3/d3c0156385b041c592704d6cd547779918437b3618c0d876f7f6e412047c62a2-d # internal
+683:go tool buildid -w $WORK/b049/_pkg_.a # internal
+684:cp $WORK/b049/_pkg_.a $REPO/.cache/step1/gocache/2f/2fc2103ade736fbbf76326ab3a4e2904888412d55a3bf25a83e2a427705d7070-d # internal
+686:cat >$REPO/.cache/step1/tmp/go-build3768285036/b042/importcfg << 'EOF' # internal
+701:go tool buildid -w $WORK/b042/_pkg_.a # internal
+702:cp $WORK/b042/_pkg_.a $REPO/.cache/step1/gocache/8f/8f579c63e7d774419e96f983739bdbd72c5ef1251ecc9970dc793018d48cc58d-d # internal
+704:cat >$REPO/.cache/step1/tmp/go-build3768285036/b060/importcfg << 'EOF' # internal
+711:go tool buildid -w $WORK/b060/_pkg_.a # internal
+712:cp $WORK/b060/_pkg_.a $REPO/.cache/step1/gocache/10/10c8ebdd7eba335ed3cdf163dc54d1bc456d86cf1fe39d9cfff7667bd0c88cca-d # internal
+714:cat >$REPO/.cache/step1/tmp/go-build3768285036/b001/importcfg << 'EOF' # internal
+724:go tool buildid -w $WORK/b001/_pkg_.a # internal
+725:cp $WORK/b001/_pkg_.a $REPO/.cache/step1/gocache/8b/8ba50024acd56d383a265b52bbde9e1b2d94307f1bbcfd25bf2c1f60b5b362a4-d # internal
+726:cat >$REPO/.cache/step1/tmp/go-build3768285036/b001/importcfg.link << 'EOF' # internal
+791:go tool buildid -w $WORK/b001/exe/a.out # internal

@@ -1,0 +1,6 @@
+WORK=$REPO/.cache/step4-broken-go126/tmp/go-build3278251576
+# github.com/kakkoyun/hooking-into-the-go-toolchain/app
+toyhook: compile github.com/kakkoyun/hooking-into-the-go-toolchain/app before: -o $WORK/b001/_pkg_.a -trimpath $WORK/b001=> -p main -lang=go1.25 -complete -buildid wWfLN-USjLf4-gFNKuV8/wWfLN-USjLf4-gFNKuV8 -goversion go1.26.8 -c=16 -shared -nolocalimports -importcfg $WORK/b001/importcfg -pack app/main.go
+toyhook: rewrote 1 function(s) in app/main.go -> $WORK/b001/main.go
+toyhook: compile github.com/kakkoyun/hooking-into-the-go-toolchain/app after: -o $WORK/b001/_pkg_.a -trimpath $WORK/b001=> -p main -lang=go1.25 -complete -buildid wWfLN-USjLf4-gFNKuV8/wWfLN-USjLf4-gFNKuV8 -goversion go1.26.8 -c=16 -shared -nolocalimports -importcfg $WORK/b001/importcfg -pack $WORK/b001/main.go
+$WORK/b001/main.go:3:8: could not import log/slog (open : no such file or directory)

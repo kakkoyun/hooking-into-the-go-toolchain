@@ -1,0 +1,13 @@
+func (sh serverHandler) ServeHTTP(rw ResponseWriter, req *Request) {
+	//line <generated>:1
+	if hookContext4219161129, _ := OtelBeforeTrampoline_ServeHTTP4219161129(&sh, &rw, &req); false {
+	} else {
+		defer OtelAfterTrampoline_ServeHTTP4219161129(hookContext4219161129)
+	}
+	//line server.go:3405:2
+	handler := sh.srv.Handler
+	//line server.go:3406:2
+	if handler == nil {
+		handler = DefaultServeMux
+	}
+	//line server.go:3409:2

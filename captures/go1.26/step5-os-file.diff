@@ -1,0 +1,11 @@
+--- os/file.go
++++ rewritten os/file.go
+@@ -862,6 +862,8 @@
+ // Because ReadFile reads the whole file, it does not treat an EOF from Read
+ // as an error to be reported.
+ func ReadFile(name string) ([]byte, error) {
++	toyhookOnReadFile(name)
++//line $GOROOT/src/os/file.go:865
+ 	f, err := Open(name)
+ 	if err != nil {
+ 		return nil, err

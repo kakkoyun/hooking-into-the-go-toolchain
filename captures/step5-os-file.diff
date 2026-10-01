@@ -1,0 +1,11 @@
+--- os/file.go
++++ rewritten os/file.go
+@@ -869,6 +869,8 @@
+ // as an error to be reported.
+ // If there is an error, it will be of type [*PathError].
+ func ReadFile(name string) ([]byte, error) {
++	toyhookOnReadFile(name)
++//line $GOROOT/src/os/file.go:872
+ 	f, err := Open(name)
+ 	if err != nil {
+ 		return nil, err

@@ -1,0 +1,5 @@
+WORK=$REPO/.cache/step3/tmp/go-build3408674438
+# github.com/kakkoyun/hooking-into-the-go-toolchain/app
+toyhook: compile github.com/kakkoyun/hooking-into-the-go-toolchain/app before: -o $WORK/b001/_pkg_.a -trimpath $WORK/b001=> -p main -lang=go1.25 -complete -buildid kIewNeZLieJMDX0sK6uO/kIewNeZLieJMDX0sK6uO -goversion go1.27.1 -c=16 -shared -nolocalimports -importcfg $WORK/b001/importcfg -pack app/main.go
+toyhook: rewrote 1 function(s) in app/main.go -> $WORK/b001/main.go
+toyhook: compile github.com/kakkoyun/hooking-into-the-go-toolchain/app after: -o $WORK/b001/_pkg_.a -trimpath $WORK/b001=> -p main -lang=go1.25 -complete -buildid kIewNeZLieJMDX0sK6uO/kIewNeZLieJMDX0sK6uO -goversion go1.27.1 -c=16 -shared -nolocalimports -importcfg $WORK/b001/importcfg -pack $WORK/b001/main.go

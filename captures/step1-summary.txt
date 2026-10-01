@@ -1,0 +1,6 @@
+lines in the -x log:                  793
+compile invocations:                  59
+asm invocations:                      48
+link invocations:                     1
+'# internal' lines:                   207
+packagefile lines in app importcfg:   6

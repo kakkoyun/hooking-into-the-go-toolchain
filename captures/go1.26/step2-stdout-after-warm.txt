@@ -1,0 +1,216 @@
+# internal/byteorder
+compile	internal/byteorder	27	files=1
+# internal/msan
+compile	internal/msan	22	files=2
+# internal/profilerecord
+compile	internal/profilerecord	88	files=1
+# unicode/utf8
+compile	unicode/utf8	69	files=1
+# internal/coverage/rtcov
+compile	internal/coverage/rtcov	190	files=1
+# internal/godebugs
+compile	internal/godebugs	64	files=1
+# internal/trace/tracev2
+compile	internal/trace/tracev2	62	files=3
+# internal/unsafeheader
+compile	internal/unsafeheader	173	files=1
+# internal/goos
+compile	internal/goos	40	files=3
+# math/bits
+compile	math/bits	25	files=3
+# cmp
+compile	cmp	144	files=1
+# internal/asan
+compile	internal/asan	41	files=2
+# internal/runtime/pprof/label
+compile	internal/runtime/pprof/label	75	files=1
+# internal/goarch
+compile	internal/goarch	35	files=3
+# internal/runtime/math
+compile	internal/runtime/math	75	files=1
+# unicode
+compile	unicode	110	files=5
+# internal/runtime/gc
+compile	internal/runtime/gc	119	files=3
+# internal/goexperiment
+compile	internal/goexperiment	94	files=21
+# internal/strconv
+compile	internal/strconv	156	files=14
+# sync/atomic
+asm	sync/atomic	37	files=1
+# sync/atomic
+compile	sync/atomic	30	files=4
+# sync/atomic
+asm	sync/atomic	12	files=1
+# internal/cpu
+asm	internal/cpu	38	files=2
+# internal/cpu
+compile	internal/cpu	31	files=6
+# internal/cpu
+asm	internal/cpu	12	files=1
+# internal/cpu
+asm	internal/cpu	17	files=1
+# internal/abi
+asm	internal/abi	18	files=2
+# internal/abi
+compile	internal/abi	56	files=14
+# internal/abi
+asm	internal/abi	45	files=1
+# internal/abi
+asm	internal/abi	32	files=1
+# internal/race
+compile	internal/race	35	files=2
+# internal/synctest
+compile	internal/synctest	25	files=1
+# internal/sync
+compile	internal/sync	35	files=3
+# math
+asm	math	25	files=3
+# math
+compile	math	60	files=52
+# math
+asm	math	11	files=1
+# math
+asm	math	18	files=1
+# math
+asm	math	14	files=1
+# internal/chacha8rand
+asm	internal/chacha8rand	15	files=1
+# internal/chacha8rand
+compile	internal/chacha8rand	24	files=2
+# internal/chacha8rand
+asm	internal/chacha8rand	12	files=1
+# internal/runtime/sys
+asm	internal/runtime/sys	16	files=2
+# internal/runtime/sys
+compile	internal/runtime/sys	22	files=7
+# internal/runtime/sys
+asm	internal/runtime/sys	14	files=1
+# internal/runtime/sys
+asm	internal/runtime/sys	10	files=1
+# internal/runtime/gc/scan
+compile	internal/runtime/gc/scan	23	files=5
+# internal/runtime/maps
+compile	internal/runtime/maps	73	files=8
+# internal/runtime/atomic
+asm	internal/runtime/atomic	48	files=1
+# internal/runtime/atomic
+compile	internal/runtime/atomic	24	files=7
+# internal/runtime/atomic
+asm	internal/runtime/atomic	10	files=1
+# internal/runtime/exithook
+compile	internal/runtime/exithook	26	files=1
+# internal/bytealg
+asm	internal/bytealg	22	files=5
+# internal/bytealg
+compile	internal/bytealg	24	files=9
+# internal/bytealg
+asm	internal/bytealg	12	files=1
+# internal/bytealg
+asm	internal/bytealg	10	files=1
+# internal/bytealg
+asm	internal/bytealg	10	files=1
+# internal/bytealg
+asm	internal/bytealg	39	files=1
+# internal/bytealg
+asm	internal/bytealg	10	files=1
+# internal/stringslite
+compile	internal/stringslite	23	files=1
+# runtime
+asm	runtime	14	files=11
+# runtime
+compile	runtime	1365	files=181
+# runtime
+asm	runtime	15	files=1
+# runtime
+asm	runtime	20	files=1
+# runtime
+asm	runtime	11	files=1
+# runtime
+asm	runtime	14	files=1
+# runtime
+asm	runtime	11	files=1
+# runtime
+asm	runtime	12	files=1
+# runtime
+asm	runtime	13	files=1
+# runtime
+asm	runtime	10	files=1
+# runtime
+asm	runtime	12	files=1
+# runtime
+asm	runtime	13	files=1
+# runtime
+asm	runtime	12	files=1
+# iter
+compile	iter	28	files=1
+# slices
+compile	slices	29	files=5
+# sync
+compile	sync	69	files=11
+# internal/bisect
+compile	internal/bisect	32	files=1
+# internal/testlog
+compile	internal/testlog	27	files=2
+# internal/godebug
+compile	internal/godebug	47	files=1
+# internal/reflectlite
+asm	internal/reflectlite	11	files=1
+# internal/reflectlite
+compile	internal/reflectlite	48	files=3
+# internal/reflectlite
+asm	internal/reflectlite	11	files=1
+# errors
+compile	errors	40	files=3
+# internal/oserror
+compile	internal/oserror	17	files=1
+# path
+compile	path	43	files=2
+# io
+compile	io	44	files=3
+# strconv
+compile	strconv	46	files=5
+# bytes
+compile	bytes	50	files=4
+# syscall
+asm	syscall	15	files=2
+# syscall
+compile	syscall	118	files=30
+# syscall
+asm	syscall	11	files=1
+# syscall
+asm	syscall	17	files=1
+# internal/syscall/execenv
+compile	internal/syscall/execenv	31	files=1
+# time
+compile	time	183	files=10
+# io/fs
+compile	io/fs	84	files=9
+# internal/filepathlite
+compile	internal/filepathlite	40	files=3
+# reflect
+asm	reflect	10	files=1
+# reflect
+compile	reflect	229	files=11
+# reflect
+asm	reflect	12	files=1
+# internal/fmtsort
+compile	internal/fmtsort	59	files=1
+# internal/syscall/unix
+asm	internal/syscall/unix	12	files=1
+# internal/syscall/unix
+compile	internal/syscall/unix	36	files=19
+# internal/syscall/unix
+asm	internal/syscall/unix	12	files=1
+# internal/poll
+compile	internal/poll	109	files=20
+# os
+compile	os	147	files=44
+# fmt
+compile	fmt	105	files=5
+# github.com/kakkoyun/hooking-into-the-go-toolchain/greet
+compile	github.com/kakkoyun/hooking-into-the-go-toolchain/greet	21	files=1
+# github.com/kakkoyun/hooking-into-the-go-toolchain/app
+compile	github.com/kakkoyun/hooking-into-the-go-toolchain/app	20	files=1
+# github.com/kakkoyun/hooking-into-the-go-toolchain/app
+link	github.com/kakkoyun/hooking-into-the-go-toolchain/app	123	files=0

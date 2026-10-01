@@ -1,0 +1,8 @@
+probes logged: 3
+example log line (tool, import path, ms, summary):
+compile | - | 14 | -V=full
+
+answer for 'compile -V=full' through the wrapper:
+compile version go1.26.8
+answer for 'compile -V=full' without the wrapper:
+compile version go1.26.8

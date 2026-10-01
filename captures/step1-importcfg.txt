@@ -1,0 +1,7 @@
+# import config
+packagefile bytes=$REPO/.cache/step1/tmp/go-build3768285036/b002/_pkg_.a
+packagefile fmt=$REPO/.cache/step1/tmp/go-build3768285036/b042/_pkg_.a
+packagefile github.com/kakkoyun/hooking-into-the-go-toolchain/greet=$REPO/.cache/step1/tmp/go-build3768285036/b060/_pkg_.a
+packagefile os=$REPO/.cache/step1/tmp/go-build3768285036/b049/_pkg_.a
+packagefile time=$REPO/.cache/step1/tmp/go-build3768285036/b054/_pkg_.a
+packagefile runtime=$REPO/.cache/step1/tmp/go-build3768285036/b009/_pkg_.a

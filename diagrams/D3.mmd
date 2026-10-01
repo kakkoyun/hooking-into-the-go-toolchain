@@ -1,0 +1,19 @@
+sequenceDiagram
+    participant Caller
+    participant Target as Instrumented function<br/>(net/http serverHandler.ServeHTTP)
+    participant Tramp as Trampolines<br/>OtelBefore/AfterTrampoline_ServeHTTP
+    participant Hook as Hook functions<br/>BeforeServeHTTP / AfterServeHTTP
+    participant Body as Original body
+
+    Caller->>Target: ServeHTTP(rw, req)
+    Target->>Tramp: OtelBeforeTrampoline_ServeHTTP(&sh, &rw, &req)
+    Tramp->>Hook: BeforeServeHTTP(hookContext, ...) via //go:linkname
+    Hook-->>Tramp: may change parameters through hookContext
+    Tramp-->>Target: hookContext (panics in the hook are recovered here)
+    Note over Target: defer OtelAfterTrampoline_ServeHTTP(hookContext)
+    Target->>Body: original statements run
+    Body-->>Target: return
+    Target->>Tramp: deferred OtelAfterTrampoline_ServeHTTP(hookContext)
+    Tramp->>Hook: AfterServeHTTP(hookContext) via //go:linkname
+    Hook-->>Tramp: may change return values
+    Target-->>Caller: return

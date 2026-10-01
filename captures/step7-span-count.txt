@@ -1,0 +1,2 @@
+spans:            3
+distinct traces:  1

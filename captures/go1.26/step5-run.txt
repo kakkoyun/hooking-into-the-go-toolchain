@@ -1,0 +1,4 @@
+hello, toolchain
+hooks.OnReadFile("go.mod")
+go.mod has 3 lines
+done in 0s

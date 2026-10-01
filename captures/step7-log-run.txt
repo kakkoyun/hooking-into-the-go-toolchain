@@ -1,0 +1,2 @@
+2026/10/01 14:28:30 INFO function entry func=world
+2026/10/01 14:28:30 INFO function exit func=world duration=232.041µs

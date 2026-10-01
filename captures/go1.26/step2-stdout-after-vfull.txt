@@ -1,0 +1,4 @@
+compile lines printed by the first build: 61
+answer for 'compile -V=full' (2 lines, the second is the stopwatch record):
+compile version go1.26.8
+compile	-	18	-V=full

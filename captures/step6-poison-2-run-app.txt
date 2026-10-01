@@ -1,0 +1,3 @@
+hello, toolchain
+go.mod has 3 lines
+done in 0s

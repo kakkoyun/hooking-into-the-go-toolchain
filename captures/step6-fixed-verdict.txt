@@ -1,0 +1,8 @@
+order 1: wrapped ./app, then plain ./other (same GOCACHE)
+  app  : injected code PRESENT
+  other: injected code absent
+order 2: plain ./other, then wrapped ./app (same GOCACHE)
+  other: injected code absent
+  app  : injected code PRESENT
+greet rewritten by the wrapper in order 1: 1 time(s)
+greet rewritten by the wrapper in order 2: 1 time(s)

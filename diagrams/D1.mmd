@@ -1,0 +1,21 @@
+flowchart TD
+    build["go build -toolexec=stopwatch ./app"]
+    probe["stopwatch compile -V=full<br/>(once per tool per build)<br/>answer = tool ID"]
+    action["per package: action ID =<br/>hash of source files, flags,<br/>tool ID, dependency IDs"]
+    hit{"cache hit?"}
+    reuse["reuse the cached archive<br/>no tool runs, nothing is logged"]
+    wrap["stopwatch compile|asm|link args"]
+    real["real compile / asm / link"]
+    log[("$STOPWATCH_LOG<br/>tool, import path, ms, args")]
+    done["output, stderr and exit code<br/>go back to cmd/go unchanged"]
+
+    build --> probe
+    build --> action
+    probe --> action
+    probe --> log
+    action --> hit
+    hit -- yes --> reuse
+    hit -- no --> wrap
+    wrap --> real
+    wrap --> log
+    real --> done

@@ -1,0 +1,21 @@
+cmd/go passed -complete to the os compile: no
+wrapper: toyhook: -complete not present, nothing to strip
+
+cmd/go's reason (cmd/go/internal/work/gc.go, go1.26.8):
+87-	// Exceptions: a few standard packages have forward declarations for
+88-	// pieces supplied behind-the-scenes by package runtime.
+89:	extFiles := len(p.CgoFiles) + len(p.CFiles) + len(p.CXXFiles) + len(p.MFiles) + len(p.FFiles) + len(p.SFiles) + len(p.SysoFiles) + len(p.SwigFiles) + len(p.SwigCXXFiles)
+90-	if p.Standard {
+91-		switch p.ImportPath {
+92-		case "bytes", "internal/poll", "net", "os":
+93-			fallthrough
+94-		case "runtime/metrics", "runtime/pprof", "runtime/trace":
+95-			fallthrough
+96-		case "sync", "syscall", "time":
+97-			extFiles++
+98-		}
+99-	}
+100-	if extFiles == 0 {
+101-		defaultGcFlags = append(defaultGcFlags, "-complete")
+102-	}
+103-	if cfg.BuildContext.InstallSuffix != "" {

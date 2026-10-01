@@ -1,0 +1,12 @@
+# Tools and build products
+.bin/
+.cache/
+.otelc-build/
+*.log
+
+# Built binaries
+/app/app
+/other/other
+/hello/hello
+/cmd/stopwatch/stopwatch
+/cmd/toyhook/toyhook

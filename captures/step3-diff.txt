@@ -1,0 +1,11 @@
+--- app/main.go
++++ $WORK/b001/main.go
+@@ -21,6 +21,8 @@
+ //
+ //demo:log
+ func countLines(path string) int {
++	fmt.Fprintf(os.Stderr, "→ %s at %s\n", "countLines", time.Now().Format(time.TimeOnly))
++//line $REPO/app/main.go:24
+ 	data, err := os.ReadFile(path)
+ 	if err != nil {
+ 		fmt.Fprintln(os.Stderr, err)

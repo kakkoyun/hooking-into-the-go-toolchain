@@ -1,0 +1,6 @@
+package os
+
+import _ "unsafe"
+
+//go:linkname toyhookOnReadFile github.com/kakkoyun/hooking-into-the-go-toolchain/hooks.OnReadFile
+func toyhookOnReadFile(name string)

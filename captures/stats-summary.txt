@@ -1,0 +1,5 @@
+one run, one machine (Darwin arm64), go1.27.1
+
+plain, no wrapper:    real 5.97 s
+plain, stopwatch:     real 5.76 s
+otelc --stats:        real 18.16 s

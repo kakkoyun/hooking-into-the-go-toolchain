@@ -1,0 +1,3 @@
+go: parsing buildID from go tool compile -V=full: unexpected output:
+	stopwatch: starting compile
+compile version go1.27.1

@@ -1,0 +1,7 @@
+lines in stderr:                  216
+lines with 'real' (timed calls):  108
+lines mentioning -V=full:         0
+
+/usr/bin/time prints to stderr. cmd/go throws away the stderr of a
+successful '-V=full' probe and only reads its stdout, so probes are timed
+but never shown; the lines above belong to real compile/asm/link calls.

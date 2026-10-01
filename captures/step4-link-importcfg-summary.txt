@@ -1,0 +1,4 @@
+lines before: 60
+lines after:  80
+added lines that mention log/slog:
+packagefile log/slog=$REPO/.cache/step4/gocache/06/06724ae7490df93230be563fe186c7ba3f1098f5805a24a7a4ee41bcef1eff9a-d

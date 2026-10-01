@@ -1,0 +1,30 @@
+// Command app is the small program used by steps 0 to 6.
+package main
+
+import (
+	"bytes"
+	"fmt"
+	"os"
+	"time"
+
+	"github.com/kakkoyun/hooking-into-the-go-toolchain/greet"
+)
+
+func main() {
+	start := time.Now()
+	fmt.Println(greet.Hello("toolchain"))
+	fmt.Printf("go.mod has %d lines\n", countLines("go.mod"))
+	fmt.Fprintf(os.Stderr, "done in %s\n", time.Since(start).Round(time.Millisecond))
+}
+
+// countLines reads path with os.ReadFile, which step 5 hooks.
+//
+//demo:log
+func countLines(path string) int {
+	data, err := os.ReadFile(path)
+	if err != nil {
+		fmt.Fprintln(os.Stderr, err)
+		os.Exit(1)
+	}
+	return bytes.Count(data, []byte("\n"))
+}

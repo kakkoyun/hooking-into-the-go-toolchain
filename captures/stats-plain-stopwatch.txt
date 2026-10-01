@@ -1,0 +1,6 @@
+tool        calls     sum ms
+-V=full probes: 3
+asm            82        869
+compile       188      12288
+link            1        157
+total         271      13314

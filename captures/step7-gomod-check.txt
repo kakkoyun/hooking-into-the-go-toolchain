@@ -1,0 +1,7 @@
+before the build:
+841e41372e15ef3da689ccac89e1f576217a6a8810783ef0507e3eebd91490e9  go.mod
+absent  go.sum
+after the build:
+841e41372e15ef3da689ccac89e1f576217a6a8810783ef0507e3eebd91490e9  go.mod
+absent  go.sum
+result: go.mod and go.sum are byte-identical

@@ -1,0 +1,15 @@
+timed lines (' real ') in the cold build:                    108
+timed lines (' real ') in the plain build with no -toolexec:  108
+timed lines (' real ') in the go build -x build:              108
+lines in the -x log ending in ' # internal':                  60
+compile/asm/link commands run by the -x build:                0
+lines in the -x log starting with 'cat ':                60
+lines in the -x log starting with 'echo ':               0
+
+first 6 ' # internal' lines of the -x log (cmd/go replays each cached tool output by cat-ing the cache file):
+10:cat $REPO/.cache/step0-replay/gocache/12/12ca198f067699906901d4c290d6a051529a6256b7b44d5169c0f122ef833284-d  # internal
+13:cat $REPO/.cache/step0-replay/gocache/be/be54475f5c4c1409a5aa8a252ef08ad8a108ef5667ff2e02609116b9f796dce1-d  # internal
+16:cat $REPO/.cache/step0-replay/gocache/7a/7a25506005be404a7443f6bdbd6a61e18b502395e281a632fa28cde26aaf0d7d-d  # internal
+19:cat $REPO/.cache/step0-replay/gocache/d7/d7245efff2eb93cdae986c746898bc30cb9ad45f281ab1d66da1881e52d66997-d  # internal
+22:cat $REPO/.cache/step0-replay/gocache/68/68ca7328f433c1f309f13579e9a8fcc12769969eccee0a6e989828da3d78c48f-d  # internal
+25:cat $REPO/.cache/step0-replay/gocache/cf/cfd2cd353ca65d4f7f857a8db59916ecfbb17110250b8fec436c55c1d63f9224-d  # internal

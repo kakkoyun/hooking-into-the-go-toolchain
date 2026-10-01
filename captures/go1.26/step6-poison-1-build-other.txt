@@ -1,0 +1,4 @@
+# github.com/kakkoyun/hooking-into-the-go-toolchain/greet
+toyhook: compile github.com/kakkoyun/hooking-into-the-go-toolchain/greet before: -o $WORK/b062/_pkg_.a -trimpath $WORK/b062=> -p github.com/kakkoyun/hooking-into-the-go-toolchain/greet -lang=go1.25 -complete -buildid 4XoDTFwC3DH82NfRQwUK/4XoDTFwC3DH82NfRQwUK -goversion go1.26.8 -c=16 -shared -nolocalimports -importcfg $WORK/b062/importcfg -pack greet/greet.go
+toyhook: rewrote 1 function(s) in greet/greet.go -> $WORK/b062/greet.go
+toyhook: compile github.com/kakkoyun/hooking-into-the-go-toolchain/greet after: -o $WORK/b062/_pkg_.a -trimpath $WORK/b062=> -p github.com/kakkoyun/hooking-into-the-go-toolchain/greet -lang=go1.25 -complete -buildid 4XoDTFwC3DH82NfRQwUK/4XoDTFwC3DH82NfRQwUK -goversion go1.26.8 -c=16 -shared -nolocalimports -importcfg $WORK/b062/importcfg -pack $WORK/b062/greet.go

@@ -1,0 +1,3 @@
+compile lines printed by the first build:  61
+compile lines printed by a second build:   61
+(a plain warm build runs no compile at all)

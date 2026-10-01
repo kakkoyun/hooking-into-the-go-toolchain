@@ -1,0 +1,18 @@
+# Directive rule: expands //demo:log in package main. Adapted from the
+# otel-night-berlin-2026 demo.
+demo_log:
+  target: main
+  where:
+    directive: "demo:log"
+  do:
+    - expand_directive:
+        template: |-
+          start := time.Now()
+          slog.Info("function entry", "func", "{{ .FuncName }}")
+          defer func() {
+            slog.Info("function exit", "func", "{{ .FuncName }}",
+              "duration", time.Since(start))
+          }()
+  imports:
+    slog: "log/slog"
+    time: "time"
